@@ -1,0 +1,230 @@
+[
+  {
+    "id": "net-001",
+    "categoryId": "net",
+    "term": "草",
+    "reading": "くさ",
+    "romaji": "kusa",
+    "meaningEn": "lol (laughing)",
+    "meaningJa": "笑い。「w」が連なると草に見えることから",
+    "exampleJa": "その返し草。",
+    "exampleRomaji": "sono kaeshi kusa.",
+    "exampleEn": "That comeback is hilarious lol.",
+    "socialConsequenceEn": "Extremely current. Type this and you read as a real Japanese netizen, not a textbook.",
+    "tag": {
+      "era": "令和ネット",
+      "whoUses": "ネット民全般",
+      "gachi": "tsuujiru",
+      "sourceNote": "(笑)→w→wwww=草。2ch由来、定着"
+    }
+  },
+  {
+    "id": "net-002",
+    "categoryId": "net",
+    "term": "乙",
+    "reading": "おつ",
+    "romaji": "otsu",
+    "meaningEn": "Nice work; thanks for the effort",
+    "meaningJa": "お疲れさまの略",
+    "exampleJa": "配信乙でした！",
+    "exampleRomaji": "haishin otsu deshita!",
+    "exampleEn": "Nice work on the stream!",
+    "socialConsequenceEn": "Casual and safe online. Saying it out loud, though, is a little chronically-online.",
+    "tag": {
+      "era": "令和ネット",
+      "whoUses": "ネット民 / 配信",
+      "gachi": "tsuujiru",
+      "sourceNote": "「おつかれ」短縮。掲示板・配信文化"
+    }
+  },
+  {
+    "id": "net-003",
+    "categoryId": "net",
+    "term": "ググる",
+    "reading": "ぐぐる",
+    "romaji": "guguru",
+    "meaningEn": "To google (something)",
+    "meaningJa": "Googleで検索する",
+    "exampleJa": "分からんかったらググって。",
+    "exampleRomaji": "wakaran-kattara gugutte.",
+    "exampleEn": "If you don't know it, just google it.",
+    "socialConsequenceEn": "Totally normal everyday slang. Zero risk.",
+    "tag": {
+      "era": "令和ネット",
+      "whoUses": "ほぼ全員",
+      "gachi": "tsuujiru",
+      "sourceNote": "Google+る(動詞化)"
+    }
+  },
+  {
+    "id": "net-004",
+    "categoryId": "net",
+    "term": "炎上",
+    "reading": "えんじょう",
+    "romaji": "enjou",
+    "meaningEn": "To blow up / get flamed online (a backlash)",
+    "meaningJa": "ネットで非難が殺到すること",
+    "exampleJa": "その発言で炎上した。",
+    "exampleRomaji": "sono hatsugen de enjou shita.",
+    "exampleEn": "That comment caused a huge backlash.",
+    "socialConsequenceEn": "A real, widely-used word — even the news uses it. Sound totally natural.",
+    "tag": {
+      "era": "令和ネット",
+      "whoUses": "メディア含む全般",
+      "gachi": "tsuujiru",
+      "sourceNote": "ネット炎上。報道でも一般化"
+    }
+  },
+  {
+    "id": "net-005",
+    "categoryId": "net",
+    "term": "ワロタ",
+    "reading": "わろた",
+    "romaji": "warota",
+    "meaningEn": "lol'd (I cracked up)",
+    "meaningJa": "笑った（の2ch表現）",
+    "exampleJa": "不意打ちでワロタ。",
+    "exampleRomaji": "fuiuchi de warota.",
+    "exampleEn": "Caught me off guard, lol'd.",
+    "socialConsequenceEn": "Reads slightly old-school 2ch now (草 took over) — still understood, mildly retro.",
+    "tag": {
+      "era": "ネット老人(2000s-)",
+      "whoUses": "古参ネット民",
+      "gachi": "itai",
+      "sourceNote": "「笑った」の2ch表現。やや古め"
+    }
+  },
+  {
+    "id": "net-006",
+    "categoryId": "net",
+    "term": "ROM専",
+    "reading": "ロムせん",
+    "romaji": "romu-sen",
+    "meaningEn": "A lurker (reads but never posts)",
+    "meaningJa": "読むだけで書き込まない人",
+    "exampleJa": "このスレはROM専でいくわ。",
+    "exampleRomaji": "kono sure wa romu-sen de iku wa.",
+    "exampleEn": "I'll just lurk this thread.",
+    "socialConsequenceEn": "Niche but real forum slang. Use it and you sound like a seasoned netizen.",
+    "tag": {
+      "era": "ネット(掲示板)",
+      "whoUses": "掲示板/コミュ勢",
+      "gachi": "tsuujiru",
+      "sourceNote": "Read Only Member 専門"
+    }
+  },
+  {
+    "id": "net-007",
+    "categoryId": "net",
+    "term": "バズる",
+    "reading": "ばずる",
+    "romaji": "bazuru",
+    "meaningEn": "To go viral",
+    "meaningJa": "ネットで急に話題になる",
+    "exampleJa": "その動画バズってた。",
+    "exampleRomaji": "sono douga bazutteta.",
+    "exampleEn": "That video went viral.",
+    "socialConsequenceEn": "Mainstream — even marketers use it. Safe.",
+    "tag": {
+      "era": "令和ネット",
+      "whoUses": "ネット民全般",
+      "gachi": "tsuujiru",
+      "sourceNote": "buzz+る"
+    }
+  },
+  {
+    "id": "net-008",
+    "categoryId": "net",
+    "term": "神",
+    "reading": "かみ",
+    "romaji": "kami",
+    "meaningEn": "God-tier; awesome",
+    "meaningJa": "最高・すごい",
+    "exampleJa": "この神アプリ便利すぎ。",
+    "exampleRomaji": "kono kami-apuri benri sugi.",
+    "exampleEn": "This god-tier app is too good.",
+    "socialConsequenceEn": "Everywhere now. Totally safe hype.",
+    "tag": {
+      "era": "令和",
+      "whoUses": "若者全般",
+      "gachi": "tsuujiru",
+      "sourceNote": "「神」=最高の俗用"
+    }
+  },
+  {
+    "id": "net-009",
+    "categoryId": "net",
+    "term": "リア充",
+    "reading": "りあじゅう",
+    "romaji": "ria-juu",
+    "meaningEn": "Someone with a fulfilling real (offline) life",
+    "meaningJa": "現実生活が充実した人",
+    "exampleJa": "週末デートとかリア充か。",
+    "exampleRomaji": "shuumatsu deeto toka ria-juu ka.",
+    "exampleEn": "Weekend dates? Total normie-with-a-life.",
+    "socialConsequenceEn": "2010s net classic — a little dated but understood.",
+    "tag": {
+      "era": "ネット老人(2000s-)",
+      "whoUses": "古参ネット民",
+      "gachi": "itai",
+      "sourceNote": "リアル(現実)+充実"
+    }
+  },
+  {
+    "id": "net-010",
+    "categoryId": "net",
+    "term": "黒歴史",
+    "reading": "くろれきし",
+    "romaji": "kuro-rekishi",
+    "meaningEn": "An embarrassing past you'd love to erase",
+    "meaningJa": "消したい恥ずかしい過去",
+    "exampleJa": "中二の日記は黒歴史。",
+    "exampleRomaji": "chuuni no nikki wa kuro-rekishi.",
+    "exampleEn": "My middle-school diary is dark history.",
+    "socialConsequenceEn": "Mainstream (from anime). Safe and relatable.",
+    "tag": {
+      "era": "令和ネット",
+      "whoUses": "ネット民全般",
+      "gachi": "tsuujiru",
+      "sourceNote": "∀ガンダム由来→一般化"
+    }
+  },
+  {
+    "id": "net-011",
+    "categoryId": "net",
+    "term": "ステマ",
+    "reading": "すてま",
+    "romaji": "sutema",
+    "meaningEn": "Stealth marketing (undisclosed ads)",
+    "meaningJa": "宣伝と隠した宣伝",
+    "exampleJa": "それステマじゃない？",
+    "exampleRomaji": "sore sutema ja nai?",
+    "exampleEn": "Isn't that just stealth marketing?",
+    "socialConsequenceEn": "Widely used, even in news. Safe.",
+    "tag": {
+      "era": "令和ネット",
+      "whoUses": "ネット民全般",
+      "gachi": "tsuujiru",
+      "sourceNote": "stealth marketing 略"
+    }
+  },
+  {
+    "id": "net-012",
+    "categoryId": "net",
+    "term": "ポチる",
+    "reading": "ぽちる",
+    "romaji": "pochiru",
+    "meaningEn": "To click-buy (online)",
+    "meaningJa": "ネットで購入ボタンを押す",
+    "exampleJa": "セールで色々ポチった。",
+    "exampleRomaji": "seeru de iroiro pochitta.",
+    "exampleEn": "Click-bought a bunch in the sale.",
+    "socialConsequenceEn": "Everyday net slang. Zero risk.",
+    "tag": {
+      "era": "令和ネット",
+      "whoUses": "ほぼ全員",
+      "gachi": "tsuujiru",
+      "sourceNote": "ポチッ(click)+る"
+    }
+  }
+]

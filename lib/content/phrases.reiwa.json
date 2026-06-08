@@ -1,0 +1,230 @@
+[
+  {
+    "id": "reiwa-001",
+    "categoryId": "reiwa",
+    "term": "それな",
+    "reading": "それな",
+    "romaji": "sore-na",
+    "meaningEn": "Exactly / so true (strong agreement)",
+    "meaningJa": "本当にそう、同意",
+    "exampleJa": "「月曜だるい」「それな」",
+    "exampleRomaji": "\"getsuyou darui\" \"sore-na\"",
+    "exampleEn": "\"Mondays suck.\" \"So true.\"",
+    "socialConsequenceEn": "Bang-current casual agreement. Use it and you sound like a real young local.",
+    "tag": {
+      "era": "令和",
+      "whoUses": "若者全般",
+      "gachi": "tsuujiru",
+      "sourceNote": "「それなんだよ」短縮。定番の同意"
+    }
+  },
+  {
+    "id": "reiwa-002",
+    "categoryId": "reiwa",
+    "term": "とりま",
+    "reading": "とりま",
+    "romaji": "torima",
+    "meaningEn": "Anyway / for now (let's just…)",
+    "meaningJa": "とりあえず、まあ",
+    "exampleJa": "とりま集合な。",
+    "exampleRomaji": "torima shuugou na.",
+    "exampleEn": "Anyway, let's meet up.",
+    "socialConsequenceEn": "Casual and current among young people. Slightly too casual for work.",
+    "tag": {
+      "era": "令和",
+      "whoUses": "若者",
+      "gachi": "tsuujiru",
+      "sourceNote": "「とりあえず、まあ」短縮"
+    }
+  },
+  {
+    "id": "reiwa-003",
+    "categoryId": "reiwa",
+    "term": "わかりみ",
+    "reading": "わかりみ",
+    "romaji": "wakarimi",
+    "meaningEn": "The deep feeling of 'I totally get it'",
+    "meaningJa": "共感できる気持ち(「分かる」の名詞化)",
+    "exampleJa": "その悩み、わかりみが深い。",
+    "exampleRomaji": "sono nayami, wakarimi ga fukai.",
+    "exampleEn": "That struggle? I feel it deeply.",
+    "socialConsequenceEn": "Young and online-flavored. Fun with friends, a bit much in formal talk.",
+    "tag": {
+      "era": "令和",
+      "whoUses": "若者 / SNS",
+      "gachi": "tsuujiru",
+      "sourceNote": "「分かる」+み(名詞化スラング)"
+    }
+  },
+  {
+    "id": "reiwa-004",
+    "categoryId": "reiwa",
+    "term": "映え",
+    "reading": "ばえ",
+    "romaji": "bae",
+    "meaningEn": "Insta-worthy; photogenic",
+    "meaningJa": "写真映えする、見栄えが良い",
+    "exampleJa": "このカフェ映えるね。",
+    "exampleRomaji": "kono kafe baeru ne.",
+    "exampleEn": "This cafe is so Insta-worthy.",
+    "socialConsequenceEn": "Fully mainstream (from インスタ映え). Safe and current.",
+    "tag": {
+      "era": "令和",
+      "whoUses": "若者中心・全般",
+      "gachi": "tsuujiru",
+      "sourceNote": "インスタ映え→映え。2017流行語"
+    }
+  },
+  {
+    "id": "reiwa-005",
+    "categoryId": "reiwa",
+    "term": "ぴえん",
+    "reading": "ぴえん",
+    "romaji": "pien",
+    "meaningEn": "Aww, I could cry (a small sad/pleading whimper)",
+    "meaningJa": "ちょっと泣きそう・残念な気持ち",
+    "exampleJa": "売り切れてた、ぴえん。",
+    "exampleRomaji": "urikirete-ta, pien.",
+    "exampleEn": "It was sold out, aww.",
+    "socialConsequenceEn": "Peaked around 2020 — now a bit dated/Gen-Z-cringe. Use ironically.",
+    "tag": {
+      "era": "令和(2020ピーク)",
+      "whoUses": "若者 / JK",
+      "gachi": "itai",
+      "sourceNote": "泣き顔の擬態。2020流行、現在やや下火"
+    }
+  },
+  {
+    "id": "reiwa-006",
+    "categoryId": "reiwa",
+    "term": "ガチ",
+    "reading": "がち",
+    "romaji": "gachi",
+    "meaningEn": "For real; seriously; legit",
+    "meaningJa": "本気で、本当に",
+    "exampleJa": "それガチで美味い。",
+    "exampleRomaji": "sore gachi de umai.",
+    "exampleEn": "That's legit delicious.",
+    "socialConsequenceEn": "Everywhere and totally safe. A reliable intensifier.",
+    "tag": {
+      "era": "令和(平成後期〜)",
+      "whoUses": "ほぼ全員",
+      "gachi": "tsuujiru",
+      "sourceNote": "「ガチンコ」由来。本気の意の定番強調"
+    }
+  },
+  {
+    "id": "reiwa-007",
+    "categoryId": "reiwa",
+    "term": "なるはや",
+    "reading": "なるはや",
+    "romaji": "naru-haya",
+    "meaningEn": "ASAP (as soon as possible)",
+    "meaningJa": "なるべく早く",
+    "exampleJa": "それなるはやで頼む。",
+    "exampleRomaji": "sore naru-haya de tanomu.",
+    "exampleEn": "Get that done ASAP.",
+    "socialConsequenceEn": "Casual young/work slang. A bit informal for bosses.",
+    "tag": {
+      "era": "令和",
+      "whoUses": "若者",
+      "gachi": "tsuujiru",
+      "sourceNote": "「なるべく早く」短縮"
+    }
+  },
+  {
+    "id": "reiwa-008",
+    "categoryId": "reiwa",
+    "term": "ちな",
+    "reading": "ちな",
+    "romaji": "china",
+    "meaningEn": "By the way (btw)",
+    "meaningJa": "ちなみに",
+    "exampleJa": "ちな、明日休みね。",
+    "exampleRomaji": "china, ashita yasumi ne.",
+    "exampleEn": "Btw, day off tomorrow.",
+    "socialConsequenceEn": "Texting slang. Casual and young.",
+    "tag": {
+      "era": "令和",
+      "whoUses": "若者 / SNS",
+      "gachi": "tsuujiru",
+      "sourceNote": "「ちなみに」短縮"
+    }
+  },
+  {
+    "id": "reiwa-009",
+    "categoryId": "reiwa",
+    "term": "飯テロ",
+    "reading": "めしてろ",
+    "romaji": "meshi-tero",
+    "meaningEn": "Food porn — posting tempting food late",
+    "meaningJa": "空腹時に飯の画像で攻撃すること",
+    "exampleJa": "夜中の飯テロやめて。",
+    "exampleRomaji": "yonaka no meshi-tero yamete.",
+    "exampleEn": "Stop with the midnight food porn.",
+    "socialConsequenceEn": "Mainstream & funny. Totally safe.",
+    "tag": {
+      "era": "令和",
+      "whoUses": "若者中心・全般",
+      "gachi": "tsuujiru",
+      "sourceNote": "飯+テロ"
+    }
+  },
+  {
+    "id": "reiwa-010",
+    "categoryId": "reiwa",
+    "term": "きまず",
+    "reading": "きまず",
+    "romaji": "kimazu",
+    "meaningEn": "Awkward (clipped from 気まずい)",
+    "meaningJa": "気まずい",
+    "exampleJa": "目が合ってきまず。",
+    "exampleRomaji": "me ga atte kimazu.",
+    "exampleEn": "Made eye contact — so awkward.",
+    "socialConsequenceEn": "Young clipped slang. Casual.",
+    "tag": {
+      "era": "令和",
+      "whoUses": "若者",
+      "gachi": "tsuujiru",
+      "sourceNote": "「気まずい」短縮"
+    }
+  },
+  {
+    "id": "reiwa-011",
+    "categoryId": "reiwa",
+    "term": "りょ",
+    "reading": "りょ",
+    "romaji": "ryo",
+    "meaningEn": "Got it (clipped 'roger')",
+    "meaningJa": "了解の超略",
+    "exampleJa": "「7時集合」「りょ」",
+    "exampleRomaji": "\"shichi-ji shuugou\" \"ryo\"",
+    "exampleEn": "\"Meet at 7.\" \"k.\"",
+    "socialConsequenceEn": "JK texting. Way too casual for work.",
+    "tag": {
+      "era": "令和 JK",
+      "whoUses": "JK / 若者",
+      "gachi": "itai",
+      "sourceNote": "「了解」→りょ"
+    }
+  },
+  {
+    "id": "reiwa-012",
+    "categoryId": "reiwa",
+    "term": "バブみ",
+    "reading": "ばぶみ",
+    "romaji": "babu-mi",
+    "meaningEn": "A comforting, motherly vibe (you feel babied)",
+    "meaningJa": "母性に甘えたくなる雰囲気",
+    "exampleJa": "あの先輩バブみある。",
+    "exampleRomaji": "ano senpai babu-mi aru.",
+    "exampleEn": "That senpai has serious motherly vibes.",
+    "socialConsequenceEn": "Niche otaku-adjacent slang. Insider-ish.",
+    "tag": {
+      "era": "令和",
+      "whoUses": "若者 / SNS",
+      "gachi": "itai",
+      "sourceNote": "バブー(赤ちゃん)+み"
+    }
+  }
+]

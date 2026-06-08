@@ -1,0 +1,230 @@
+[
+  {
+    "id": "otaku-001",
+    "categoryId": "otaku",
+    "term": "推し",
+    "reading": "おし",
+    "romaji": "oshi",
+    "meaningEn": "Your fave — the one you root for and support",
+    "meaningJa": "応援している人・キャラ",
+    "exampleJa": "今日も推しが尊い。",
+    "exampleRomaji": "kyou mo oshi ga toutoi.",
+    "exampleEn": "My oshi is precious again today.",
+    "socialConsequenceEn": "Mainstream now — even on TV. Say it freely; you'll sound plugged into fan culture.",
+    "tag": {
+      "era": "令和",
+      "whoUses": "ファン全般",
+      "gachi": "tsuujiru",
+      "sourceNote": "推す→推し。アイドル/VTuber文化から一般化"
+    }
+  },
+  {
+    "id": "otaku-002",
+    "categoryId": "otaku",
+    "term": "尊い",
+    "reading": "とうとい",
+    "romaji": "toutoi",
+    "meaningEn": "So precious / sublime (about your oshi or a ship)",
+    "meaningJa": "(推しなどが)尊くてありがたい",
+    "exampleJa": "この二人の関係、尊い……。",
+    "exampleRomaji": "kono futari no kankei, toutoi…….",
+    "exampleEn": "These two together… so precious…",
+    "socialConsequenceEn": "Core fandom vocab. Among fans it's perfect; to non-fans it signals 'I am deep in it.'",
+    "tag": {
+      "era": "令和オタク",
+      "whoUses": "オタク / 推し活",
+      "gachi": "tsuujiru",
+      "sourceNote": "本来の「尊い」を推し文化で転用"
+    }
+  },
+  {
+    "id": "otaku-003",
+    "categoryId": "otaku",
+    "term": "神回",
+    "reading": "かみかい",
+    "romaji": "kami-kai",
+    "meaningEn": "A god-tier episode (an amazing one)",
+    "meaningJa": "とても出来の良い回",
+    "exampleJa": "今週のアニメ神回だった。",
+    "exampleRomaji": "konshuu no anime kami-kai datta.",
+    "exampleEn": "This week's anime episode was god-tier.",
+    "socialConsequenceEn": "Widely used and safe. You'll sound like a normal fan hyping a good episode.",
+    "tag": {
+      "era": "令和",
+      "whoUses": "視聴者全般",
+      "gachi": "tsuujiru",
+      "sourceNote": "神+回。配信/アニメ実況で定着"
+    }
+  },
+  {
+    "id": "otaku-004",
+    "categoryId": "otaku",
+    "term": "沼",
+    "reading": "ぬま",
+    "romaji": "numa",
+    "meaningEn": "A fandom rabbit hole you can't climb out of",
+    "meaningJa": "抜け出せないほどハマる対象",
+    "exampleJa": "そのジャンル、完全に沼だよ。",
+    "exampleRomaji": "sono janru, kanzen ni numa da yo.",
+    "exampleEn": "That genre? Total rabbit hole.",
+    "socialConsequenceEn": "Current and relatable. 'I fell into the ◯◯ 沼' is peak fan talk.",
+    "tag": {
+      "era": "令和",
+      "whoUses": "オタク / 趣味勢",
+      "gachi": "tsuujiru",
+      "sourceNote": "底なし沼の比喩。趣味没入を指す"
+    }
+  },
+  {
+    "id": "otaku-005",
+    "categoryId": "otaku",
+    "term": "萌え",
+    "reading": "もえ",
+    "romaji": "moe",
+    "meaningEn": "That warm fuzzy fan-adoration for a character",
+    "meaningJa": "キャラへの愛着・ときめき",
+    "exampleJa": "その仕草、萌えるわ。",
+    "exampleRomaji": "sono shigusa, moeru wa.",
+    "exampleEn": "That little gesture? Adorable.",
+    "socialConsequenceEn": "Iconic 2000s otaku word — a bit retro now. Charming, slightly dated.",
+    "tag": {
+      "era": "平成オタク(2000s)",
+      "whoUses": "古参オタク",
+      "gachi": "itai",
+      "sourceNote": "2000年代オタク文化の代表語。やや懐かしめ"
+    }
+  },
+  {
+    "id": "otaku-006",
+    "categoryId": "otaku",
+    "term": "ガチ恋",
+    "reading": "がちこい",
+    "romaji": "gachi-koi",
+    "meaningEn": "Genuinely in love with an idol/streamer",
+    "meaningJa": "アイドルや配信者に本気で恋すること",
+    "exampleJa": "あの配信者にガチ恋してる。",
+    "exampleRomaji": "ano haishinsha ni gachi-koi shiteru.",
+    "exampleEn": "I'm seriously in love with that streamer.",
+    "socialConsequenceEn": "Real fan slang, a little intense — fine among fans, revealing to outsiders.",
+    "tag": {
+      "era": "令和オタク",
+      "whoUses": "推し活 / 配信勢",
+      "gachi": "tsuujiru",
+      "sourceNote": "ガチ+恋。アイドル/配信文化"
+    }
+  },
+  {
+    "id": "otaku-007",
+    "categoryId": "otaku",
+    "term": "推し活",
+    "reading": "おしかつ",
+    "romaji": "oshi-katsu",
+    "meaningEn": "Fan activities to support your oshi",
+    "meaningJa": "推しを応援する活動",
+    "exampleJa": "週末は推し活で忙しい。",
+    "exampleRomaji": "shuumatsu wa oshi-katsu de isogashii.",
+    "exampleEn": "Busy with oshi-katsu all weekend.",
+    "socialConsequenceEn": "Totally mainstream now. Say it proudly.",
+    "tag": {
+      "era": "令和",
+      "whoUses": "ファン全般",
+      "gachi": "tsuujiru",
+      "sourceNote": "推し+活動"
+    }
+  },
+  {
+    "id": "otaku-008",
+    "categoryId": "otaku",
+    "term": "二次元",
+    "reading": "にじげん",
+    "romaji": "nijigen",
+    "meaningEn": "The 2D world (anime/manga/games)",
+    "meaningJa": "アニメ・漫画など二次元の世界",
+    "exampleJa": "二次元の嫁が一番。",
+    "exampleRomaji": "nijigen no yome ga ichiban.",
+    "exampleEn": "My 2D waifu is the best.",
+    "socialConsequenceEn": "Core otaku word — reveals you're a fan.",
+    "tag": {
+      "era": "令和オタク",
+      "whoUses": "オタク / 推し活",
+      "gachi": "tsuujiru",
+      "sourceNote": "2D=二次元"
+    }
+  },
+  {
+    "id": "otaku-009",
+    "categoryId": "otaku",
+    "term": "厨二病",
+    "reading": "ちゅうにびょう",
+    "romaji": "chuuni-byou",
+    "meaningEn": "'8th-grader syndrome' (cringe edgy phase)",
+    "meaningJa": "思春期にありがちな痛い背伸び",
+    "exampleJa": "黒コート、厨二病だな。",
+    "exampleRomaji": "kuro kooto, chuuni-byou da na.",
+    "exampleEn": "Black trench coat? Total chuunibyou.",
+    "socialConsequenceEn": "Mainstream & funny. Light self-deprecation.",
+    "tag": {
+      "era": "令和",
+      "whoUses": "若者全般",
+      "gachi": "tsuujiru",
+      "sourceNote": "中二+病"
+    }
+  },
+  {
+    "id": "otaku-010",
+    "categoryId": "otaku",
+    "term": "供給",
+    "reading": "きょうきゅう",
+    "romaji": "kyoukyuu",
+    "meaningEn": "New content/material of your oshi",
+    "meaningJa": "推しの新情報・コンテンツ",
+    "exampleJa": "今月供給多すぎ尊い。",
+    "exampleRomaji": "kongetsu kyoukyuu oosugi toutoi.",
+    "exampleEn": "So much oshi content this month, precious.",
+    "socialConsequenceEn": "Deep fan slang. Among fans only.",
+    "tag": {
+      "era": "令和オタク",
+      "whoUses": "オタク / 推し活",
+      "gachi": "tsuujiru",
+      "sourceNote": "「供給」=コンテンツ提供の転用"
+    }
+  },
+  {
+    "id": "otaku-011",
+    "categoryId": "otaku",
+    "term": "布教",
+    "reading": "ふきょう",
+    "romaji": "fukyou",
+    "meaningEn": "Evangelizing your oshi (getting others into it)",
+    "meaningJa": "推しを勧めて広めること",
+    "exampleJa": "友達に布教して沼らせた。",
+    "exampleRomaji": "tomodachi ni fukyou shite numaraseta.",
+    "exampleEn": "Converted my friend into the fandom.",
+    "socialConsequenceEn": "Playful fan slang (from 'missionary work'). Fun.",
+    "tag": {
+      "era": "令和オタク",
+      "whoUses": "オタク / 推し活",
+      "gachi": "tsuujiru",
+      "sourceNote": "宗教の布教の転用"
+    }
+  },
+  {
+    "id": "otaku-012",
+    "categoryId": "otaku",
+    "term": "同担拒否",
+    "reading": "どうたんきょひ",
+    "romaji": "doutan-kyohi",
+    "meaningEn": "Refusing fans of the same oshi",
+    "meaningJa": "同じ推しのファンを避ける主義",
+    "exampleJa": "私同担拒否だから。",
+    "exampleRomaji": "watashi doutan-kyohi da kara.",
+    "exampleEn": "I'm doutan-kyohi, sorry.",
+    "socialConsequenceEn": "Niche but real fandom stance. Insider only.",
+    "tag": {
+      "era": "令和オタク",
+      "whoUses": "オタク / 推し活",
+      "gachi": "tsuujiru",
+      "sourceNote": "同担(同じ推し)+拒否"
+    }
+  }
+]

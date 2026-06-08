@@ -1,0 +1,116 @@
+[
+  {
+    "id": "heian-001",
+    "categoryId": "heian",
+    "term": "いとをかし",
+    "reading": "いとをかし",
+    "romaji": "ito-wokashi",
+    "meaningEn": "How delightful / charming (classical praise)",
+    "meaningJa": "とても趣がある・素敵だ",
+    "exampleJa": "春はあけぼの、いとをかし。",
+    "exampleRomaji": "haru wa akebono, ito-wokashi.",
+    "exampleEn": "Spring, at dawn — how delightful.",
+    "socialConsequenceEn": "Pure Heian classroom Japanese. Say it today and you're charmingly cosplaying a court poet.",
+    "tag": {
+      "era": "平安",
+      "whoUses": "平安貴族",
+      "gachi": "wakeru",
+      "sourceNote": "枕草子の有名表現"
+    }
+  },
+  {
+    "id": "heian-002",
+    "categoryId": "heian",
+    "term": "もののあはれ",
+    "reading": "もののあはれ",
+    "romaji": "mono-no-aware",
+    "meaningEn": "The bittersweet pathos of things",
+    "meaningJa": "しみじみとした情趣・哀感",
+    "exampleJa": "秋の夕暮れはもののあはれ。",
+    "exampleRomaji": "aki no yuugure wa mono-no-aware.",
+    "exampleEn": "Autumn dusk stirs a deep, fleeting feeling.",
+    "socialConsequenceEn": "A famous aesthetic term — still used in literary/cultural talk. Sounds refined.",
+    "tag": {
+      "era": "平安",
+      "whoUses": "平安貴族",
+      "gachi": "tsuujiru",
+      "sourceNote": "本居宣長が論じた美意識"
+    }
+  },
+  {
+    "id": "heian-003",
+    "categoryId": "heian",
+    "term": "かたじけない",
+    "reading": "かたじけない",
+    "romaji": "katajikenai",
+    "meaningEn": "I'm deeply obliged / much grateful (humble)",
+    "meaningJa": "ありがたい・恐れ多い",
+    "exampleJa": "ご親切、かたじけない。",
+    "exampleRomaji": "go-shinsetsu, katajikenai.",
+    "exampleEn": "Your kindness — I'm much obliged.",
+    "socialConsequenceEn": "Survives in samurai dramas. Use it and you sound gallantly old-fashioned.",
+    "tag": {
+      "era": "平安",
+      "whoUses": "古典・時代劇",
+      "gachi": "wakeru",
+      "sourceNote": "古語の謙譲表現、時代劇で残る"
+    }
+  },
+  {
+    "id": "heian-004",
+    "categoryId": "heian",
+    "term": "うつくし",
+    "reading": "うつくし",
+    "romaji": "utsukushi",
+    "meaningEn": "Adorable / dear (classical: small & lovable)",
+    "meaningJa": "いとしい・かわいらしい（古語）",
+    "exampleJa": "雀の子、うつくし。",
+    "exampleRomaji": "suzume no ko, utsukushi.",
+    "exampleEn": "A baby sparrow — so dear.",
+    "socialConsequenceEn": "Note: classical 'adorable', NOT modern 美しい (beautiful). A subtle flex.",
+    "tag": {
+      "era": "平安",
+      "whoUses": "平安貴族",
+      "gachi": "wakeru",
+      "sourceNote": "古語うつくし=愛らしい（現代の美しいと別義）"
+    }
+  },
+  {
+    "id": "heian-005",
+    "categoryId": "heian",
+    "term": "げに",
+    "reading": "げに",
+    "romaji": "geni",
+    "meaningEn": "Indeed; truly (classical)",
+    "meaningJa": "本当に・なるほど（古語）",
+    "exampleJa": "げに、その通りなり。",
+    "exampleRomaji": "geni, sono toori nari.",
+    "exampleEn": "Indeed, it is just as you say.",
+    "socialConsequenceEn": "Classical 'indeed'. Drop it for instant period-drama flavor.",
+    "tag": {
+      "era": "平安",
+      "whoUses": "古典・時代劇",
+      "gachi": "wakeru",
+      "sourceNote": "古語の副詞「げに」"
+    }
+  },
+  {
+    "id": "heian-006",
+    "categoryId": "heian",
+    "term": "まろ",
+    "reading": "まろ",
+    "romaji": "maro",
+    "meaningEn": "I / me (archaic court 'I')",
+    "meaningJa": "自分を指す古い一人称（貴族）",
+    "exampleJa": "まろは知らぬ。",
+    "exampleRomaji": "maro wa shiranu.",
+    "exampleEn": "I know not (says the noble).",
+    "socialConsequenceEn": "Court-noble 'I'. Pure aristocratic cosplay — gloriously over the top.",
+    "tag": {
+      "era": "平安",
+      "whoUses": "平安貴族",
+      "gachi": "wakeru",
+      "sourceNote": "平安貴族の一人称「まろ」"
+    }
+  }
+]

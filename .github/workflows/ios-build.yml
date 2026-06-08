@@ -1,0 +1,52 @@
+name: iOS compile gate
+
+# The "does it actually build on a Mac" gate for a Windows dev box.
+# Pure compile check: expo prebuild + xcodebuild for the simulator, NO code
+# signing (no Apple secrets needed). This catches native/RN compile errors that
+# tsc + vitest can't. Signing + TestFlight is a later, separate workflow.
+#
+# Public repo => unlimited free macOS minutes. EAS is not used (Line I policy).
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  ios-build:
+    runs-on: macos-14
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Install deps
+        run: npm ci
+
+      - name: Expo prebuild (generate native iOS project)
+        run: npx expo prebuild --platform ios --no-install
+
+      - name: Resolve Xcode scheme
+        id: scheme
+        run: |
+          WS=$(ls ios/*.xcworkspace | head -1)
+          SCHEME=$(basename "$WS" .xcworkspace)
+          echo "ws=$WS" >> "$GITHUB_OUTPUT"
+          echo "scheme=$SCHEME" >> "$GITHUB_OUTPUT"
+          echo "Workspace=$WS Scheme=$SCHEME"
+
+      - name: Build (iphonesimulator, no signing)
+        run: |
+          set -o pipefail
+          xcodebuild \
+            -workspace "${{ steps.scheme.outputs.ws }}" \
+            -scheme "${{ steps.scheme.outputs.scheme }}" \
+            -configuration Release \
+            -sdk iphonesimulator \
+            -destination 'generic/platform=iOS Simulator' \
+            CODE_SIGNING_ALLOWED=NO \
+            build

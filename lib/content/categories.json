@@ -1,0 +1,10 @@
+[
+  { "id": "gyaru",   "nameJa": "ギャル語",   "nameEn": "Gyaru slang",   "emoji": "💅", "blurbEn": "Heisei-era gal slang — loud, fun, gloriously dated.", "tier": "free", "accent": "#FF4D6D", "tileBg": "#FFD6E0", "kwShadow": "#FF4D6D", "peek": "あげぽよ" },
+  { "id": "kansai",  "nameJa": "関西弁",     "nameEn": "Kansai-ben",    "emoji": "🐙", "blurbEn": "The rhythm of Osaka & Kyoto. Still very much alive.", "tier": "free", "accent": "#16C79A", "tileBg": "#BFF3E6", "kwShadow": "#16C79A", "peek": "なんでやねん" },
+  { "id": "edo",     "nameJa": "江戸言葉",   "nameEn": "Edo talk",      "emoji": "🏯", "blurbEn": "Feisty old-Tokyo speech from the samurai days.", "tier": "free", "accent": "#21305C", "tileBg": "#CDD6F0", "kwShadow": "#21305C", "peek": "べらぼうめ" },
+  { "id": "net",     "nameJa": "ネット語",   "nameEn": "Net slang",     "emoji": "💻", "blurbEn": "How Japan actually types online.", "tier": "free", "accent": "#3FA34D", "tileBg": "#D6F5C6", "kwShadow": "#3FA34D", "peek": "草" },
+  { "id": "otaku",   "nameJa": "オタク語",   "nameEn": "Otaku / oshi",  "emoji": "💖", "blurbEn": "Fandom, oshi-life and VTuber vocabulary.", "tier": "free", "accent": "#8B5CF6", "tileBg": "#E6D6FB", "kwShadow": "#8B5CF6", "peek": "尊い" },
+  { "id": "reiwa",   "nameJa": "令和の若者", "nameEn": "Reiwa casual",  "emoji": "📱", "blurbEn": "What young people say right now.", "tier": "free", "accent": "#3B82F6", "tileBg": "#CFE3FF", "kwShadow": "#3B82F6", "peek": "それな" },
+  { "id": "heian",   "nameJa": "平安の雅",   "nameEn": "Heian elegant", "emoji": "🌙", "blurbEn": "Courtly classical Japanese, 1000 years old.", "tier": "pro", "accent": "#B06AB3", "tileBg": "#F3D9EE", "kwShadow": "#B06AB3", "peek": "いとをかし" },
+  { "id": "okinawa", "nameJa": "沖縄の言葉", "nameEn": "Okinawa",       "emoji": "🌺", "blurbEn": "The warm island words of Uchinaa.", "tier": "pro", "accent": "#FF8A3D", "tileBg": "#FFE0BD", "kwShadow": "#FF8A3D", "peek": "なんくるないさ" }
+]

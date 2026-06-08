@@ -1,0 +1,116 @@
+[
+  {
+    "id": "okinawa-001",
+    "categoryId": "okinawa",
+    "term": "めんそーれ",
+    "reading": "めんそーれ",
+    "romaji": "mensoore",
+    "meaningEn": "Welcome",
+    "meaningJa": "いらっしゃい・ようこそ",
+    "exampleJa": "沖縄へめんそーれ！",
+    "exampleRomaji": "okinawa e mensoore!",
+    "exampleEn": "Welcome to Okinawa!",
+    "socialConsequenceEn": "Real, living Okinawan. You'll be greeted with it everywhere down south.",
+    "tag": {
+      "era": "沖縄(現役)",
+      "whoUses": "沖縄の人",
+      "gachi": "tsuujiru",
+      "sourceNote": "うちなーぐち「めんそーれ」"
+    }
+  },
+  {
+    "id": "okinawa-002",
+    "categoryId": "okinawa",
+    "term": "なんくるないさ",
+    "reading": "なんくるないさ",
+    "romaji": "nankurunaisa",
+    "meaningEn": "It'll work out somehow",
+    "meaningJa": "なんとかなるさ",
+    "exampleJa": "心配ない、なんくるないさ。",
+    "exampleRomaji": "shinpai nai, nankurunaisa.",
+    "exampleEn": "No worries — it'll work out.",
+    "socialConsequenceEn": "The famous Okinawan optimism. Warm and very real.",
+    "tag": {
+      "era": "沖縄(現役)",
+      "whoUses": "沖縄の人",
+      "gachi": "tsuujiru",
+      "sourceNote": "うちなーぐち「なんくるないさ」"
+    }
+  },
+  {
+    "id": "okinawa-003",
+    "categoryId": "okinawa",
+    "term": "はいさい",
+    "reading": "はいさい",
+    "romaji": "haisai",
+    "meaningEn": "Hi / hey (said by men)",
+    "meaningJa": "こんにちは（男性が使う）",
+    "exampleJa": "はいさい、元気ね？",
+    "exampleRomaji": "haisai, genki ne?",
+    "exampleEn": "Hey there, you doing well?",
+    "socialConsequenceEn": "A real everyday greeting (men's form is はいさい). Friendly and local.",
+    "tag": {
+      "era": "沖縄(現役)",
+      "whoUses": "沖縄の人",
+      "gachi": "tsuujiru",
+      "sourceNote": "うちなーぐち挨拶（男性形）"
+    }
+  },
+  {
+    "id": "okinawa-004",
+    "categoryId": "okinawa",
+    "term": "ちむどんどん",
+    "reading": "ちむどんどん",
+    "romaji": "chimudondon",
+    "meaningEn": "Heart pounding with excitement",
+    "meaningJa": "胸がわくわく高鳴る",
+    "exampleJa": "祭り前でちむどんどん。",
+    "exampleRomaji": "matsuri mae de chimudondon.",
+    "exampleEn": "Heart racing before the festival.",
+    "socialConsequenceEn": "Popular Okinawan word (an NHK drama used it). Cute and real.",
+    "tag": {
+      "era": "沖縄(現役)",
+      "whoUses": "沖縄の人",
+      "gachi": "tsuujiru",
+      "sourceNote": "ちむ(肝/心)+どんどん"
+    }
+  },
+  {
+    "id": "okinawa-005",
+    "categoryId": "okinawa",
+    "term": "でーじ",
+    "reading": "でーじ",
+    "romaji": "deeji",
+    "meaningEn": "Very; seriously (like めっちゃ)",
+    "meaningJa": "とても・大変",
+    "exampleJa": "今日はでーじ暑いさ。",
+    "exampleRomaji": "kyou wa deeji atsui sa.",
+    "exampleEn": "It's seriously hot today.",
+    "socialConsequenceEn": "Everyday Okinawan intensifier. Use it freely down south.",
+    "tag": {
+      "era": "沖縄(現役)",
+      "whoUses": "沖縄の人",
+      "gachi": "tsuujiru",
+      "sourceNote": "うちなーぐち「でーじ」=大変/とても"
+    }
+  },
+  {
+    "id": "okinawa-006",
+    "categoryId": "okinawa",
+    "term": "にふぇーでーびる",
+    "reading": "にふぇーでーびる",
+    "romaji": "nifee-deebiru",
+    "meaningEn": "Thank you (very much)",
+    "meaningJa": "ありがとうございます",
+    "exampleJa": "助かった、にふぇーでーびる。",
+    "exampleRomaji": "tasukatta, nifee-deebiru.",
+    "exampleEn": "You saved me — thank you so much.",
+    "socialConsequenceEn": "The full, heartfelt Okinawan thank-you. Locals will light up.",
+    "tag": {
+      "era": "沖縄(現役)",
+      "whoUses": "沖縄の人",
+      "gachi": "tsuujiru",
+      "sourceNote": "うちなーぐち「にふぇーでーびる」"
+    }
+  }
+]

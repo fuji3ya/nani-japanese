@@ -1,0 +1,230 @@
+[
+  {
+    "id": "edo-001",
+    "categoryId": "edo",
+    "term": "べらぼうめ",
+    "reading": "べらぼうめ",
+    "romaji": "berabou-me",
+    "meaningEn": "You damn fool! — a feisty Edo insult",
+    "meaningJa": "ばかやろう（江戸っ子の啖呵）",
+    "exampleJa": "べらぼうめ、なめんじゃねえ！",
+    "exampleRomaji": "berabou-me, namen ja nee!",
+    "exampleEn": "You damn fool — don't mess with me!",
+    "socialConsequenceEn": "Yell this today and you instantly become a samurai-drama grandpa. Glorious, but nobody talks like this anymore.",
+    "tag": {
+      "era": "江戸",
+      "whoUses": "江戸っ子 / 時代劇",
+      "gachi": "wakeru",
+      "sourceNote": "Edo-period rough speech; survives in jidaigeki"
+    }
+  },
+  {
+    "id": "edo-002",
+    "categoryId": "edo",
+    "term": "てやんでい",
+    "reading": "てやんでい",
+    "romaji": "teyandei",
+    "meaningEn": "What're you on about?! — a blustering retort",
+    "meaningJa": "何を言ってやがる（の江戸訛り）",
+    "exampleJa": "てやんでい、こちとら江戸っ子でい！",
+    "exampleRomaji": "teyandei, kochitora edokko dei!",
+    "exampleEn": "What're you on about?! I'm a true Edo native!",
+    "socialConsequenceEn": "Peak Edo bravado. Say it and you sound like you stepped out of a 1960s samurai film.",
+    "tag": {
+      "era": "江戸",
+      "whoUses": "江戸っ子 / 職人",
+      "gachi": "wakeru",
+      "sourceNote": "「何を言ってるんだ」の江戸訛り"
+    }
+  },
+  {
+    "id": "edo-003",
+    "categoryId": "edo",
+    "term": "おととい来やがれ",
+    "reading": "おとといきやがれ",
+    "romaji": "ototoi-kiyagare",
+    "meaningEn": "Get lost! (lit. 'come back the day before yesterday')",
+    "meaningJa": "二度と来るな（追い返す決まり文句）",
+    "exampleJa": "そんな話、おととい来やがれ！",
+    "exampleRomaji": "sonna hanashi, ototoi kiyagare!",
+    "exampleEn": "A deal like that? Get outta here!",
+    "socialConsequenceEn": "A theatrical 'buzz off'. Hilarious and harmless now — pure old-Tokyo flavor.",
+    "tag": {
+      "era": "江戸",
+      "whoUses": "江戸っ子",
+      "gachi": "wakeru",
+      "sourceNote": "来られない日を指す江戸の追い返し表現"
+    }
+  },
+  {
+    "id": "edo-004",
+    "categoryId": "edo",
+    "term": "野暮",
+    "reading": "やぼ",
+    "romaji": "yabo",
+    "meaningEn": "Unrefined; tactless; uncool",
+    "meaningJa": "洗練されていない、無粋",
+    "exampleJa": "それを聞くのは野暮ってもんだ。",
+    "exampleRomaji": "sore wo kiku no wa yabo tte mon da.",
+    "exampleEn": "Asking that is just tactless.",
+    "socialConsequenceEn": "Still perfectly usable today — an Edo word that never went out of style.",
+    "tag": {
+      "era": "江戸発・現役",
+      "whoUses": "現代でも通じる",
+      "gachi": "tsuujiru",
+      "sourceNote": "江戸の美意識(粋の対義)。現代も使う"
+    }
+  },
+  {
+    "id": "edo-005",
+    "categoryId": "edo",
+    "term": "粋",
+    "reading": "いき",
+    "romaji": "iki",
+    "meaningEn": "Chic; stylish in an understated, cool way",
+    "meaningJa": "洗練されて格好いい、あか抜けた様子",
+    "exampleJa": "あの人の着こなしは粋だね。",
+    "exampleRomaji": "ano hito no kikonashi wa iki da ne.",
+    "exampleEn": "The way they dress is so chic.",
+    "socialConsequenceEn": "A compliment that still lands. Calling someone 粋 makes you sound cultured.",
+    "tag": {
+      "era": "江戸発・現役",
+      "whoUses": "現代でも通じる",
+      "gachi": "tsuujiru",
+      "sourceNote": "江戸の美意識の中核。現代も使う"
+    }
+  },
+  {
+    "id": "edo-006",
+    "categoryId": "edo",
+    "term": "すっとこどっこい",
+    "reading": "すっとこどっこい",
+    "romaji": "suttoko-dokkoi",
+    "meaningEn": "You blockhead! — a comic insult",
+    "meaningJa": "間抜け、とんちんかんな人をののしる語",
+    "exampleJa": "このすっとこどっこいめ！",
+    "exampleRomaji": "kono suttoko-dokkoi me!",
+    "exampleEn": "Why you blockhead!",
+    "socialConsequenceEn": "So old-fashioned it loops back to funny. Drop it as a joke and people will grin.",
+    "tag": {
+      "era": "江戸",
+      "whoUses": "江戸っ子 / 落語",
+      "gachi": "wakeru",
+      "sourceNote": "江戸の悪態。落語等で残る"
+    }
+  },
+  {
+    "id": "edo-007",
+    "categoryId": "edo",
+    "term": "いなせ",
+    "reading": "いなせ",
+    "romaji": "inase",
+    "meaningEn": "Dashing & gallant (old-Tokyo cool)",
+    "meaningJa": "粋で勇み肌な様子",
+    "exampleJa": "いなせな兄さんやね。",
+    "exampleRomaji": "inase na nii-san ya ne.",
+    "exampleEn": "What a dashing fella.",
+    "socialConsequenceEn": "A vintage compliment. Sounds like you stepped out of a festival.",
+    "tag": {
+      "era": "江戸発・現役",
+      "whoUses": "江戸っ子",
+      "gachi": "tsuujiru",
+      "sourceNote": "江戸の美意識(粋・勇み肌)"
+    }
+  },
+  {
+    "id": "edo-008",
+    "categoryId": "edo",
+    "term": "ちゃきちゃき",
+    "reading": "ちゃきちゃき",
+    "romaji": "chaki-chaki",
+    "meaningEn": "Brisk & true-bred (a real Edoite)",
+    "meaningJa": "生粋で歯切れがよい様子",
+    "exampleJa": "ちゃきちゃきの江戸っ子だ。",
+    "exampleRomaji": "chaki-chaki no edokko da.",
+    "exampleEn": "A true-bred Edo native.",
+    "socialConsequenceEn": "Still used, a little old-timey. Charming.",
+    "tag": {
+      "era": "江戸発・現役",
+      "whoUses": "江戸っ子",
+      "gachi": "tsuujiru",
+      "sourceNote": "「ちゃきちゃきの江戸っ子」慣用句"
+    }
+  },
+  {
+    "id": "edo-009",
+    "categoryId": "edo",
+    "term": "御の字",
+    "reading": "おんのじ",
+    "romaji": "on-no-ji",
+    "meaningEn": "More than good enough; can't complain",
+    "meaningJa": "大いに有り難い・十分なこと",
+    "exampleJa": "それなら御の字だ。",
+    "exampleRomaji": "sore nara on-no-ji da.",
+    "exampleEn": "That'd be more than enough.",
+    "socialConsequenceEn": "Still understood, sounds mature. Safe.",
+    "tag": {
+      "era": "江戸発・現役",
+      "whoUses": "現代でも通じる",
+      "gachi": "tsuujiru",
+      "sourceNote": "江戸由来の慣用句"
+    }
+  },
+  {
+    "id": "edo-010",
+    "categoryId": "edo",
+    "term": "こちとら",
+    "reading": "こちとら",
+    "romaji": "kochitora",
+    "meaningEn": "Us / me (rough old-Tokyo 'I')",
+    "meaningJa": "自分(たち)を指す伝法な言い方",
+    "exampleJa": "こちとら江戸っ子でい！",
+    "exampleRomaji": "kochitora edokko dei!",
+    "exampleEn": "Us? We're Edo natives!",
+    "socialConsequenceEn": "Tough-guy Edo speech. Pure jidaigeki energy.",
+    "tag": {
+      "era": "江戸",
+      "whoUses": "江戸っ子",
+      "gachi": "wakeru",
+      "sourceNote": "伝法な一人称"
+    }
+  },
+  {
+    "id": "edo-011",
+    "categoryId": "edo",
+    "term": "すっからかん",
+    "reading": "すっからかん",
+    "romaji": "sukkarakan",
+    "meaningEn": "Totally broke; completely empty",
+    "meaningJa": "一文無し・空っぽ",
+    "exampleJa": "給料日前ですっからかん。",
+    "exampleRomaji": "kyuuryoubi mae de sukkarakan.",
+    "exampleEn": "Dead broke before payday.",
+    "socialConsequenceEn": "Edo-flavored but still used. Safe and vivid.",
+    "tag": {
+      "era": "江戸発・現役",
+      "whoUses": "現代でも通じる",
+      "gachi": "tsuujiru",
+      "sourceNote": "江戸言葉由来"
+    }
+  },
+  {
+    "id": "edo-012",
+    "categoryId": "edo",
+    "term": "べらんめえ",
+    "reading": "べらんめえ",
+    "romaji": "beranmee",
+    "meaningEn": "Rough, rapid-fire old-Tokyo speech style",
+    "meaningJa": "江戸の伝法な話し方",
+    "exampleJa": "べらんめえ口調で啖呵を切る。",
+    "exampleRomaji": "beranmee chou de tanka wo kiru.",
+    "exampleEn": "He rattles off in beranmee style.",
+    "socialConsequenceEn": "The classic Edo tough-talk. Theatrical now.",
+    "tag": {
+      "era": "江戸",
+      "whoUses": "江戸っ子",
+      "gachi": "wakeru",
+      "sourceNote": "べらんめえ調"
+    }
+  }
+]
