@@ -10,7 +10,7 @@ const ACCENT = '#FF4D6D';
 const MUTE = '#8a8475';
 
 const PRO_PERKS = [
-  ['🔓', 'All 8 packs', 'Adds Heian elegant + Okinawa'],
+  ['🔓', 'All 8 packs', 'Adds Otaku, Heian & Okinawa'],
   ['∞', 'Unlimited new words', 'No 5-a-day limit'],
   ['🔁', 'SRS review on every pack', 'Spaced-repetition across all of them'],
   ['📖', 'Fill your whole collection', 'Every word, every pack'],
@@ -57,7 +57,7 @@ export default function Paywall() {
       >
         <Text style={{ fontWeight: '900', fontSize: 12, color: MUTE, letterSpacing: 1 }}>YOU'RE ON FREE</Text>
         <Text style={{ fontWeight: '700', fontSize: 14, color: INK, marginTop: 5 }}>
-          ✓ 6 packs · ✓ 5 new words a day · ✓ review what you've learned
+          ✓ 5 packs · ✓ 5 new words a day · ✓ review what you've learned
         </Text>
         <Text style={{ fontWeight: '700', fontSize: 13, color: MUTE, marginTop: 4 }}>
           Free stays free. Pro just removes the limits ↓
@@ -98,28 +98,10 @@ export default function Paywall() {
         or $39.99 / year (save 33%)
       </Text>
 
-      {/* Trial mechanics — exactly what happens */}
-      <View
-        style={{
-          marginTop: 16,
-          backgroundColor: '#EAF1FF',
-          borderWidth: 2,
-          borderColor: '#3B82F6',
-          borderRadius: 14,
-          padding: 14,
-        }}
-      >
-        <Text style={{ fontWeight: '800', fontSize: 13, color: INK, lineHeight: 19 }}>
-          ▸ Days 1–7: full Pro, free.{'\n'}
-          ▸ Cancel before day 7 → you pay $0 and keep Free.{'\n'}
-          ▸ Don't cancel → $4.99/mo starts on day 8.
-        </Text>
-      </View>
-
       <Pressable
         onPress={goPro}
         style={{
-          marginTop: 16,
+          marginTop: 20,
           backgroundColor: ACCENT,
           borderWidth: 3,
           borderColor: INK,
@@ -129,7 +111,7 @@ export default function Paywall() {
           boxShadow: '5px 5px 0px #15130F',
         }}
       >
-        <Text style={{ color: '#fff', fontWeight: '900', fontSize: 18 }}>Start 7-day free trial</Text>
+        <Text style={{ color: '#fff', fontWeight: '900', fontSize: 18 }}>Unlock everything</Text>
       </Pressable>
 
       <Pressable onPress={() => router.back()} style={{ marginTop: 14, alignItems: 'center', padding: 8 }}>
