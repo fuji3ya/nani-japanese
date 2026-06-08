@@ -1,4 +1,4 @@
-import { useLocalSearchParams, Stack, useRouter } from 'expo-router';
+import { Redirect, useLocalSearchParams, Stack, useRouter } from 'expo-router';
 import { useEffect, useState } from 'react';
 import { Pressable, ScrollView, Share, Text, View } from 'react-native';
 import { findCategory, loadPhrasesByCategory } from '../../lib/content/loadContent';
@@ -21,7 +21,12 @@ import {
 const INK = '#15130F';
 const PAPER = '#FFFDF7';
 const DAILY_GOAL = 3;
-const todayISO = () => new Date().toISOString().slice(0, 10);
+// LOCAL calendar date (not UTC) so streak/daily-cap day boundaries match the
+// user's wall clock — UTC slicing miscounts for JST users before 09:00.
+const todayISO = () => {
+  const d = new Date();
+  return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
+};
 
 type Step = { kind: 'learn' | 'practice'; phrase: Phrase };
 
@@ -70,8 +75,16 @@ export default function Lesson() {
   // build exercise when entering a practice step
   useEffect(() => {
     if (step?.kind === 'practice' && progress) {
-      setEx(buildBestExercise(step.phrase, pool, boxOf(progress, step.phrase.id)));
-      setPicked(null);
+      const e = buildBestExercise(step.phrase, pool, boxOf(progress, step.phrase.id));
+      if (e) {
+        setEx(e);
+        setPicked(null);
+      } else {
+        // No buildable exercise (e.g. a pool too small for distractors) —
+        // skip this step instead of leaving the user on a dead "…" screen.
+        setEx(null);
+        setIdx((i) => i + 1);
+      }
     } else {
       setEx(null);
     }
@@ -85,6 +98,12 @@ export default function Lesson() {
         <Text>…</Text>
       </View>
     );
+  }
+
+  // Pro-pack guard: the Home grid gates navigation, but this screen must also
+  // refuse a Pro pack reached any other way (deep link, back-stack, future web).
+  if (cat.tier === 'pro' && !progress.pro) {
+    return <Redirect href={'/paywall' as never} />;
   }
 
   // coming soon (no content)

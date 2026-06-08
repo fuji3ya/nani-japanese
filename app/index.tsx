@@ -45,7 +45,10 @@ export default function Home() {
   const startId =
     progress.interest && loadPhrasesByCategory(progress.interest).length ? progress.interest : 'kansai';
   const startCat = findCategory(startId) ?? findCategory('kansai')!;
-  const featured = loadPhrasesByCategory(startId)[1] ?? loadPhrasesByCategory(startId)[0];
+  // Word of the day: rotate once per day (deterministic, advances daily).
+  const wodPool = loadPhrasesByCategory(startId);
+  const dayIdx = Math.floor(Date.now() / 86_400_000);
+  const featured = wodPool.length ? wodPool[dayIdx % wodPool.length] : undefined;
 
   return (
     <ScrollView style={{ flex: 1, backgroundColor: PAPER }} contentContainerStyle={{ paddingBottom: 28 }}>

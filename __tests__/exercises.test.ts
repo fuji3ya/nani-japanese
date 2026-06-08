@@ -67,6 +67,15 @@ describe('buildExercise', () => {
     const ex = buildExercise('vibe', pool[0], pool, zero)!;
     expect(ex.choices.find((c) => c.correct)!.text).toBe('who-a');
   });
+
+  it('cringe: choices are shuffled (correct answer not always same position)', () => {
+    const positions = new Set<number>();
+    for (let i = 0; i < 30; i++) {
+      const ex = buildExercise('cringe', pool[0], pool)!; // default Math.random
+      positions.add(ex.choices.findIndex((c) => c.correct));
+    }
+    expect(positions.size).toBeGreaterThan(1);
+  });
 });
 
 describe('difficulty selection', () => {

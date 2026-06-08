@@ -10,6 +10,7 @@ const ACCENT = '#FF4D6D';
 
 const REASONS = ['Anime & manga', 'I have Japanese friends', 'Visiting Japan', 'I just love weird words'];
 const LEVELS = ['Total zero', 'I know こんにちは', 'I can survive', 'Pretty good already'];
+const LEVEL_GOAL = [1, 1, 3, 5]; // self-rated level → seeds the default daily goal
 const GOALS = [
   { n: 1, label: 'Chill · 1 word/day' },
   { n: 3, label: 'Steady · 3 words/day' },
@@ -35,7 +36,7 @@ export default function Onboarding() {
 
   const finish = async () => {
     if (!base) return;
-    const np = completeOnboarding(base, { goal, interest });
+    const np = completeOnboarding(base, { goal, interest, reason, level });
     await saveProgress(np);
     router.replace('/');
   };
@@ -80,8 +81,9 @@ export default function Onboarding() {
           q="How's your Japanese?"
           options={LEVELS}
           selected={level}
-          onPick={(v) => {
-            setLevel(v);
+          onPick={(_, i) => {
+            setLevel(LEVELS[i]);
+            setGoal(LEVEL_GOAL[i]); // consume level: seed the daily-goal default
             next();
           }}
         />

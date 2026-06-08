@@ -16,6 +16,8 @@ export interface Progress {
   onboarded: boolean; // finished first-run onboarding
   goal: number; // daily new-word goal (1/3/5) — consumed by buildSession
   interest?: string; // chosen starter pack id — consumed by Home (word-of-the-day)
+  reason?: string; // why-here answer — persisted from onboarding
+  level?: string; // self-rated JP level — persisted; seeds the default goal
 }
 
 const EMPTY: Progress = {
@@ -29,8 +31,11 @@ const EMPTY: Progress = {
   goal: 3,
 };
 
-export function completeOnboarding(p: Progress, a: { goal: number; interest?: string }): Progress {
-  return { ...p, onboarded: true, goal: a.goal, interest: a.interest };
+export function completeOnboarding(
+  p: Progress,
+  a: { goal: number; interest?: string; reason?: string; level?: string },
+): Progress {
+  return { ...p, onboarded: true, goal: a.goal, interest: a.interest, reason: a.reason, level: a.level };
 }
 
 /** New words still allowed today for free users (Infinity if Pro). */

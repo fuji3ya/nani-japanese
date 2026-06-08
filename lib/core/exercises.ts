@@ -114,7 +114,11 @@ export function buildExercise(
     }
     case 'cringe': {
       const levels: GachiLevel[] = ['wakeru', 'itai', 'tsuujiru'];
-      const choices = levels.map((g) => ({ id: g, text: GACHI_EN[g], correct: g === phrase.tag.gachi }));
+      // Shuffle so the correct answer isn't always in the same position.
+      const choices = shuffle(
+        levels.map((g) => ({ id: g, text: GACHI_EN[g], correct: g === phrase.tag.gachi })),
+        rng,
+      );
       return {
         type,
         phraseId: phrase.id,

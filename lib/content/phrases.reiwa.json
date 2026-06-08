@@ -779,25 +779,6 @@
     }
   },
   {
-    "id": "reiwa-042",
-    "categoryId": "reiwa",
-    "term": "しんどい",
-    "reading": "しんどい",
-    "romaji": "shindoi",
-    "meaningEn": "Overwhelming (in a GOOD way too)",
-    "meaningJa": "尊すぎてつらい、良い意味のしんどさ",
-    "exampleJa": "今日の推し尊くてしんどい",
-    "exampleRomaji": "kyou no oshi toutokute shindoi",
-    "exampleEn": "My fave's so precious today it hurts (good).",
-    "socialConsequenceEn": "Reiwa twist: 'shindoi' as overwhelmed-by-cuteness, not just tired.",
-    "tag": {
-      "era": "令和",
-      "whoUses": "若者",
-      "gachi": "tsuujiru",
-      "sourceNote": "shindoi reclaimed as 'good overwhelm'; cf Kansai sense"
-    }
-  },
-  {
     "id": "reiwa-043",
     "categoryId": "reiwa",
     "term": "推し疲れ",
