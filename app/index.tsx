@@ -2,7 +2,7 @@ import { Stack, useRouter } from 'expo-router';
 import { useEffect, useState } from 'react';
 import { Pressable, ScrollView, Text, View } from 'react-native';
 import { findCategory, loadCategories, loadPhrasesByCategory } from '../lib/content/loadContent';
-import { loadProgress, Progress } from '../store/progress';
+import { loadProgress, saveProgress, setPro, Progress } from '../store/progress';
 import { FONT } from '../lib/theme';
 
 const INK = '#15130F';
@@ -28,6 +28,14 @@ export default function Home() {
 
   const isPro = progress.pro;
   const unlocked = isPro ? cats.length : cats.filter((c) => c.tier === 'free').length;
+
+  // Demo only: flip Pro off so the locked/free state can be re-tested.
+  // (Replaced by real Restore Purchases when StoreKit/RevenueCat is wired.)
+  const resetProDemo = async () => {
+    const np = setPro(progress, false);
+    await saveProgress(np);
+    setProgress(np);
+  };
 
   // Word of the day — featured from the user's chosen starter pack (falls back to Kansai).
   const startId =
@@ -173,13 +181,14 @@ export default function Home() {
         })}
       </View>
 
-      {!isPro && (
-        <Pressable onPress={() => router.push('/paywall' as never)} style={{ paddingTop: 18, paddingBottom: 4 }}>
-          <Text style={{ textAlign: 'center', fontWeight: '800', fontSize: 12, color: '#8a8475' }}>
-            🔒 Unlock all packs with Pro →
-          </Text>
-        </Pressable>
-      )}
+      <Pressable
+        onPress={() => (isPro ? resetProDemo() : router.push('/paywall' as never))}
+        style={{ paddingTop: 18, paddingBottom: 4 }}
+      >
+        <Text style={{ textAlign: 'center', fontWeight: '800', fontSize: 12, color: '#8a8475' }}>
+          {isPro ? '✨ Pro active (demo) · tap to reset' : '🔒 Unlock all packs with Pro →'}
+        </Text>
+      </Pressable>
     </ScrollView>
   );
 }
