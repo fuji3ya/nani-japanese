@@ -65,7 +65,10 @@ jobs:
         run: |
           set -euo pipefail
           WORKSPACE=$(find ios -maxdepth 1 -name "*.xcworkspace" | head -1)
-          SCHEME=$(xcodebuild -list -workspace "$WORKSPACE" -json | python3 -c "import sys,json;print(json.load(sys.stdin)['workspace']['schemes'][0])")
+          # The app scheme == the .xcodeproj name. Do NOT use schemes[0]: the
+          # workspace lists Pod schemes too (EXConstants etc.) and [0] picks the
+          # alphabetically-first one, which archives a pod, not the app.
+          SCHEME=$(basename "$(ls -d ios/*.xcodeproj | head -1)" .xcodeproj)
           echo "workspace=$WORKSPACE" >> "$GITHUB_OUTPUT"
           echo "scheme=$SCHEME" >> "$GITHUB_OUTPUT"
           echo "Resolved workspace=$WORKSPACE scheme=$SCHEME"
@@ -128,7 +131,10 @@ jobs:
         run: |
           set -euo pipefail
           WORKSPACE=$(find ios -maxdepth 1 -name "*.xcworkspace" | head -1)
-          SCHEME=$(xcodebuild -list -workspace "$WORKSPACE" -json | python3 -c "import sys,json;print(json.load(sys.stdin)['workspace']['schemes'][0])")
+          # The app scheme == the .xcodeproj name. Do NOT use schemes[0]: the
+          # workspace lists Pod schemes too (EXConstants etc.) and [0] picks the
+          # alphabetically-first one, which archives a pod, not the app.
+          SCHEME=$(basename "$(ls -d ios/*.xcodeproj | head -1)" .xcodeproj)
           echo "workspace=$WORKSPACE" >> "$GITHUB_OUTPUT"
           echo "scheme=$SCHEME" >> "$GITHUB_OUTPUT"
 
