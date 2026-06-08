@@ -874,25 +874,6 @@
     }
   },
   {
-    "id": "otaku-047",
-    "categoryId": "otaku",
-    "term": "概念",
-    "reading": "がいねん",
-    "romaji": "gainen",
-    "meaningEn": "'The concept' — abstract oshi-themed aesthetics",
-    "meaningJa": "推しを象徴するイメージやモチーフ",
-    "exampleJa": "これ完全に推しの概念じゃん",
-    "exampleRomaji": "kore kanzen ni oshi no gainen jan",
-    "exampleEn": "This totally embodies my fave's vibe.",
-    "socialConsequenceEn": "Niche fan usage: items that 'feel like' your oshi without being them.",
-    "tag": {
-      "era": "オタク文化",
-      "whoUses": "オタク",
-      "gachi": "tsuujiru",
-      "sourceNote": "gainen = 'concept' merch/aesthetic; review nuance"
-    }
-  },
-  {
     "id": "otaku-048",
     "categoryId": "otaku",
     "term": "担降り",

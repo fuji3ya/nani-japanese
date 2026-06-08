@@ -817,25 +817,6 @@
     }
   },
   {
-    "id": "reiwa-045",
-    "categoryId": "reiwa",
-    "term": "ぎゃるぴーす",
-    "reading": "ぎゃるぴーす",
-    "romaji": "gyaru-piisu",
-    "meaningEn": "The downward-flipped 'gal peace' pose",
-    "meaningJa": "逆向きのピースサイン（ギャルポーズ）",
-    "exampleJa": "プリでぎゃるぴーすして撮る",
-    "exampleRomaji": "puri de gyaru-piisu shite toru",
-    "exampleEn": "We do the flipped peace sign in photos.",
-    "socialConsequenceEn": "The upside-down peace sign that defined late-2010s/2020s selfies.",
-    "tag": {
-      "era": "令和",
-      "whoUses": "若者",
-      "gachi": "tsuujiru",
-      "sourceNote": "gyaru peace pose; review nuance"
-    }
-  },
-  {
     "id": "reiwa-046",
     "categoryId": "reiwa",
     "term": "限界",
@@ -928,25 +909,6 @@
       "whoUses": "若者",
       "gachi": "tsuujiru",
       "sourceNote": "激推し表現 好きすぎて滅; 2025 (weknowledge)"
-    }
-  },
-  {
-    "id": "reiwa-051",
-    "categoryId": "reiwa",
-    "term": "界隈",
-    "reading": "かいわい",
-    "romaji": "kaiwai",
-    "meaningEn": "A scene / community around an interest",
-    "meaningJa": "特定の趣味や話題でつながる人たちの集まり",
-    "exampleJa": "K-POP界隈はやばい",
-    "exampleRomaji": "kei-poppu kaiwai wa yabai",
-    "exampleEn": "The K-pop community is wild.",
-    "socialConsequenceEn": "Lit. 'the vicinity'. Now means any niche online scene. Everywhere in 2025.",
-    "tag": {
-      "era": "令和",
-      "whoUses": "若者",
-      "gachi": "tsuujiru",
-      "sourceNote": "○○界隈=趣味コミュニティ; 2025定番 (g-crews/haradaeigo)"
     }
   },
   {

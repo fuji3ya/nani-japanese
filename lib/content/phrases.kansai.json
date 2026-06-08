@@ -910,24 +910,5 @@
       "gachi": "tsuujiru",
       "sourceNote": "waya = a mess (west Japan)"
     }
-  },
-  {
-    "id": "kansai-049",
-    "categoryId": "kansai",
-    "term": "たこ",
-    "reading": "たこ",
-    "romaji": "tako",
-    "meaningEn": "You fool! (light insult)",
-    "meaningJa": "あほ・ばかに近い軽い罵り",
-    "exampleJa": "なにしてんねん、このたこ",
-    "exampleRomaji": "nani shiten nen, kono tako",
-    "exampleEn": "What are you doing, you fool!",
-    "socialConsequenceEn": "Lit. 'octopus'. A rough but jokey Kansai jab.",
-    "tag": {
-      "era": "関西",
-      "whoUses": "関西の人",
-      "gachi": "tsuujiru",
-      "sourceNote": "tako as light insult (Kansai)"
-    }
   }
 ]

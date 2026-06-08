@@ -853,24 +853,5 @@
       "gachi": "tsuujiru",
       "sourceNote": "jimoto + -ii suffix"
     }
-  },
-  {
-    "id": "gyaru-048",
-    "categoryId": "gyaru",
-    "term": "じゃんがら",
-    "reading": "じゃんがら",
-    "romaji": "jangara",
-    "meaningEn": "Cheap, flashy, gaudy",
-    "meaningJa": "安っぽく派手な様子",
-    "exampleJa": "ちょっとじゃんがらすぎかな",
-    "exampleRomaji": "chotto jangara sugi kana",
-    "exampleEn": "Maybe a bit too gaudy?",
-    "socialConsequenceEn": "Niche gal slang — flag for a native check.",
-    "tag": {
-      "era": "平成ギャル",
-      "whoUses": "ギャル",
-      "gachi": "itai",
-      "sourceNote": "less-attested gal term for gaudy; needs review"
-    }
   }
 ]

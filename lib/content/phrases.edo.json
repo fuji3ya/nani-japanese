@@ -798,25 +798,6 @@
     }
   },
   {
-    "id": "edo-044",
-    "categoryId": "edo",
-    "term": "野暮天",
-    "reading": "やぼてん",
-    "romaji": "yaboten",
-    "meaningEn": "A hopelessly tactless person",
-    "meaningJa": "野暮の極み、無粋な人",
-    "exampleJa": "そこで聞くか、この野暮天が",
-    "exampleRomaji": "soko de kiku ka, kono yaboten ga",
-    "exampleEn": "You ask THAT now? Such a clod.",
-    "socialConsequenceEn": "The anti-'iki': stronger than yabo. Edo aesthetics insult.",
-    "tag": {
-      "era": "江戸",
-      "whoUses": "江戸っ子",
-      "gachi": "tsuujiru",
-      "sourceNote": "yabo + ten emphatic; review nuance"
-    }
-  },
-  {
     "id": "edo-045",
     "categoryId": "edo",
     "term": "おうとも",
