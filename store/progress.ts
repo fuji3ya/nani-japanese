@@ -57,11 +57,20 @@ export function setPro(p: Progress, pro: boolean): Progress {
 
 export async function loadProgress(): Promise<Progress> {
   const raw = await AsyncStorage.getItem(KEY);
-  if (!raw) return EMPTY;
+  if (!raw) return { ...EMPTY };
   try {
-    return { ...EMPTY, ...JSON.parse(raw) };
+    const parsed = JSON.parse(raw);
+    const isObj = (v: unknown) => !!v && typeof v === 'object' && !Array.isArray(v);
+    // Validate the index-accessed maps: a corrupted (null/array/string) value
+    // would otherwise crash on p.seenByCategory[id] / p.words[id].
+    return {
+      ...EMPTY,
+      ...parsed,
+      seenByCategory: isObj(parsed.seenByCategory) ? parsed.seenByCategory : {},
+      words: isObj(parsed.words) ? parsed.words : {},
+    };
   } catch {
-    return EMPTY;
+    return { ...EMPTY };
   }
 }
 

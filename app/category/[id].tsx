@@ -128,7 +128,9 @@ export default function Lesson() {
     const unseenExist = pool.some((ph) => !(progress.seenByCategory[id!] ?? []).includes(ph.id));
     const limited = steps.length === 0 && !progress.pro && freeNewRemaining(progress, todayISO()) === 0 && unseenExist;
     const allCaughtUp = steps.length === 0 && !limited;
-    const cardPhrase = steps.find((s) => s.kind === 'learn')?.phrase ?? steps[0]?.phrase;
+    // Only show the "I just learned" share card when a NEW word was actually
+    // learned this session — never label a merely-reviewed word as "just learned".
+    const cardPhrase = stats.learned > 0 ? steps.find((s) => s.kind === 'learn')?.phrase : undefined;
     const shareWord = () => {
       if (!cardPhrase) return;
       Share.share({
