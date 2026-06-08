@@ -44,7 +44,7 @@ jobs:
       - name: Resolve Xcode scheme
         id: scheme
         run: |
-          WS=$(ls ios/*.xcworkspace | head -1)
+          WS=$(ls -d ios/*.xcworkspace | head -1)
           SCHEME=$(basename "$WS" .xcworkspace)
           echo "ws=$WS" >> "$GITHUB_OUTPUT"
           echo "scheme=$SCHEME" >> "$GITHUB_OUTPUT"
