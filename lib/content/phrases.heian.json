@@ -112,5 +112,784 @@
       "gachi": "wakeru",
       "sourceNote": "平安貴族の一人称「まろ」"
     }
+  },
+  {
+    "id": "heian-007",
+    "categoryId": "heian",
+    "term": "あはれ",
+    "reading": "あはれ",
+    "romaji": "aware",
+    "meaningEn": "Deep, moving emotion; 'how touching'",
+    "meaningJa": "しみじみと心に染みる感動",
+    "exampleJa": "月の光、いとあはれなり。",
+    "exampleRomaji": "tsuki no hikari, ito aware nari.",
+    "exampleEn": "The moonlight — how deeply moving.",
+    "socialConsequenceEn": "The root feeling behind mono-no-aware. Pure classical sensibility.",
+    "tag": {
+      "era": "平安",
+      "whoUses": "平安貴族",
+      "gachi": "wakeru",
+      "sourceNote": "古文基本語: あはれ=しみじみした情趣"
+    }
+  },
+  {
+    "id": "heian-008",
+    "categoryId": "heian",
+    "term": "いみじ",
+    "reading": "いみじ",
+    "romaji": "imiji",
+    "meaningEn": "Extremely (wonderful or terrible)",
+    "meaningJa": "程度がはなはだしい。すばらしい・ひどい",
+    "exampleJa": "雪の朝、いみじうをかし。",
+    "exampleRomaji": "yuki no ashita, imijiu wokashi.",
+    "exampleEn": "A snowy morning — extraordinarily lovely.",
+    "socialConsequenceEn": "A top-tier 古文 word. Intensity that swings good or bad.",
+    "tag": {
+      "era": "平安",
+      "whoUses": "平安貴族",
+      "gachi": "wakeru",
+      "sourceNote": "古文重要単語 いみじ=程度甚だしい"
+    }
+  },
+  {
+    "id": "heian-009",
+    "categoryId": "heian",
+    "term": "ゆかし",
+    "reading": "ゆかし",
+    "romaji": "yukashi",
+    "meaningEn": "Longing to see/know; charmingly intriguing",
+    "meaningJa": "見たい・知りたい、心ひかれる",
+    "exampleJa": "奥の景色、いとゆかし。",
+    "exampleRomaji": "oku no keshiki, ito yukashi.",
+    "exampleEn": "The scenery beyond — I long to see it.",
+    "socialConsequenceEn": "Wistful curiosity. Survives in 'okuyukashii' (refined/modest).",
+    "tag": {
+      "era": "平安",
+      "whoUses": "平安貴族",
+      "gachi": "wakeru",
+      "sourceNote": "古文単語 ゆかし=心がひかれる"
+    }
+  },
+  {
+    "id": "heian-010",
+    "categoryId": "heian",
+    "term": "めでたし",
+    "reading": "めでたし",
+    "romaji": "medetashi",
+    "meaningEn": "Splendid; admirable; auspicious",
+    "meaningJa": "すばらしい、立派だ、喜ばしい",
+    "exampleJa": "花の盛り、いとめでたし。",
+    "exampleRomaji": "hana no sakari, ito medetashi.",
+    "exampleEn": "The blossoms at their peak — how splendid.",
+    "socialConsequenceEn": "Source of 'medetai'. Classical praise, slightly grander.",
+    "tag": {
+      "era": "平安",
+      "whoUses": "平安貴族",
+      "gachi": "wakeru",
+      "sourceNote": "古文単語 めでたし=立派だ/喜ばしい"
+    }
+  },
+  {
+    "id": "heian-011",
+    "categoryId": "heian",
+    "term": "らうたし",
+    "reading": "らうたし",
+    "romaji": "rautashi",
+    "meaningEn": "Adorable; dear; sweet",
+    "meaningJa": "かわいらしい、いとしい",
+    "exampleJa": "稚児の寝顔、らうたし。",
+    "exampleRomaji": "chigo no negao, rautashi.",
+    "exampleEn": "The sleeping child's face — so dear.",
+    "socialConsequenceEn": "Tender classical 'adorable'. Softer than utsukushi.",
+    "tag": {
+      "era": "平安",
+      "whoUses": "平安貴族",
+      "gachi": "wakeru",
+      "sourceNote": "古文単語 らうたし=かわいい/いとしい"
+    }
+  },
+  {
+    "id": "heian-012",
+    "categoryId": "heian",
+    "term": "はかなし",
+    "reading": "はかなし",
+    "romaji": "hakanashi",
+    "meaningEn": "Fleeting; ephemeral; frail",
+    "meaningJa": "頼りない、むなしい、はかない",
+    "exampleJa": "露のごとくはかなし。",
+    "exampleRomaji": "tsuyu no gotoku hakanashi.",
+    "exampleEn": "As fleeting as the morning dew.",
+    "socialConsequenceEn": "Lives on as 'hakanai'. Core of Heian impermanence.",
+    "tag": {
+      "era": "平安",
+      "whoUses": "平安貴族",
+      "gachi": "tsuujiru",
+      "sourceNote": "古文単語 はかなし=はかない"
+    }
+  },
+  {
+    "id": "heian-013",
+    "categoryId": "heian",
+    "term": "つれづれ",
+    "reading": "つれづれ",
+    "romaji": "tsurezure",
+    "meaningEn": "Idle tedium; having nothing to do",
+    "meaningJa": "することがなく退屈なさま",
+    "exampleJa": "つれづれなるままに、筆をとる。",
+    "exampleRomaji": "tsurezure naru mama ni, fude o toru.",
+    "exampleEn": "With nothing to do, I take up the brush.",
+    "socialConsequenceEn": "Opens the Tsurezuregusa. Pure classical 'idle musing'.",
+    "tag": {
+      "era": "平安",
+      "whoUses": "平安貴族",
+      "gachi": "wakeru",
+      "sourceNote": "徒然草 冒頭, つれづれ=退屈"
+    }
+  },
+  {
+    "id": "heian-014",
+    "categoryId": "heian",
+    "term": "ものぐるほし",
+    "reading": "ものぐるほし",
+    "romaji": "monoguruhoshi",
+    "meaningEn": "Feeling oddly restless / half-crazed",
+    "meaningJa": "何となく気が変になりそうな感じ",
+    "exampleJa": "心ものぐるほしくおぼゆ。",
+    "exampleRomaji": "kokoro monoguruhoshiku oboyu.",
+    "exampleEn": "My heart feels strangely unsettled.",
+    "socialConsequenceEn": "From Tsurezuregusa's opening. A delicious classical mood-word.",
+    "tag": {
+      "era": "平安",
+      "whoUses": "平安貴族",
+      "gachi": "wakeru",
+      "sourceNote": "徒然草序段 ものぐるほし"
+    }
+  },
+  {
+    "id": "heian-015",
+    "categoryId": "heian",
+    "term": "あけぼの",
+    "reading": "あけぼの",
+    "romaji": "akebono",
+    "meaningEn": "Dawn; daybreak",
+    "meaningJa": "夜がほのぼのと明けるころ",
+    "exampleJa": "春はあけぼの。",
+    "exampleRomaji": "haru wa akebono.",
+    "exampleEn": "In spring — the dawn.",
+    "socialConsequenceEn": "The famous opening of The Pillow Book. Instantly classical.",
+    "tag": {
+      "era": "平安",
+      "whoUses": "平安貴族",
+      "gachi": "tsuujiru",
+      "sourceNote": "枕草子 春はあけぼの"
+    }
+  },
+  {
+    "id": "heian-016",
+    "categoryId": "heian",
+    "term": "つとめて",
+    "reading": "つとめて",
+    "romaji": "tsutomete",
+    "meaningEn": "Early morning; the morning after",
+    "meaningJa": "早朝、または翌朝",
+    "exampleJa": "冬はつとめて。",
+    "exampleRomaji": "fuyu wa tsutomete.",
+    "exampleEn": "In winter — the early morning.",
+    "socialConsequenceEn": "Also from The Pillow Book. A classic exam-trap word.",
+    "tag": {
+      "era": "平安",
+      "whoUses": "平安貴族",
+      "gachi": "wakeru",
+      "sourceNote": "枕草子 つとめて=早朝/翌朝"
+    }
+  },
+  {
+    "id": "heian-017",
+    "categoryId": "heian",
+    "term": "やうやう",
+    "reading": "やうやう",
+    "romaji": "youyou",
+    "meaningEn": "Gradually; little by little",
+    "meaningJa": "だんだんと、しだいに",
+    "exampleJa": "やうやう白くなりゆく山ぎは。",
+    "exampleRomaji": "youyou shiroku nariyuku yamagiwa.",
+    "exampleEn": "The mountain rim gradually growing pale.",
+    "socialConsequenceEn": "The Pillow Book's dawn line. Becomes modern 'youyaku'.",
+    "tag": {
+      "era": "平安",
+      "whoUses": "平安貴族",
+      "gachi": "wakeru",
+      "sourceNote": "枕草子, やうやう=だんだん"
+    }
+  },
+  {
+    "id": "heian-018",
+    "categoryId": "heian",
+    "term": "いと",
+    "reading": "いと",
+    "romaji": "ito",
+    "meaningEn": "Very; exceedingly",
+    "meaningJa": "たいへん、非常に",
+    "exampleJa": "いとうつくしきもの。",
+    "exampleRomaji": "ito utsukushiki mono.",
+    "exampleEn": "A truly adorable thing.",
+    "socialConsequenceEn": "The classical 'very'. Pairs with everything in 古文.",
+    "tag": {
+      "era": "平安",
+      "whoUses": "平安貴族",
+      "gachi": "wakeru",
+      "sourceNote": "古文副詞 いと=非常に"
+    }
+  },
+  {
+    "id": "heian-019",
+    "categoryId": "heian",
+    "term": "いざ",
+    "reading": "いざ",
+    "romaji": "iza",
+    "meaningEn": "Come now; let's (a call to action)",
+    "meaningJa": "さあ、と人を誘う語",
+    "exampleJa": "いざ、参らむ。",
+    "exampleRomaji": "iza, mairamu.",
+    "exampleEn": "Come now, let us go.",
+    "socialConsequenceEn": "Survives in 'iza to iu toki'. Stirring, heroic flavor.",
+    "tag": {
+      "era": "平安",
+      "whoUses": "平安貴族",
+      "gachi": "tsuujiru",
+      "sourceNote": "古文 いざ=さあ"
+    }
+  },
+  {
+    "id": "heian-020",
+    "categoryId": "heian",
+    "term": "あな",
+    "reading": "あな",
+    "romaji": "ana",
+    "meaningEn": "Oh! Ah! (exclamation)",
+    "meaningJa": "感動を表す語。ああ",
+    "exampleJa": "あな、うれし。",
+    "exampleRomaji": "ana, ureshi.",
+    "exampleEn": "Oh, how delightful!",
+    "socialConsequenceEn": "Classical 'oh!'. Pairs into 'ana-medetashi' etc.",
+    "tag": {
+      "era": "平安",
+      "whoUses": "平安貴族",
+      "gachi": "wakeru",
+      "sourceNote": "古文 感動詞 あな=ああ"
+    }
+  },
+  {
+    "id": "heian-021",
+    "categoryId": "heian",
+    "term": "さらなり",
+    "reading": "さらなり",
+    "romaji": "saranari",
+    "meaningEn": "Needless to say; of course",
+    "meaningJa": "言うまでもない",
+    "exampleJa": "夏は夜。月のころはさらなり。",
+    "exampleRomaji": "natsu wa yoru. tsuki no koro wa saranari.",
+    "exampleEn": "Summer — the night. Moonlit ones, needless to say.",
+    "socialConsequenceEn": "From The Pillow Book. Elegant 'it goes without saying'.",
+    "tag": {
+      "era": "平安",
+      "whoUses": "平安貴族",
+      "gachi": "wakeru",
+      "sourceNote": "枕草子 さらなり=言うまでもない"
+    }
+  },
+  {
+    "id": "heian-022",
+    "categoryId": "heian",
+    "term": "わろし",
+    "reading": "わろし",
+    "romaji": "waroshi",
+    "meaningEn": "Not good; inferior; unpleasant",
+    "meaningJa": "よくない、感心しない",
+    "exampleJa": "雨など降るもわろし。",
+    "exampleRomaji": "ame nado furu mo waroshi.",
+    "exampleEn": "Rain falling, too, is rather poor.",
+    "socialConsequenceEn": "The mild 'bad' between yoshi and ashi. Root of modern 'warui'.",
+    "tag": {
+      "era": "平安",
+      "whoUses": "平安貴族",
+      "gachi": "wakeru",
+      "sourceNote": "古文 わろし=よくない(程度)"
+    }
+  },
+  {
+    "id": "heian-023",
+    "categoryId": "heian",
+    "term": "よろし",
+    "reading": "よろし",
+    "romaji": "yoroshi",
+    "meaningEn": "Passable; fine; not bad",
+    "meaningJa": "悪くない、まあよい",
+    "exampleJa": "この歌はよろし。",
+    "exampleRomaji": "kono uta wa yoroshi.",
+    "exampleEn": "This poem is quite acceptable.",
+    "socialConsequenceEn": "Middling approval. Becomes modern 'yoroshii'.",
+    "tag": {
+      "era": "平安",
+      "whoUses": "平安貴族",
+      "gachi": "wakeru",
+      "sourceNote": "古文 よろし=まあよい"
+    }
+  },
+  {
+    "id": "heian-024",
+    "categoryId": "heian",
+    "term": "うし",
+    "reading": "うし",
+    "romaji": "ushi",
+    "meaningEn": "Wretched; miserable; gloomy",
+    "meaningJa": "つらい、いやだ、憂鬱だ",
+    "exampleJa": "世の中うし。",
+    "exampleRomaji": "yo no naka ushi.",
+    "exampleEn": "The world is so wearisome.",
+    "socialConsequenceEn": "Classical melancholy (憂し). Root of 'uttoushii' family.",
+    "tag": {
+      "era": "平安",
+      "whoUses": "平安貴族",
+      "gachi": "wakeru",
+      "sourceNote": "古文 憂し=つらい/憂鬱"
+    }
+  },
+  {
+    "id": "heian-025",
+    "categoryId": "heian",
+    "term": "こひし",
+    "reading": "こひし",
+    "romaji": "koishi",
+    "meaningEn": "Longed-for; dearly missed",
+    "meaningJa": "恋しい、慕わしい",
+    "exampleJa": "都こひし。",
+    "exampleRomaji": "miyako koishi.",
+    "exampleEn": "How I long for the capital.",
+    "socialConsequenceEn": "Becomes modern 'koishii'. Classical romantic longing.",
+    "tag": {
+      "era": "平安",
+      "whoUses": "平安貴族",
+      "gachi": "tsuujiru",
+      "sourceNote": "古文 恋し=こいしい"
+    }
+  },
+  {
+    "id": "heian-026",
+    "categoryId": "heian",
+    "term": "ながむ",
+    "reading": "ながむ",
+    "romaji": "nagamu",
+    "meaningEn": "To gaze pensively (and brood)",
+    "meaningJa": "物思いにふけって眺める",
+    "exampleJa": "ひとりながむる秋の夕暮れ。",
+    "exampleRomaji": "hitori nagamuru aki no yuugure.",
+    "exampleEn": "Gazing alone at the autumn dusk.",
+    "socialConsequenceEn": "More than 'look': a wistful, brooding gaze. Very waka.",
+    "tag": {
+      "era": "平安",
+      "whoUses": "平安貴族",
+      "gachi": "wakeru",
+      "sourceNote": "古文 ながむ=物思いに眺める"
+    }
+  },
+  {
+    "id": "heian-027",
+    "categoryId": "heian",
+    "term": "おはす",
+    "reading": "おはす",
+    "romaji": "owasu",
+    "meaningEn": "To be / to come / to go (honorific)",
+    "meaningJa": "あり・行く・来の尊敬語",
+    "exampleJa": "君はいづくにおはする。",
+    "exampleRomaji": "kimi wa izuku ni owasuru.",
+    "exampleEn": "Where is my lord?",
+    "socialConsequenceEn": "Honorific 'to be'. The grammar of speaking up to nobles.",
+    "tag": {
+      "era": "平安",
+      "whoUses": "平安貴族",
+      "gachi": "wakeru",
+      "sourceNote": "古文 尊敬語 おはす"
+    }
+  },
+  {
+    "id": "heian-028",
+    "categoryId": "heian",
+    "term": "たまふ",
+    "reading": "たまふ",
+    "romaji": "tamau",
+    "meaningEn": "To deign to; honorific 'do' / 'give'",
+    "meaningJa": "尊敬・謙譲の補助動詞。お〜になる",
+    "exampleJa": "仰せたまふ。",
+    "exampleRomaji": "oose tamau.",
+    "exampleEn": "He deigns to speak (a command).",
+    "socialConsequenceEn": "The workhorse honorific verb. Survives in 'choudai'.",
+    "tag": {
+      "era": "平安",
+      "whoUses": "平安貴族",
+      "gachi": "wakeru",
+      "sourceNote": "古文 給ふ 尊敬/謙譲補助動詞"
+    }
+  },
+  {
+    "id": "heian-029",
+    "categoryId": "heian",
+    "term": "はべり",
+    "reading": "はべり",
+    "romaji": "haberi",
+    "meaningEn": "To be (humble / polite 'desu')",
+    "meaningJa": "あり・をりの丁寧・謙譲語",
+    "exampleJa": "都に侍り。",
+    "exampleRomaji": "miyako ni haberi.",
+    "exampleEn": "I am (humbly) in the capital.",
+    "socialConsequenceEn": "Humble/polite 'to be'. The court's 'desu/masu'.",
+    "tag": {
+      "era": "平安",
+      "whoUses": "平安貴族",
+      "gachi": "wakeru",
+      "sourceNote": "古文 侍り 丁寧/謙譲"
+    }
+  },
+  {
+    "id": "heian-030",
+    "categoryId": "heian",
+    "term": "みかど",
+    "reading": "みかど",
+    "romaji": "mikado",
+    "meaningEn": "The Emperor",
+    "meaningJa": "天皇の敬称",
+    "exampleJa": "みかどの仰せ。",
+    "exampleRomaji": "mikado no oose.",
+    "exampleEn": "The Emperor's command.",
+    "socialConsequenceEn": "Lit. 'the honorable gate'. Reverent classical word for emperor.",
+    "tag": {
+      "era": "平安",
+      "whoUses": "平安貴族",
+      "gachi": "wakeru",
+      "sourceNote": "古文 帝=天皇"
+    }
+  },
+  {
+    "id": "heian-031",
+    "categoryId": "heian",
+    "term": "きさき",
+    "reading": "きさき",
+    "romaji": "kisaki",
+    "meaningEn": "The Empress / imperial consort",
+    "meaningJa": "天皇の妻、皇后",
+    "exampleJa": "きさきの宮。",
+    "exampleRomaji": "kisaki no miya.",
+    "exampleEn": "The Empress's palace.",
+    "socialConsequenceEn": "Classical word for the emperor's consort. Pure court vocab.",
+    "tag": {
+      "era": "平安",
+      "whoUses": "平安貴族",
+      "gachi": "wakeru",
+      "sourceNote": "古文 后=皇后/妃"
+    }
+  },
+  {
+    "id": "heian-032",
+    "categoryId": "heian",
+    "term": "にょうぼう",
+    "reading": "にょうぼう",
+    "romaji": "nyoubou",
+    "meaningEn": "A court lady-in-waiting",
+    "meaningJa": "宮中に仕える女性",
+    "exampleJa": "女房たち集ひて。",
+    "exampleRomaji": "nyoubou-tachi tsudoite.",
+    "exampleEn": "The ladies-in-waiting gathered.",
+    "socialConsequenceEn": "Sei Shonagon was one. Note: NOT the modern 'wife' meaning.",
+    "tag": {
+      "era": "平安",
+      "whoUses": "平安貴族",
+      "gachi": "wakeru",
+      "sourceNote": "古文 女房=宮仕えの女性"
+    }
+  },
+  {
+    "id": "heian-033",
+    "categoryId": "heian",
+    "term": "ふみ",
+    "reading": "ふみ",
+    "romaji": "fumi",
+    "meaningEn": "A letter; a written note",
+    "meaningJa": "手紙、書物",
+    "exampleJa": "ふみをこそ書け。",
+    "exampleRomaji": "fumi o koso kake.",
+    "exampleEn": "Do write me a letter.",
+    "socialConsequenceEn": "Heian romance ran on 'fumi'. Letters were courtship itself.",
+    "tag": {
+      "era": "平安",
+      "whoUses": "平安貴族",
+      "gachi": "wakeru",
+      "sourceNote": "古文 文=手紙"
+    }
+  },
+  {
+    "id": "heian-034",
+    "categoryId": "heian",
+    "term": "うた",
+    "reading": "うた",
+    "romaji": "uta",
+    "meaningEn": "A waka poem",
+    "meaningJa": "和歌",
+    "exampleJa": "歌をよみてつかはす。",
+    "exampleRomaji": "uta o yomite tsukawasu.",
+    "exampleEn": "He composed a poem and sent it.",
+    "socialConsequenceEn": "Composing a waka was a noble's core skill — and flirtation.",
+    "tag": {
+      "era": "平安",
+      "whoUses": "平安貴族",
+      "gachi": "wakeru",
+      "sourceNote": "古文 歌=和歌"
+    }
+  },
+  {
+    "id": "heian-035",
+    "categoryId": "heian",
+    "term": "すくせ",
+    "reading": "すくせ",
+    "romaji": "sukuse",
+    "meaningEn": "Karmic fate from past lives",
+    "meaningJa": "前世からの因縁・宿命",
+    "exampleJa": "前の世の宿世にや。",
+    "exampleRomaji": "saki no yo no sukuse ni ya.",
+    "exampleEn": "Perhaps it is fate from a former life.",
+    "socialConsequenceEn": "Buddhist destiny threading The Tale of Genji. Deeply classical.",
+    "tag": {
+      "era": "平安",
+      "whoUses": "平安貴族",
+      "gachi": "wakeru",
+      "sourceNote": "古文 宿世=前世からの因縁"
+    }
+  },
+  {
+    "id": "heian-036",
+    "categoryId": "heian",
+    "term": "もののけ",
+    "reading": "もののけ",
+    "romaji": "mononoke",
+    "meaningEn": "A vengeful or possessing spirit",
+    "meaningJa": "人にとりつく怨霊・物の怪",
+    "exampleJa": "もののけにわづらひ給ふ。",
+    "exampleRomaji": "mononoke ni wazurai tamau.",
+    "exampleEn": "She is afflicted by a vengeful spirit.",
+    "socialConsequenceEn": "Genji's spirit-possession dread. Still alive in pop culture.",
+    "tag": {
+      "era": "平安",
+      "whoUses": "平安貴族",
+      "gachi": "tsuujiru",
+      "sourceNote": "古文 物の怪=怨霊"
+    }
+  },
+  {
+    "id": "heian-037",
+    "categoryId": "heian",
+    "term": "みやび",
+    "reading": "みやび",
+    "romaji": "miyabi",
+    "meaningEn": "Courtly elegance; refinement",
+    "meaningJa": "宮廷風の上品な美しさ",
+    "exampleJa": "みやびなる遊び。",
+    "exampleRomaji": "miyabi naru asobi.",
+    "exampleEn": "An elegant courtly pastime.",
+    "socialConsequenceEn": "The Heian aesthetic ideal: tasteful, courtly grace.",
+    "tag": {
+      "era": "平安",
+      "whoUses": "平安貴族",
+      "gachi": "tsuujiru",
+      "sourceNote": "古文/美意識 雅=宮廷的優雅"
+    }
+  },
+  {
+    "id": "heian-038",
+    "categoryId": "heian",
+    "term": "いろごのみ",
+    "reading": "いろごのみ",
+    "romaji": "irogonomi",
+    "meaningEn": "A connoisseur of love and romance",
+    "meaningJa": "恋愛の情趣を好み解する人",
+    "exampleJa": "世の色好みの君。",
+    "exampleRomaji": "yo no irogonomi no kimi.",
+    "exampleEn": "A lord renowned as a man of romance.",
+    "socialConsequenceEn": "Not mere lust — refined romantic sensibility. Genji's ideal.",
+    "tag": {
+      "era": "平安",
+      "whoUses": "平安貴族",
+      "gachi": "wakeru",
+      "sourceNote": "古文 色好み=恋の情趣を解する人"
+    }
+  },
+  {
+    "id": "heian-039",
+    "categoryId": "heian",
+    "term": "けそう",
+    "reading": "けそう",
+    "romaji": "kesou",
+    "meaningEn": "Romantic longing; courting someone",
+    "meaningJa": "恋い慕うこと、懸想",
+    "exampleJa": "ひそかに懸想す。",
+    "exampleRomaji": "hisoka ni kesou su.",
+    "exampleEn": "He secretly pines for her.",
+    "socialConsequenceEn": "'Kesou-bumi' = a love letter. Classical courtship vocab.",
+    "tag": {
+      "era": "平安",
+      "whoUses": "平安貴族",
+      "gachi": "wakeru",
+      "sourceNote": "古文 懸想=恋い慕う"
+    }
+  },
+  {
+    "id": "heian-040",
+    "categoryId": "heian",
+    "term": "かいまみ",
+    "reading": "かいまみ",
+    "romaji": "kaimami",
+    "meaningEn": "Peeking at someone through a gap",
+    "meaningJa": "物のすき間からのぞき見ること",
+    "exampleJa": "垣間見してけり。",
+    "exampleRomaji": "kaimami shite keri.",
+    "exampleEn": "He caught a glimpse of her through the fence.",
+    "socialConsequenceEn": "How Heian romance often began — a stolen glimpse. Very Genji/Ise.",
+    "tag": {
+      "era": "平安",
+      "whoUses": "平安貴族",
+      "gachi": "wakeru",
+      "sourceNote": "古文 垣間見=のぞき見(求愛の発端)"
+    }
+  },
+  {
+    "id": "heian-041",
+    "categoryId": "heian",
+    "term": "きぬぎぬ",
+    "reading": "きぬぎぬ",
+    "romaji": "kinuginu",
+    "meaningEn": "The morning-after parting of lovers",
+    "meaningJa": "共寝した翌朝の別れ",
+    "exampleJa": "後朝のふみ送る。",
+    "exampleRomaji": "kinuginu no fumi okuru.",
+    "exampleEn": "He sends the morning-after letter.",
+    "socialConsequenceEn": "Lovers part at dawn; etiquette demanded a 'kinuginu' poem after.",
+    "tag": {
+      "era": "平安",
+      "whoUses": "平安貴族",
+      "gachi": "wakeru",
+      "sourceNote": "古文 後朝=共寝の翌朝の別れ"
+    }
+  },
+  {
+    "id": "heian-042",
+    "categoryId": "heian",
+    "term": "あやし",
+    "reading": "あやし",
+    "romaji": "ayashi",
+    "meaningEn": "Strange / mysterious; also humble (lowly)",
+    "meaningJa": "不思議だ。また、身分が低い・粗末だ",
+    "exampleJa": "あやしき賤の家。",
+    "exampleRomaji": "ayashiki shizu no ie.",
+    "exampleEn": "A humble, shabby peasant's hut.",
+    "socialConsequenceEn": "Two senses: 'mysterious' and 'lowly'. Classic exam double-meaning.",
+    "tag": {
+      "era": "平安",
+      "whoUses": "平安貴族",
+      "gachi": "wakeru",
+      "sourceNote": "古文 あやし=不思議/身分が低い"
+    }
+  },
+  {
+    "id": "heian-043",
+    "categoryId": "heian",
+    "term": "つきづきし",
+    "reading": "つきづきし",
+    "romaji": "tsukizukishi",
+    "meaningEn": "Fitting; harmonious; well-suited",
+    "meaningJa": "似つかわしい、ふさわしい",
+    "exampleJa": "冬はつきづきし。",
+    "exampleRomaji": "fuyu wa tsukizukishi.",
+    "exampleEn": "It is just right for winter.",
+    "socialConsequenceEn": "Praise for things that suit their setting. Pillow Book favorite.",
+    "tag": {
+      "era": "平安",
+      "whoUses": "平安貴族",
+      "gachi": "wakeru",
+      "sourceNote": "古文 つきづきし=ふさわしい"
+    }
+  },
+  {
+    "id": "heian-044",
+    "categoryId": "heian",
+    "term": "なまめかし",
+    "reading": "なまめかし",
+    "romaji": "namamekashi",
+    "meaningEn": "Gracefully elegant; charmingly youthful",
+    "meaningJa": "若々しく優美だ、しっとり美しい",
+    "exampleJa": "なまめかしき姿。",
+    "exampleRomaji": "namamekashiki sugata.",
+    "exampleEn": "A gracefully elegant figure.",
+    "socialConsequenceEn": "Refined, alluring grace (not crude). Source of modern 'namameku'.",
+    "tag": {
+      "era": "平安",
+      "whoUses": "平安貴族",
+      "gachi": "wakeru",
+      "sourceNote": "古文 なまめかし=優美/若々しい"
+    }
+  },
+  {
+    "id": "heian-045",
+    "categoryId": "heian",
+    "term": "あだなり",
+    "reading": "あだなり",
+    "romaji": "adanari",
+    "meaningEn": "Fleeting; fickle; in vain",
+    "meaningJa": "はかない、誠実でない、むだだ",
+    "exampleJa": "あだなる契り。",
+    "exampleRomaji": "adanaru chigiri.",
+    "exampleEn": "A fleeting, faithless vow.",
+    "socialConsequenceEn": "Impermanence + faithlessness. Survives in 'ada ni suru'.",
+    "tag": {
+      "era": "平安",
+      "whoUses": "平安貴族",
+      "gachi": "wakeru",
+      "sourceNote": "古文 あだなり=はかない/誠実でない"
+    }
+  },
+  {
+    "id": "heian-046",
+    "categoryId": "heian",
+    "term": "うるはし",
+    "reading": "うるはし",
+    "romaji": "uruwashi",
+    "meaningEn": "Beautiful and orderly; formally lovely",
+    "meaningJa": "きちんとして美しい、端正だ",
+    "exampleJa": "うるはしき御姿。",
+    "exampleRomaji": "uruwashiki mi-sugata.",
+    "exampleEn": "A dignified, beautiful figure.",
+    "socialConsequenceEn": "Formal, well-composed beauty (vs cute). Source of 'uruwashii'.",
+    "tag": {
+      "era": "平安",
+      "whoUses": "平安貴族",
+      "gachi": "wakeru",
+      "sourceNote": "古文 うるはし=端正な美"
+    }
+  },
+  {
+    "id": "heian-047",
+    "categoryId": "heian",
+    "term": "すさまじ",
+    "reading": "すさまじ",
+    "romaji": "susamaji",
+    "meaningEn": "Forlorn; out of place; chilling",
+    "meaningJa": "興ざめだ、殺風景だ、ものすごい",
+    "exampleJa": "昼ほゆる犬、すさまじ。",
+    "exampleRomaji": "hiru hoyuru inu, susamaji.",
+    "exampleEn": "A dog howling at noon — how dreary.",
+    "socialConsequenceEn": "'Out of season / mood-killing'. Modern 'susamajii' = tremendous.",
+    "tag": {
+      "era": "平安",
+      "whoUses": "平安貴族",
+      "gachi": "wakeru",
+      "sourceNote": "古文 すさまじ=興ざめ/殺風景"
+    }
   }
 ]

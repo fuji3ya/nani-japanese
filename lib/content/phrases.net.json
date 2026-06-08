@@ -226,5 +226,689 @@
       "gachi": "tsuujiru",
       "sourceNote": "ポチッ(click)+る"
     }
+  },
+  {
+    "id": "net-013",
+    "categoryId": "net",
+    "term": "ggrks",
+    "reading": "ぐぐれかす",
+    "romaji": "gugurekasu",
+    "meaningEn": "Just google it, dummy",
+    "meaningJa": "ググレカスの略。自分で検索しろ",
+    "exampleJa": "そんなのggrksだろ",
+    "exampleRomaji": "sonna no gugurekasu daro",
+    "exampleEn": "That's a just-google-it, dude.",
+    "socialConsequenceEn": "Old 2ch snark. Harsh but iconic forum energy.",
+    "tag": {
+      "era": "ネット",
+      "whoUses": "ネット民",
+      "gachi": "itai",
+      "sourceNote": "abbrev of gugure kasu, 2ch"
+    }
+  },
+  {
+    "id": "net-014",
+    "categoryId": "net",
+    "term": "大草原",
+    "reading": "だいそうげん",
+    "romaji": "daisougen",
+    "meaningEn": "LMAO (a whole field of 'grass')",
+    "meaningJa": "大笑い。草（笑い）が広がる様子",
+    "exampleJa": "そのオチ大草原なんだけど",
+    "exampleRomaji": "sono ochi daisougen nan da kedo",
+    "exampleEn": "That punchline is killing me, LMAO.",
+    "socialConsequenceEn": "Escalation of 草. The more grass, the harder you laughed.",
+    "tag": {
+      "era": "ネット",
+      "whoUses": "ネット民",
+      "gachi": "tsuujiru",
+      "sourceNote": "kusa(grass=laugh) escalated to a field"
+    }
+  },
+  {
+    "id": "net-015",
+    "categoryId": "net",
+    "term": "フイタ",
+    "reading": "ふいた",
+    "romaji": "fuita",
+    "meaningEn": "I spat my drink (laughing)",
+    "meaningJa": "思わず噴き出した、笑った",
+    "exampleJa": "通知見てフイタ",
+    "exampleRomaji": "tsuuchi mite fuita",
+    "exampleEn": "Saw the notification and lost it.",
+    "socialConsequenceEn": "Classic forum 'I cracked up'. Vivid and old-school.",
+    "tag": {
+      "era": "ネット",
+      "whoUses": "ネット民",
+      "gachi": "tsuujiru",
+      "sourceNote": "fuita = burst out laughing"
+    }
+  },
+  {
+    "id": "net-016",
+    "categoryId": "net",
+    "term": "ぐぬぬ",
+    "reading": "ぐぬぬ",
+    "romaji": "gununu",
+    "meaningEn": "Grr… (frustrated, no comeback)",
+    "meaningJa": "悔しくて言い返せない様子",
+    "exampleJa": "正論すぎてぐぬぬ",
+    "exampleRomaji": "seiron sugite gununu",
+    "exampleEn": "Too right to argue with… grr.",
+    "socialConsequenceEn": "The sound of being out-argued. Funny, self-aware defeat.",
+    "tag": {
+      "era": "ネット",
+      "whoUses": "ネット民",
+      "gachi": "tsuujiru",
+      "sourceNote": "gununu = frustrated grunt"
+    }
+  },
+  {
+    "id": "net-017",
+    "categoryId": "net",
+    "term": "厨",
+    "reading": "ちゅう",
+    "romaji": "chuu",
+    "meaningEn": "An obnoxious fan/poster (suffix '-tard')",
+    "meaningJa": "迷惑な熱狂者を指す接尾語",
+    "exampleJa": "にわか厨が湧いてる",
+    "exampleRomaji": "niwaka-chuu ga waiteru",
+    "exampleEn": "The fake-fan crowd is swarming.",
+    "socialConsequenceEn": "From 'chuubou' (middle-schooler). A pointed forum insult suffix.",
+    "tag": {
+      "era": "ネット",
+      "whoUses": "ネット民",
+      "gachi": "tsuujiru",
+      "sourceNote": "chuu suffix from chuubou"
+    }
+  },
+  {
+    "id": "net-018",
+    "categoryId": "net",
+    "term": "信者",
+    "reading": "しんじゃ",
+    "romaji": "shinja",
+    "meaningEn": "A blind fanboy/devotee",
+    "meaningJa": "盲目的に崇拝する人",
+    "exampleJa": "あのブランドの信者多いな",
+    "exampleRomaji": "ano burando no shinja ooi na",
+    "exampleEn": "That brand has so many blind devotees.",
+    "socialConsequenceEn": "Lit. 'believer'. Mildly mocking term for superfans.",
+    "tag": {
+      "era": "ネット",
+      "whoUses": "ネット民",
+      "gachi": "tsuujiru",
+      "sourceNote": "shinja = devotee/fanboy (net)"
+    }
+  },
+  {
+    "id": "net-019",
+    "categoryId": "net",
+    "term": "アンチ",
+    "reading": "あんち",
+    "romaji": "anchi",
+    "meaningEn": "A hater / anti-fan",
+    "meaningJa": "特定の対象を執拗に叩く人",
+    "exampleJa": "アンチがうるさいだけ",
+    "exampleRomaji": "anchi ga urusai dake",
+    "exampleEn": "It's just the haters being loud.",
+    "socialConsequenceEn": "From 'anti'. Fully standard internet vocabulary now.",
+    "tag": {
+      "era": "ネット",
+      "whoUses": "ネット民",
+      "gachi": "tsuujiru",
+      "sourceNote": "anchi = anti-fan/hater"
+    }
+  },
+  {
+    "id": "net-020",
+    "categoryId": "net",
+    "term": "垢",
+    "reading": "あか",
+    "romaji": "aka",
+    "meaningEn": "Account (clipped from 'akaunto')",
+    "meaningJa": "アカウントの略",
+    "exampleJa": "新しい垢作った",
+    "exampleRomaji": "atarashii aka tsukutta",
+    "exampleEn": "I made a new account.",
+    "socialConsequenceEn": "Everyday net shorthand. Spawns kagi-aka, ura-aka, sute-aka.",
+    "tag": {
+      "era": "ネット",
+      "whoUses": "ネット民",
+      "gachi": "tsuujiru",
+      "sourceNote": "aka = clipped akaunto"
+    }
+  },
+  {
+    "id": "net-021",
+    "categoryId": "net",
+    "term": "裏垢",
+    "reading": "うらあか",
+    "romaji": "ura-aka",
+    "meaningEn": "A secret alt account",
+    "meaningJa": "本音や趣味用の非公開サブ垢",
+    "exampleJa": "裏垢でこっそり呟いてる",
+    "exampleRomaji": "ura-aka de kossori tsubuyaiteru",
+    "exampleEn": "I quietly post on my secret alt.",
+    "socialConsequenceEn": "Where the real thoughts go. Everyone suspects everyone has one.",
+    "tag": {
+      "era": "ネット",
+      "whoUses": "ネット民",
+      "gachi": "tsuujiru",
+      "sourceNote": "ura (hidden) + aka"
+    }
+  },
+  {
+    "id": "net-022",
+    "categoryId": "net",
+    "term": "鍵垢",
+    "reading": "かぎあか",
+    "romaji": "kagi-aka",
+    "meaningEn": "A locked / private account",
+    "meaningJa": "非公開設定のアカウント",
+    "exampleJa": "鍵垢だからフォロー申請して",
+    "exampleRomaji": "kagi-aka dakara forou shinsei shite",
+    "exampleEn": "It's private, so send a follow request.",
+    "socialConsequenceEn": "The 'lock' icon as a noun. Standard social-media talk.",
+    "tag": {
+      "era": "ネット",
+      "whoUses": "ネット民",
+      "gachi": "tsuujiru",
+      "sourceNote": "kagi (lock) + aka"
+    }
+  },
+  {
+    "id": "net-023",
+    "categoryId": "net",
+    "term": "凍結",
+    "reading": "とうけつ",
+    "romaji": "touketsu",
+    "meaningEn": "Account suspension (frozen)",
+    "meaningJa": "アカウントが利用停止されること",
+    "exampleJa": "スパム判定で凍結された",
+    "exampleRomaji": "supamu hantei de touketsu sareta",
+    "exampleEn": "I got suspended for looking like spam.",
+    "socialConsequenceEn": "Lit. 'frozen'. The dreaded social-platform timeout.",
+    "tag": {
+      "era": "ネット",
+      "whoUses": "ネット民",
+      "gachi": "tsuujiru",
+      "sourceNote": "touketsu = account freeze"
+    }
+  },
+  {
+    "id": "net-024",
+    "categoryId": "net",
+    "term": "リプ",
+    "reading": "りぷ",
+    "romaji": "ripu",
+    "meaningEn": "A reply (to a post)",
+    "meaningJa": "リプライの略",
+    "exampleJa": "リプ来ないと寂しい",
+    "exampleRomaji": "ripu konai to sabishii",
+    "exampleEn": "It's lonely when nobody replies.",
+    "socialConsequenceEn": "Core social-media verb/noun. Spawns 'ripu-ran' (reply chaos).",
+    "tag": {
+      "era": "ネット",
+      "whoUses": "ネット民",
+      "gachi": "tsuujiru",
+      "sourceNote": "ripu = clipped reply"
+    }
+  },
+  {
+    "id": "net-025",
+    "categoryId": "net",
+    "term": "拡散",
+    "reading": "かくさん",
+    "romaji": "kakusan",
+    "meaningEn": "To spread / signal-boost (RT)",
+    "meaningJa": "情報を広めること、RT",
+    "exampleJa": "拡散希望って書いてある",
+    "exampleRomaji": "kakusan kibou tte kaite aru",
+    "exampleEn": "It says 'please share widely'.",
+    "socialConsequenceEn": "The 'please RT' culture word. Often follows 'kibou' (request).",
+    "tag": {
+      "era": "ネット",
+      "whoUses": "ネット民",
+      "gachi": "tsuujiru",
+      "sourceNote": "kakusan = to spread/RT"
+    }
+  },
+  {
+    "id": "net-026",
+    "categoryId": "net",
+    "term": "凸",
+    "reading": "とつ",
+    "romaji": "totsu",
+    "meaningEn": "To charge in / confront (online or off)",
+    "meaningJa": "突撃する、直接乗り込むこと",
+    "exampleJa": "運営に凸してきた",
+    "exampleRomaji": "unei ni totsu shite kita",
+    "exampleEn": "I went and confronted the admins.",
+    "socialConsequenceEn": "The kanji 凸 = 'charge'. Can mean a fun call-in or a raid.",
+    "tag": {
+      "era": "ネット",
+      "whoUses": "ネット民",
+      "gachi": "tsuujiru",
+      "sourceNote": "totsu = totsugeki (charge)"
+    }
+  },
+  {
+    "id": "net-027",
+    "categoryId": "net",
+    "term": "スレ",
+    "reading": "すれ",
+    "romaji": "sure",
+    "meaningEn": "A thread (forum)",
+    "meaningJa": "掲示板のスレッド",
+    "exampleJa": "そのスレもう落ちたよ",
+    "exampleRomaji": "sono sure mou ochita yo",
+    "exampleEn": "That thread's already dead.",
+    "socialConsequenceEn": "2ch/5ch backbone vocab. 'Sure ga ochiru' = thread dies.",
+    "tag": {
+      "era": "ネット",
+      "whoUses": "ネット民",
+      "gachi": "tsuujiru",
+      "sourceNote": "sure = thread (2ch)"
+    }
+  },
+  {
+    "id": "net-028",
+    "categoryId": "net",
+    "term": "名無し",
+    "reading": "ななし",
+    "romaji": "nanashi",
+    "meaningEn": "An anonymous poster (no-name)",
+    "meaningJa": "匿名の書き込み者",
+    "exampleJa": "名無しの意見だけど一理ある",
+    "exampleRomaji": "nanashi no iken da kedo ichiri aru",
+    "exampleEn": "Anon's take, but it has a point.",
+    "socialConsequenceEn": "The anonymous default name on Japanese boards. Pure 2ch.",
+    "tag": {
+      "era": "ネット",
+      "whoUses": "ネット民",
+      "gachi": "tsuujiru",
+      "sourceNote": "nanashi = anonymous (no-name)"
+    }
+  },
+  {
+    "id": "net-029",
+    "categoryId": "net",
+    "term": "釣り",
+    "reading": "つり",
+    "romaji": "tsuri",
+    "meaningEn": "Bait; a troll post (clickbait)",
+    "meaningJa": "わざと釣る挑発的な書き込み",
+    "exampleJa": "完全に釣りタイトルだった",
+    "exampleRomaji": "kanzen ni tsuri taitoru datta",
+    "exampleEn": "It was total clickbait.",
+    "socialConsequenceEn": "Lit. 'fishing'. To get 'tsurareta' = to take the bait.",
+    "tag": {
+      "era": "ネット",
+      "whoUses": "ネット民",
+      "gachi": "tsuujiru",
+      "sourceNote": "tsuri = bait/troll (fishing)"
+    }
+  },
+  {
+    "id": "net-030",
+    "categoryId": "net",
+    "term": "マジレス",
+    "reading": "まじれす",
+    "romaji": "majiresu",
+    "meaningEn": "A serious reply (to a joke)",
+    "meaningJa": "冗談に本気で返答すること",
+    "exampleJa": "ネタにマジレスすんな",
+    "exampleRomaji": "neta ni majiresu sunna",
+    "exampleEn": "Don't seriously reply to a joke.",
+    "socialConsequenceEn": "Killing the joke by answering it straight. Mildly cringe.",
+    "tag": {
+      "era": "ネット",
+      "whoUses": "ネット民",
+      "gachi": "tsuujiru",
+      "sourceNote": "maji + resu (serious reply)"
+    }
+  },
+  {
+    "id": "net-031",
+    "categoryId": "net",
+    "term": "スルー",
+    "reading": "するー",
+    "romaji": "suruu",
+    "meaningEn": "To ignore / let it slide",
+    "meaningJa": "無視する、受け流す",
+    "exampleJa": "煽りはスルーが一番",
+    "exampleRomaji": "aori wa suruu ga ichiban",
+    "exampleEn": "Best to just ignore the trolls.",
+    "socialConsequenceEn": "From 'through'. The wise net move: don't feed it.",
+    "tag": {
+      "era": "ネット",
+      "whoUses": "ネット民",
+      "gachi": "tsuujiru",
+      "sourceNote": "suruu = to ignore (from 'through')"
+    }
+  },
+  {
+    "id": "net-032",
+    "categoryId": "net",
+    "term": "既読スルー",
+    "reading": "きどくするー",
+    "romaji": "kidoku-suruu",
+    "meaningEn": "To read a message and not reply",
+    "meaningJa": "既読をつけて返信しないこと",
+    "exampleJa": "三日も既読スルーされた",
+    "exampleRomaji": "mikka mo kidoku-suruu sareta",
+    "exampleEn": "Left on read for three whole days.",
+    "socialConsequenceEn": "The LINE-era heartbreak. Read receipts made it a thing.",
+    "tag": {
+      "era": "ネット",
+      "whoUses": "ネット民",
+      "gachi": "tsuujiru",
+      "sourceNote": "kidoku (read) + suruu"
+    }
+  },
+  {
+    "id": "net-033",
+    "categoryId": "net",
+    "term": "情弱",
+    "reading": "じょうじゃく",
+    "romaji": "joujaku",
+    "meaningEn": "Someone bad with info (info-illiterate)",
+    "meaningJa": "情報弱者の略",
+    "exampleJa": "それ情弱が引っかかる詐欺だよ",
+    "exampleRomaji": "sore joujaku ga hikkakaru sagi da yo",
+    "exampleEn": "That scam only catches the clueless.",
+    "socialConsequenceEn": "From 'jouhou jakusha'. A slightly elitist net jab.",
+    "tag": {
+      "era": "ネット",
+      "whoUses": "ネット民",
+      "gachi": "tsuujiru",
+      "sourceNote": "abbrev jouhou jakusha"
+    }
+  },
+  {
+    "id": "net-034",
+    "categoryId": "net",
+    "term": "テンプレ",
+    "reading": "てんぷれ",
+    "romaji": "tenpure",
+    "meaningEn": "A template / boilerplate response",
+    "meaningJa": "定型文、ひな形",
+    "exampleJa": "質問はテンプレ読んでから",
+    "exampleRomaji": "shitsumon wa tenpure yonde kara",
+    "exampleEn": "Read the template before asking.",
+    "socialConsequenceEn": "Forum FAQ culture. 'Tenpure-doori' = exactly as expected.",
+    "tag": {
+      "era": "ネット",
+      "whoUses": "ネット民",
+      "gachi": "tsuujiru",
+      "sourceNote": "tenpure = clipped template"
+    }
+  },
+  {
+    "id": "net-035",
+    "categoryId": "net",
+    "term": "自演",
+    "reading": "じえん",
+    "romaji": "jien",
+    "meaningEn": "Sockpuppeting (replying to yourself)",
+    "meaningJa": "自作自演。複数人を装うこと",
+    "exampleJa": "それ自演バレてるよ",
+    "exampleRomaji": "sore jien barete ru yo",
+    "exampleEn": "Everyone can tell that's you replying to yourself.",
+    "socialConsequenceEn": "From 'jisaku-jien'. A classic forum accusation.",
+    "tag": {
+      "era": "ネット",
+      "whoUses": "ネット民",
+      "gachi": "tsuujiru",
+      "sourceNote": "jien = self-performance/sockpuppet"
+    }
+  },
+  {
+    "id": "net-036",
+    "categoryId": "net",
+    "term": "なりすまし",
+    "reading": "なりすまし",
+    "romaji": "narisumashi",
+    "meaningEn": "Impersonation (pretending to be someone)",
+    "meaningJa": "他人になりすます行為",
+    "exampleJa": "なりすましアカウントに注意",
+    "exampleRomaji": "narisumashi akaunto ni chuui",
+    "exampleEn": "Watch out for impersonator accounts.",
+    "socialConsequenceEn": "Standard security/net term. Fully serious usage.",
+    "tag": {
+      "era": "ネット",
+      "whoUses": "ネット民",
+      "gachi": "tsuujiru",
+      "sourceNote": "narisumashi = impersonation"
+    }
+  },
+  {
+    "id": "net-037",
+    "categoryId": "net",
+    "term": "リムる",
+    "reading": "りむる",
+    "romaji": "rimuru",
+    "meaningEn": "To unfollow (remove)",
+    "meaningJa": "フォローを外すこと",
+    "exampleJa": "うざいからリムった",
+    "exampleRomaji": "uzai kara rimutta",
+    "exampleEn": "They were annoying so I unfollowed.",
+    "socialConsequenceEn": "From 'remove' + -ru. The quiet social-media breakup.",
+    "tag": {
+      "era": "ネット",
+      "whoUses": "ネット民",
+      "gachi": "tsuujiru",
+      "sourceNote": "rimuru = to unfollow (remove+ru)"
+    }
+  },
+  {
+    "id": "net-038",
+    "categoryId": "net",
+    "term": "フォロバ",
+    "reading": "ふぉろば",
+    "romaji": "foroba",
+    "meaningEn": "A follow-back",
+    "meaningJa": "フォローを返すこと",
+    "exampleJa": "フォロバありがとう",
+    "exampleRomaji": "foroba arigatou",
+    "exampleEn": "Thanks for the follow-back.",
+    "socialConsequenceEn": "Follow-economy basics. 'Foroba 100%' = follows everyone back.",
+    "tag": {
+      "era": "ネット",
+      "whoUses": "ネット民",
+      "gachi": "tsuujiru",
+      "sourceNote": "foroba = follow-back"
+    }
+  },
+  {
+    "id": "net-039",
+    "categoryId": "net",
+    "term": "相互",
+    "reading": "そうご",
+    "romaji": "sougo",
+    "meaningEn": "A mutual (follows each other)",
+    "meaningJa": "相互フォローの関係",
+    "exampleJa": "相互さんと絡みたい",
+    "exampleRomaji": "sougo-san to karamitai",
+    "exampleEn": "I want to chat with my mutuals.",
+    "socialConsequenceEn": "'Sougo-san' = your mutuals. Core follow-culture word.",
+    "tag": {
+      "era": "ネット",
+      "whoUses": "ネット民",
+      "gachi": "tsuujiru",
+      "sourceNote": "sougo = mutual follow"
+    }
+  },
+  {
+    "id": "net-040",
+    "categoryId": "net",
+    "term": "過疎",
+    "reading": "かそ",
+    "romaji": "kaso",
+    "meaningEn": "Dead / deserted (a quiet thread or server)",
+    "meaningJa": "人がいなくて閑散としている状態",
+    "exampleJa": "このサーバー過疎ってる",
+    "exampleRomaji": "kono saabaa kasotteru",
+    "exampleEn": "This server is totally dead.",
+    "socialConsequenceEn": "Borrowed from rural 'depopulation'. Used for dead online spaces.",
+    "tag": {
+      "era": "ネット",
+      "whoUses": "ネット民",
+      "gachi": "tsuujiru",
+      "sourceNote": "kaso = depopulated/dead (online)"
+    }
+  },
+  {
+    "id": "net-041",
+    "categoryId": "net",
+    "term": "まとめ",
+    "reading": "まとめ",
+    "romaji": "matome",
+    "meaningEn": "A curated summary site/post",
+    "meaningJa": "情報をまとめたサイトや投稿",
+    "exampleJa": "まとめサイトで知った",
+    "exampleRomaji": "matome saito de shitta",
+    "exampleEn": "I found out via a summary site.",
+    "socialConsequenceEn": "'Matome-site' culture — sometimes informative, sometimes spammy.",
+    "tag": {
+      "era": "ネット",
+      "whoUses": "ネット民",
+      "gachi": "tsuujiru",
+      "sourceNote": "matome = curated summary"
+    }
+  },
+  {
+    "id": "net-042",
+    "categoryId": "net",
+    "term": "コテハン",
+    "reading": "こてはん",
+    "romaji": "kotehan",
+    "meaningEn": "A fixed handle (named regular)",
+    "meaningJa": "固定ハンドルネーム",
+    "exampleJa": "あのスレの有名コテハン",
+    "exampleRomaji": "ano sure no yuumei kotehan",
+    "exampleEn": "A famous named regular on that thread.",
+    "socialConsequenceEn": "On anonymous boards, using a name stands out. Very 2ch.",
+    "tag": {
+      "era": "ネット",
+      "whoUses": "ネット民",
+      "gachi": "tsuujiru",
+      "sourceNote": "kotei handle-name → kotehan"
+    }
+  },
+  {
+    "id": "net-043",
+    "categoryId": "net",
+    "term": "ワンチャン",
+    "reading": "わんちゃん",
+    "romaji": "wanchan",
+    "meaningEn": "There's a chance; maybe (one shot)",
+    "meaningJa": "可能性がある、ひょっとしたら",
+    "exampleJa": "ワンチャン間に合うかも",
+    "exampleRomaji": "wanchan maniau kamo",
+    "exampleEn": "There's a chance we make it.",
+    "socialConsequenceEn": "From 'one chance'. Totally current, crosses into spoken slang.",
+    "tag": {
+      "era": "ネット",
+      "whoUses": "ネット民",
+      "gachi": "tsuujiru",
+      "sourceNote": "wanchan = one chance"
+    }
+  },
+  {
+    "id": "net-044",
+    "categoryId": "net",
+    "term": "把握",
+    "reading": "はあく",
+    "romaji": "haaku",
+    "meaningEn": "Got it; understood",
+    "meaningJa": "理解した、了解",
+    "exampleJa": "了解、把握した",
+    "exampleRomaji": "ryoukai, haaku shita",
+    "exampleEn": "Roger, got it.",
+    "socialConsequenceEn": "Net-flavored 'understood'. Crisp, slightly cool.",
+    "tag": {
+      "era": "ネット",
+      "whoUses": "ネット民",
+      "gachi": "tsuujiru",
+      "sourceNote": "haaku shita = understood (net)"
+    }
+  },
+  {
+    "id": "net-045",
+    "categoryId": "net",
+    "term": "うp",
+    "reading": "うぷ",
+    "romaji": "uppu",
+    "meaningEn": "To upload (post a file)",
+    "meaningJa": "アップロードの2ch表記",
+    "exampleJa": "画像うpよろ",
+    "exampleRomaji": "gazou uppu yoro",
+    "exampleEn": "Upload the pic, please.",
+    "socialConsequenceEn": "Classic 2ch typo-spelling of 'up'. Charmingly retro.",
+    "tag": {
+      "era": "ネット",
+      "whoUses": "ネット民",
+      "gachi": "itai",
+      "sourceNote": "uppu = 2ch spelling of upload"
+    }
+  },
+  {
+    "id": "net-046",
+    "categoryId": "net",
+    "term": "ネタ",
+    "reading": "ねた",
+    "romaji": "neta",
+    "meaningEn": "A joke / material / a source",
+    "meaningJa": "話の種、冗談、情報源",
+    "exampleJa": "それただのネタだから",
+    "exampleRomaji": "sore tada no neta dakara",
+    "exampleEn": "That's just a joke, relax.",
+    "socialConsequenceEn": "Super versatile: joke, content, or scoop. 'Neta-bare' = spoiler.",
+    "tag": {
+      "era": "ネット",
+      "whoUses": "ネット民",
+      "gachi": "tsuujiru",
+      "sourceNote": "neta = material/joke (tane reversed)"
+    }
+  },
+  {
+    "id": "net-047",
+    "categoryId": "net",
+    "term": "垢消し",
+    "reading": "あかけし",
+    "romaji": "aka-keshi",
+    "meaningEn": "Deleting your account",
+    "meaningJa": "アカウントを削除すること",
+    "exampleJa": "炎上して垢消しした",
+    "exampleRomaji": "enjou shite aka-keshi shita",
+    "exampleEn": "Got flamed and deleted my account.",
+    "socialConsequenceEn": "The nuclear exit. Often follows an 'enjou'.",
+    "tag": {
+      "era": "ネット",
+      "whoUses": "ネット民",
+      "gachi": "tsuujiru",
+      "sourceNote": "aka (account) + keshi (delete)"
+    }
+  },
+  {
+    "id": "net-048",
+    "categoryId": "net",
+    "term": "ワロス",
+    "reading": "わろす",
+    "romaji": "warosu",
+    "meaningEn": "lol (older variant of warota)",
+    "meaningJa": "笑った、の古いネット表現",
+    "exampleJa": "誤字ひどくてワロス",
+    "exampleRomaji": "goji hidokute warosu",
+    "exampleEn": "The typo's so bad, lol.",
+    "socialConsequenceEn": "Mid-2000s board lol. Reads vintage now.",
+    "tag": {
+      "era": "ネット",
+      "whoUses": "ネット民",
+      "gachi": "itai",
+      "sourceNote": "warosu = older warota variant"
+    }
   }
 ]

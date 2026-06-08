@@ -11,7 +11,12 @@
     "exampleRomaji": "maido, ookini!",
     "exampleEn": "Thanks, as always!",
     "socialConsequenceEn": "Say it in Kyoto and shopkeepers will love you. Say it in Tokyo and they'll know you've been to Osaka.",
-    "tag": { "era": "現役", "whoUses": "関西の人 / 商売人", "gachi": "tsuujiru", "sourceNote": "Kansai standard; common in Kyoto/Osaka shops" }
+    "tag": {
+      "era": "現役",
+      "whoUses": "関西の人 / 商売人",
+      "gachi": "tsuujiru",
+      "sourceNote": "Kansai standard; common in Kyoto/Osaka shops"
+    }
   },
   {
     "id": "kansai-002",
@@ -25,7 +30,12 @@
     "exampleRomaji": "saifu wasureta? nan-de-ya-nen!",
     "exampleEn": "You forgot your wallet? Are you kidding me!",
     "socialConsequenceEn": "The ultimate comedic comeback. Nail the timing and you're basically a manzai pro.",
-    "tag": { "era": "現役", "whoUses": "関西の人", "gachi": "tsuujiru", "sourceNote": "classic tsukkomi (comedic retort)" }
+    "tag": {
+      "era": "現役",
+      "whoUses": "関西の人",
+      "gachi": "tsuujiru",
+      "sourceNote": "classic tsukkomi (comedic retort)"
+    }
   },
   {
     "id": "kansai-003",
@@ -39,7 +49,12 @@
     "exampleRomaji": "sore, honma ni oishii de.",
     "exampleEn": "That's really delicious, I'm telling you.",
     "socialConsequenceEn": "Instantly makes you sound Kansai. Use freely.",
-    "tag": { "era": "現役", "whoUses": "関西の人", "gachi": "tsuujiru", "sourceNote": "Kansai form of 本当" }
+    "tag": {
+      "era": "現役",
+      "whoUses": "関西の人",
+      "gachi": "tsuujiru",
+      "sourceNote": "Kansai form of 本当"
+    }
   },
   {
     "id": "kansai-004",
@@ -53,7 +68,12 @@
     "exampleRomaji": "koko de netara akan de.",
     "exampleEn": "You can't go falling asleep here.",
     "socialConsequenceEn": "Understood nationwide. You'll sound casual and a little Kansai.",
-    "tag": { "era": "現役", "whoUses": "関西の人", "gachi": "tsuujiru", "sourceNote": "Kansai negative; widely understood nationwide" }
+    "tag": {
+      "era": "現役",
+      "whoUses": "関西の人",
+      "gachi": "tsuujiru",
+      "sourceNote": "Kansai negative; widely understood nationwide"
+    }
   },
   {
     "id": "kansai-005",
@@ -67,7 +87,12 @@
     "exampleRomaji": "kyou meccha atsui yan.",
     "exampleEn": "It's super hot today, huh.",
     "socialConsequenceEn": "Everyone says this now. Zero risk, maximum casual.",
-    "tag": { "era": "現役", "whoUses": "関西発・全国区", "gachi": "tsuujiru", "sourceNote": "Kansai origin, now nationwide casual" }
+    "tag": {
+      "era": "現役",
+      "whoUses": "関西発・全国区",
+      "gachi": "tsuujiru",
+      "sourceNote": "Kansai origin, now nationwide casual"
+    }
   },
   {
     "id": "kansai-006",
@@ -81,7 +106,12 @@
     "exampleRomaji": "sore chau-chau, kocchi yatte.",
     "exampleEn": "No no, not that — this one.",
     "socialConsequenceEn": "Very Kansai. String two together (ちゃうちゃう) for bonus points.",
-    "tag": { "era": "現役", "whoUses": "関西の人", "gachi": "tsuujiru", "sourceNote": "Kansai form of 違う" }
+    "tag": {
+      "era": "現役",
+      "whoUses": "関西の人",
+      "gachi": "tsuujiru",
+      "sourceNote": "Kansai form of 違う"
+    }
   },
   {
     "id": "kansai-007",
@@ -95,7 +125,12 @@
     "exampleRomaji": "sore ee-yan!",
     "exampleEn": "That's great!",
     "socialConsequenceEn": "Warm Kansai approval. Instantly friendly.",
-    "tag": { "era": "現役", "whoUses": "関西の人", "gachi": "tsuujiru", "sourceNote": "Kansai 'いいじゃない'" }
+    "tag": {
+      "era": "現役",
+      "whoUses": "関西の人",
+      "gachi": "tsuujiru",
+      "sourceNote": "Kansai 'いいじゃない'"
+    }
   },
   {
     "id": "kansai-008",
@@ -109,7 +144,12 @@
     "exampleRomaji": "kyou wa honma shindoi.",
     "exampleEn": "Today is seriously exhausting.",
     "socialConsequenceEn": "Kansai-born, nationwide now. Totally safe.",
-    "tag": { "era": "現役", "whoUses": "関西発・全国区", "gachi": "tsuujiru", "sourceNote": "Kansai origin, now nationwide" }
+    "tag": {
+      "era": "現役",
+      "whoUses": "関西発・全国区",
+      "gachi": "tsuujiru",
+      "sourceNote": "Kansai origin, now nationwide"
+    }
   },
   {
     "id": "kansai-009",
@@ -123,7 +163,12 @@
     "exampleRomaji": "hona, mata ashita.",
     "exampleEn": "Well, see you tomorrow.",
     "socialConsequenceEn": "Casual Kansai sign-off. Sounds local and easy.",
-    "tag": { "era": "現役", "whoUses": "関西の人", "gachi": "tsuujiru", "sourceNote": "Kansai 'それでは'" }
+    "tag": {
+      "era": "現役",
+      "whoUses": "関西の人",
+      "gachi": "tsuujiru",
+      "sourceNote": "Kansai 'それでは'"
+    }
   },
   {
     "id": "kansai-010",
@@ -137,7 +182,12 @@
     "exampleRomaji": "sono hanashi omoroi naa.",
     "exampleEn": "That story's hilarious.",
     "socialConsequenceEn": "The Kansai 面白い. Use it and you sound from Osaka.",
-    "tag": { "era": "現役", "whoUses": "関西の人", "gachi": "tsuujiru", "sourceNote": "Kansai form of 面白い" }
+    "tag": {
+      "era": "現役",
+      "whoUses": "関西の人",
+      "gachi": "tsuujiru",
+      "sourceNote": "Kansai form of 面白い"
+    }
   },
   {
     "id": "kansai-011",
@@ -151,7 +201,12 @@
     "exampleRomaji": "okurete mo kamahen de.",
     "exampleEn": "It's fine if you're late.",
     "socialConsequenceEn": "Easygoing Kansai reassurance. Very friendly.",
-    "tag": { "era": "現役", "whoUses": "関西の人", "gachi": "tsuujiru", "sourceNote": "Kansai form of 構わない" }
+    "tag": {
+      "era": "現役",
+      "whoUses": "関西の人",
+      "gachi": "tsuujiru",
+      "sourceNote": "Kansai form of 構わない"
+    }
   },
   {
     "id": "kansai-012",
@@ -165,6 +220,714 @@
     "exampleRomaji": "\"atsui na\" \"seya-na\"",
     "exampleEn": "\"It's hot.\" \"Yeah, it is.\"",
     "socialConsequenceEn": "The Kansai version of それな. Pure local agreement.",
-    "tag": { "era": "現役", "whoUses": "関西の人", "gachi": "tsuujiru", "sourceNote": "Kansai 'そうやな/それな'" }
+    "tag": {
+      "era": "現役",
+      "whoUses": "関西の人",
+      "gachi": "tsuujiru",
+      "sourceNote": "Kansai 'そうやな/それな'"
+    }
+  },
+  {
+    "id": "kansai-013",
+    "categoryId": "kansai",
+    "term": "あほ",
+    "reading": "あほ",
+    "romaji": "aho",
+    "meaningEn": "Idiot (often affectionate in Kansai)",
+    "meaningJa": "ばか。関西では親しみを込めて使う",
+    "exampleJa": "なにしてんの、あほやなあ",
+    "exampleRomaji": "nani shiten no, aho yanaa",
+    "exampleEn": "What are you doing, you goof.",
+    "socialConsequenceEn": "In Kansai it's playful. Say 'baka' instead and you'll sound oddly cold.",
+    "tag": {
+      "era": "関西",
+      "whoUses": "関西の人",
+      "gachi": "tsuujiru",
+      "sourceNote": "core Kansai word; aho≈affectionate vs Kanto baka"
+    }
+  },
+  {
+    "id": "kansai-014",
+    "categoryId": "kansai",
+    "term": "どないやねん",
+    "reading": "どないやねん",
+    "romaji": "donai yanen",
+    "meaningEn": "What the heck is going on?!",
+    "meaningJa": "どうなってるの、という突っ込み",
+    "exampleJa": "予約取れてへんてどないやねん",
+    "exampleRomaji": "yoyaku torete hen te donai yanen",
+    "exampleEn": "No reservation?! What the heck?!",
+    "socialConsequenceEn": "A classic tsukkomi (comic retort). Instantly reads as Kansai.",
+    "tag": {
+      "era": "関西",
+      "whoUses": "関西の人",
+      "gachi": "tsuujiru",
+      "sourceNote": "donai(how)+yanen, tsukkomi staple"
+    }
+  },
+  {
+    "id": "kansai-015",
+    "categoryId": "kansai",
+    "term": "せやで",
+    "reading": "せやで",
+    "romaji": "seya-de",
+    "meaningEn": "Yeah, that's right (assertive)",
+    "meaningJa": "そうだよ、と肯定する言い方",
+    "exampleJa": "それで合ってる？せやで！",
+    "exampleRomaji": "sore de atteru? seya-de!",
+    "exampleEn": "Is that right? Yep, that's right!",
+    "socialConsequenceEn": "Friendly and confident. The Kansai 'yep'.",
+    "tag": {
+      "era": "関西",
+      "whoUses": "関西の人",
+      "gachi": "tsuujiru",
+      "sourceNote": "seya + de assertive particle"
+    }
+  },
+  {
+    "id": "kansai-016",
+    "categoryId": "kansai",
+    "term": "ほんで",
+    "reading": "ほんで",
+    "romaji": "honde",
+    "meaningEn": "And then; so (story connector)",
+    "meaningJa": "それで、の関西的な言い方",
+    "exampleJa": "ほんで、どうなったん？",
+    "exampleRomaji": "honde, dou natta n?",
+    "exampleEn": "So then, what happened?",
+    "socialConsequenceEn": "The Kansai narrative glue. You'll hear it nonstop in Osaka chats.",
+    "tag": {
+      "era": "関西",
+      "whoUses": "関西の人",
+      "gachi": "tsuujiru",
+      "sourceNote": "sorede → honde"
+    }
+  },
+  {
+    "id": "kansai-017",
+    "categoryId": "kansai",
+    "term": "まいど",
+    "reading": "まいど",
+    "romaji": "maido",
+    "meaningEn": "Hey / thanks (shopkeeper's greeting)",
+    "meaningJa": "毎度ありがとう、の挨拶",
+    "exampleJa": "まいど！今日も安いで",
+    "exampleRomaji": "maido! kyou mo yasui de",
+    "exampleEn": "Hey there! Cheap again today.",
+    "socialConsequenceEn": "Classic Osaka merchant warmth. Friendly all-purpose greeting.",
+    "tag": {
+      "era": "関西",
+      "whoUses": "関西の人",
+      "gachi": "tsuujiru",
+      "sourceNote": "maido = 'every time', merchant greeting"
+    }
+  },
+  {
+    "id": "kansai-018",
+    "categoryId": "kansai",
+    "term": "なんぼ",
+    "reading": "なんぼ",
+    "romaji": "nanbo",
+    "meaningEn": "How much? (price)",
+    "meaningJa": "いくら、の関西弁",
+    "exampleJa": "これなんぼ？",
+    "exampleRomaji": "kore nanbo?",
+    "exampleEn": "How much is this?",
+    "socialConsequenceEn": "Pure Osaka market talk. Haggling starts here.",
+    "tag": {
+      "era": "関西",
+      "whoUses": "関西の人",
+      "gachi": "tsuujiru",
+      "sourceNote": "nanbo = ikura (how much)"
+    }
+  },
+  {
+    "id": "kansai-019",
+    "categoryId": "kansai",
+    "term": "ぎょうさん",
+    "reading": "ぎょうさん",
+    "romaji": "gyousan",
+    "meaningEn": "A lot; plenty",
+    "meaningJa": "たくさん",
+    "exampleJa": "おかずぎょうさん作ったで",
+    "exampleRomaji": "okazu gyousan tsukutta de",
+    "exampleEn": "I made a whole lot of food.",
+    "socialConsequenceEn": "Warm, homey Kansai. The grandma word for 'tons'.",
+    "tag": {
+      "era": "関西",
+      "whoUses": "関西の人",
+      "gachi": "tsuujiru",
+      "sourceNote": "gyousan = takusan"
+    }
+  },
+  {
+    "id": "kansai-020",
+    "categoryId": "kansai",
+    "term": "ようけ",
+    "reading": "ようけ",
+    "romaji": "youke",
+    "meaningEn": "Lots; a great deal",
+    "meaningJa": "たくさん、いっぱい",
+    "exampleJa": "人ようけおったわ",
+    "exampleRomaji": "hito youke otta wa",
+    "exampleEn": "There were loads of people.",
+    "socialConsequenceEn": "Old-school Kansai for 'tons'. Reads warm and local.",
+    "tag": {
+      "era": "関西",
+      "whoUses": "関西の人",
+      "gachi": "tsuujiru",
+      "sourceNote": "youke = a lot, regional"
+    }
+  },
+  {
+    "id": "kansai-021",
+    "categoryId": "kansai",
+    "term": "しゃあない",
+    "reading": "しゃあない",
+    "romaji": "shaanai",
+    "meaningEn": "It can't be helped; oh well",
+    "meaningJa": "仕方がない",
+    "exampleJa": "雨やししゃあないな",
+    "exampleRomaji": "ame yashi shaanai na",
+    "exampleEn": "It's raining, oh well, can't be helped.",
+    "socialConsequenceEn": "The Kansai shrug. Calm acceptance of fate.",
+    "tag": {
+      "era": "関西",
+      "whoUses": "関西の人",
+      "gachi": "tsuujiru",
+      "sourceNote": "shikata ga nai → shaanai"
+    }
+  },
+  {
+    "id": "kansai-022",
+    "categoryId": "kansai",
+    "term": "かなん",
+    "reading": "かなん",
+    "romaji": "kanan",
+    "meaningEn": "Can't stand it; what a pain",
+    "meaningJa": "嫌だ、困る、かなわない",
+    "exampleJa": "この暑さほんまかなんわ",
+    "exampleRomaji": "kono atsusa honma kanan wa",
+    "exampleEn": "This heat is really unbearable.",
+    "socialConsequenceEn": "A gentle Kansai complaint. Very everyday.",
+    "tag": {
+      "era": "関西",
+      "whoUses": "関西の人",
+      "gachi": "tsuujiru",
+      "sourceNote": "kanawanai → kanan"
+    }
+  },
+  {
+    "id": "kansai-023",
+    "categoryId": "kansai",
+    "term": "いちびり",
+    "reading": "いちびり",
+    "romaji": "ichibiri",
+    "meaningEn": "A show-off; the class clown",
+    "meaningJa": "調子に乗ってふざける人",
+    "exampleJa": "あいつほんまいちびりやな",
+    "exampleRomaji": "aitsu honma ichibiri yana",
+    "exampleEn": "That guy's such a show-off.",
+    "socialConsequenceEn": "Distinctly Kansai. Half insult, half affection.",
+    "tag": {
+      "era": "関西",
+      "whoUses": "関西の人",
+      "gachi": "tsuujiru",
+      "sourceNote": "ichibiru noun form"
+    }
+  },
+  {
+    "id": "kansai-024",
+    "categoryId": "kansai",
+    "term": "どんくさい",
+    "reading": "どんくさい",
+    "romaji": "donkusai",
+    "meaningEn": "Clumsy; slow on the uptake",
+    "meaningJa": "動作や反応が鈍い",
+    "exampleJa": "ほんまどんくさいなあ",
+    "exampleRomaji": "honma donkusai naa",
+    "exampleEn": "You're really clumsy, huh.",
+    "socialConsequenceEn": "A teasing Kansai jab. Said with a grin, usually.",
+    "tag": {
+      "era": "関西",
+      "whoUses": "関西の人",
+      "gachi": "tsuujiru",
+      "sourceNote": "donkusai = clumsy/slow"
+    }
+  },
+  {
+    "id": "kansai-025",
+    "categoryId": "kansai",
+    "term": "けったい",
+    "reading": "けったい",
+    "romaji": "kettai",
+    "meaningEn": "Strange; odd; peculiar",
+    "meaningJa": "変な、奇妙な",
+    "exampleJa": "けったいな味やな",
+    "exampleRomaji": "kettai na aji yana",
+    "exampleEn": "That's a weird taste.",
+    "socialConsequenceEn": "Old-school Kansai for 'weird'. Warmly quirky.",
+    "tag": {
+      "era": "関西",
+      "whoUses": "関西の人",
+      "gachi": "tsuujiru",
+      "sourceNote": "kettai(na) = strange"
+    }
+  },
+  {
+    "id": "kansai-026",
+    "categoryId": "kansai",
+    "term": "えげつない",
+    "reading": "えげつない",
+    "romaji": "egetsunai",
+    "meaningEn": "Brutal; over-the-top; ruthless",
+    "meaningJa": "度が過ぎている、あくどい",
+    "exampleJa": "この量えげつないな",
+    "exampleRomaji": "kono ryou egetsunai na",
+    "exampleEn": "This amount is insane.",
+    "socialConsequenceEn": "Now spreading nationwide, but Kansai at heart.",
+    "tag": {
+      "era": "関西",
+      "whoUses": "関西の人",
+      "gachi": "tsuujiru",
+      "sourceNote": "egetsunai = brutal/extreme"
+    }
+  },
+  {
+    "id": "kansai-027",
+    "categoryId": "kansai",
+    "term": "いけず",
+    "reading": "いけず",
+    "romaji": "ikezu",
+    "meaningEn": "Mean; spiteful (esp. Kyoto)",
+    "meaningJa": "意地悪、つれない",
+    "exampleJa": "そんないけず言わんといて",
+    "exampleRomaji": "sonna ikezu iwan toite",
+    "exampleEn": "Don't be so mean to me.",
+    "socialConsequenceEn": "Kyoto's velvet-gloved jab. Politely pointed.",
+    "tag": {
+      "era": "関西",
+      "whoUses": "関西の人",
+      "gachi": "tsuujiru",
+      "sourceNote": "ikezu = spiteful, Kyoto-flavored"
+    }
+  },
+  {
+    "id": "kansai-028",
+    "categoryId": "kansai",
+    "term": "なおす",
+    "reading": "なおす",
+    "romaji": "naosu",
+    "meaningEn": "To put (something) away (Kansai meaning)",
+    "meaningJa": "片付ける、しまう（関西特有）",
+    "exampleJa": "皿なおしといて",
+    "exampleRomaji": "sara naoshi toite",
+    "exampleEn": "Put the dishes away, please.",
+    "socialConsequenceEn": "Trap word: in Kansai it's 'put away', not 'fix'. Confuses Tokyoites.",
+    "tag": {
+      "era": "関西",
+      "whoUses": "関西の人",
+      "gachi": "tsuujiru",
+      "sourceNote": "naosu = to put away (Kansai sense)"
+    }
+  },
+  {
+    "id": "kansai-029",
+    "categoryId": "kansai",
+    "term": "ほかす",
+    "reading": "ほかす",
+    "romaji": "hokasu",
+    "meaningEn": "To throw away; toss out",
+    "meaningJa": "捨てる",
+    "exampleJa": "これもうほかしてええ？",
+    "exampleRomaji": "kore mou hokashite ee?",
+    "exampleEn": "Can I throw this out now?",
+    "socialConsequenceEn": "Pure Kansai for 'toss'. Tokyoites won't know it.",
+    "tag": {
+      "era": "関西",
+      "whoUses": "関西の人",
+      "gachi": "tsuujiru",
+      "sourceNote": "hokasu = to discard"
+    }
+  },
+  {
+    "id": "kansai-030",
+    "categoryId": "kansai",
+    "term": "さら",
+    "reading": "さら",
+    "romaji": "sara",
+    "meaningEn": "Brand new",
+    "meaningJa": "新品の、まっさらの",
+    "exampleJa": "このノートまださらやで",
+    "exampleRomaji": "kono nooto mada sara ya de",
+    "exampleEn": "This notebook is still brand new.",
+    "socialConsequenceEn": "Handy Kansai word. 'Sara-pin' = brand spanking new.",
+    "tag": {
+      "era": "関西",
+      "whoUses": "関西の人",
+      "gachi": "tsuujiru",
+      "sourceNote": "sara = brand new (massara)"
+    }
+  },
+  {
+    "id": "kansai-031",
+    "categoryId": "kansai",
+    "term": "べっぴん",
+    "reading": "べっぴん",
+    "romaji": "beppin",
+    "meaningEn": "A beauty; a stunning woman",
+    "meaningJa": "美人",
+    "exampleJa": "おたくの娘さんべっぴんやね",
+    "exampleRomaji": "otaku no musume-san beppin yane",
+    "exampleEn": "Your daughter's a real beauty.",
+    "socialConsequenceEn": "Old-fashioned, warm compliment. Reads endearingly retro.",
+    "tag": {
+      "era": "関西",
+      "whoUses": "関西の人",
+      "gachi": "tsuujiru",
+      "sourceNote": "beppin = a beauty"
+    }
+  },
+  {
+    "id": "kansai-032",
+    "categoryId": "kansai",
+    "term": "ごっつ",
+    "reading": "ごっつ",
+    "romaji": "gottsu",
+    "meaningEn": "Super; really (intensifier)",
+    "meaningJa": "すごく、めっちゃ",
+    "exampleJa": "これごっつうまいやん",
+    "exampleRomaji": "kore gottsu umai yan",
+    "exampleEn": "This is super tasty!",
+    "socialConsequenceEn": "A meatier 'meccha'. Strong Kansai flavor.",
+    "tag": {
+      "era": "関西",
+      "whoUses": "関西の人",
+      "gachi": "tsuujiru",
+      "sourceNote": "gottsu = very (gotsui)"
+    }
+  },
+  {
+    "id": "kansai-033",
+    "categoryId": "kansai",
+    "term": "しょうもない",
+    "reading": "しょうもない",
+    "romaji": "shoumonai",
+    "meaningEn": "Silly; pointless; trivial",
+    "meaningJa": "くだらない、つまらない",
+    "exampleJa": "しょうもない冗談やめて",
+    "exampleRomaji": "shoumonai joudan yamete",
+    "exampleEn": "Quit with the silly jokes.",
+    "socialConsequenceEn": "Affectionate dismissal. The Kansai 'lame, but cute'.",
+    "tag": {
+      "era": "関西",
+      "whoUses": "関西の人",
+      "gachi": "tsuujiru",
+      "sourceNote": "shou mo nai = worthless/silly"
+    }
+  },
+  {
+    "id": "kansai-034",
+    "categoryId": "kansai",
+    "term": "ほんなら",
+    "reading": "ほんなら",
+    "romaji": "honnara",
+    "meaningEn": "Well then; in that case",
+    "meaningJa": "それなら、では",
+    "exampleJa": "ほんなら先行くわ",
+    "exampleRomaji": "honnara saki iku wa",
+    "exampleEn": "Well then, I'll head off first.",
+    "socialConsequenceEn": "Soft Kansai sign-off. Warmer than 'jaa'.",
+    "tag": {
+      "era": "関西",
+      "whoUses": "関西の人",
+      "gachi": "tsuujiru",
+      "sourceNote": "sorenara → honnara"
+    }
+  },
+  {
+    "id": "kansai-035",
+    "categoryId": "kansai",
+    "term": "かいらしい",
+    "reading": "かいらしい",
+    "romaji": "kairashii",
+    "meaningEn": "Cute; adorable",
+    "meaningJa": "かわいらしい",
+    "exampleJa": "かいらしい子やなあ",
+    "exampleRomaji": "kairashii ko yanaa",
+    "exampleEn": "What an adorable kid.",
+    "socialConsequenceEn": "Gentle, grandmotherly Kansai for 'cute'.",
+    "tag": {
+      "era": "関西",
+      "whoUses": "関西の人",
+      "gachi": "tsuujiru",
+      "sourceNote": "kawairashii → kairashii"
+    }
+  },
+  {
+    "id": "kansai-036",
+    "categoryId": "kansai",
+    "term": "なんでやのん",
+    "reading": "なんでやのん",
+    "romaji": "nande-yanon",
+    "meaningEn": "Why on earth? (softer, questioning)",
+    "meaningJa": "なんでなの、という柔らかい問い",
+    "exampleJa": "それなんでやのん？",
+    "exampleRomaji": "sore nande-yanon?",
+    "exampleEn": "Why is that, though?",
+    "socialConsequenceEn": "A softer cousin of nandeyanen. Gentle curiosity.",
+    "tag": {
+      "era": "関西",
+      "whoUses": "関西の人",
+      "gachi": "tsuujiru",
+      "sourceNote": "nande+yanon questioning variant"
+    }
+  },
+  {
+    "id": "kansai-037",
+    "categoryId": "kansai",
+    "term": "おもんない",
+    "reading": "おもんない",
+    "romaji": "omonnai",
+    "meaningEn": "Not funny; boring",
+    "meaningJa": "面白くない",
+    "exampleJa": "その話おもんないわ",
+    "exampleRomaji": "sono hanashi omonnai wa",
+    "exampleEn": "That story's not funny.",
+    "socialConsequenceEn": "The blunt Kansai verdict on a flat joke. Stings a little.",
+    "tag": {
+      "era": "関西",
+      "whoUses": "関西の人",
+      "gachi": "tsuujiru",
+      "sourceNote": "omoroku nai → omonnai"
+    }
+  },
+  {
+    "id": "kansai-038",
+    "categoryId": "kansai",
+    "term": "なんや",
+    "reading": "なんや",
+    "romaji": "nanya",
+    "meaningEn": "What is it? / What the…",
+    "meaningJa": "何だ、なんだよ",
+    "exampleJa": "なんや、その顔",
+    "exampleRomaji": "nanya, sono kao",
+    "exampleEn": "What's with that face?",
+    "socialConsequenceEn": "Everyday Kansai filler/retort. Tone does the work.",
+    "tag": {
+      "era": "関西",
+      "whoUses": "関西の人",
+      "gachi": "tsuujiru",
+      "sourceNote": "nanda → nanya"
+    }
+  },
+  {
+    "id": "kansai-039",
+    "categoryId": "kansai",
+    "term": "あんじょう",
+    "reading": "あんじょう",
+    "romaji": "anjou",
+    "meaningEn": "Well; properly; nicely",
+    "meaningJa": "うまく、ちゃんと",
+    "exampleJa": "あんじょうやっといてや",
+    "exampleRomaji": "anjou yattoite ya",
+    "exampleEn": "Do it properly, okay?",
+    "socialConsequenceEn": "Older Kansai. Reads warm and a touch old-school.",
+    "tag": {
+      "era": "関西",
+      "whoUses": "関西の人",
+      "gachi": "tsuujiru",
+      "sourceNote": "anjou = well/properly (regional)"
+    }
+  },
+  {
+    "id": "kansai-040",
+    "categoryId": "kansai",
+    "term": "どや",
+    "reading": "どや",
+    "romaji": "doya",
+    "meaningEn": "How about it? / Pretty good, huh?",
+    "meaningJa": "どうだ、という得意げな問い",
+    "exampleJa": "どや、うまいやろ",
+    "exampleRomaji": "doya, umai yaro",
+    "exampleEn": "How about it — tasty, right?",
+    "socialConsequenceEn": "Source of 'doya-gao' (smug face). Playfully boastful.",
+    "tag": {
+      "era": "関西",
+      "whoUses": "関西の人",
+      "gachi": "tsuujiru",
+      "sourceNote": "douda → doya, boastful"
+    }
+  },
+  {
+    "id": "kansai-041",
+    "categoryId": "kansai",
+    "term": "ちゃうちゃう",
+    "reading": "ちゃうちゃう",
+    "romaji": "chau-chau",
+    "meaningEn": "No no, that's not it!",
+    "meaningJa": "違う違う、と強く否定",
+    "exampleJa": "ちゃうちゃう、そこちゃうて",
+    "exampleRomaji": "chau-chau, soko chau te",
+    "exampleEn": "No no, not there!",
+    "socialConsequenceEn": "Doubled for emphasis. A beloved Kansai tongue-twister joke too.",
+    "tag": {
+      "era": "関西",
+      "whoUses": "関西の人",
+      "gachi": "tsuujiru",
+      "sourceNote": "chau reduplicated for emphasis"
+    }
+  },
+  {
+    "id": "kansai-042",
+    "categoryId": "kansai",
+    "term": "もうかりまっか",
+    "reading": "もうかりまっか",
+    "romaji": "moukarimakka",
+    "meaningEn": "How's business? (classic Osaka hello)",
+    "meaningJa": "儲かってますか、という挨拶",
+    "exampleJa": "社長、もうかりまっか？",
+    "exampleRomaji": "shachou, moukarimakka?",
+    "exampleEn": "Hey boss, how's business?",
+    "socialConsequenceEn": "Textbook Osaka merchant greeting. Reply: 'bochi-bochi'.",
+    "tag": {
+      "era": "関西",
+      "whoUses": "関西の人",
+      "gachi": "tsuujiru",
+      "sourceNote": "classic Osaka merchant greeting"
+    }
+  },
+  {
+    "id": "kansai-043",
+    "categoryId": "kansai",
+    "term": "ぼちぼち",
+    "reading": "ぼちぼち",
+    "romaji": "bochi-bochi",
+    "meaningEn": "So-so; coming along (set reply)",
+    "meaningJa": "まあまあ、ぼちぼちやってる",
+    "exampleJa": "もうかりまっか？ぼちぼちでんな",
+    "exampleRomaji": "moukarimakka? bochi-bochi denna",
+    "exampleEn": "How's business? Oh, so-so.",
+    "socialConsequenceEn": "The set reply to 'moukarimakka'. Humble Osaka modesty.",
+    "tag": {
+      "era": "関西",
+      "whoUses": "関西の人",
+      "gachi": "tsuujiru",
+      "sourceNote": "bochi-bochi = so-so / gradually"
+    }
+  },
+  {
+    "id": "kansai-044",
+    "categoryId": "kansai",
+    "term": "まいど おおきに",
+    "reading": "まいどおおきに",
+    "romaji": "maido ookini",
+    "meaningEn": "Thanks as always (shop send-off)",
+    "meaningJa": "毎度ありがとう、の決まり文句",
+    "exampleJa": "まいどおおきに！またきてや",
+    "exampleRomaji": "maido ookini! mata kite ya",
+    "exampleEn": "Thanks as always! Come again.",
+    "socialConsequenceEn": "The shopkeeper's warm send-off. Pure Osaka hospitality.",
+    "tag": {
+      "era": "関西",
+      "whoUses": "関西の人",
+      "gachi": "tsuujiru",
+      "sourceNote": "set merchant thank-you phrase"
+    }
+  },
+  {
+    "id": "kansai-045",
+    "categoryId": "kansai",
+    "term": "いてまう",
+    "reading": "いてまう",
+    "romaji": "itemau",
+    "meaningEn": "To do someone in / wreck it (rough)",
+    "meaningJa": "やっつける、しまう（荒い言い方）",
+    "exampleJa": "もういてまうぞ",
+    "exampleRomaji": "mou itemau zo",
+    "exampleEn": "I'll seriously get you for that.",
+    "socialConsequenceEn": "Rough, jokey-tough Kansai. Mostly mock-threat among friends.",
+    "tag": {
+      "era": "関西",
+      "whoUses": "関西の人",
+      "gachi": "tsuujiru",
+      "sourceNote": "itemau = to do in (rough Kansai)"
+    }
+  },
+  {
+    "id": "kansai-046",
+    "categoryId": "kansai",
+    "term": "ちゃちゃっと",
+    "reading": "ちゃちゃっと",
+    "romaji": "chacha-tto",
+    "meaningEn": "Quickly; in a jiffy",
+    "meaningJa": "手早く、さっと",
+    "exampleJa": "ちゃちゃっと済ませよ",
+    "exampleRomaji": "chacha-tto sumase yo",
+    "exampleEn": "Let's knock it out quick.",
+    "socialConsequenceEn": "Brisk, can-do Kansai energy. Widely understood.",
+    "tag": {
+      "era": "関西",
+      "whoUses": "関西の人",
+      "gachi": "tsuujiru",
+      "sourceNote": "chachatto = swiftly"
+    }
+  },
+  {
+    "id": "kansai-047",
+    "categoryId": "kansai",
+    "term": "めんどい",
+    "reading": "めんどい",
+    "romaji": "mendoi",
+    "meaningEn": "What a hassle; a pain",
+    "meaningJa": "面倒くさい",
+    "exampleJa": "出かけるのめんどいわ",
+    "exampleRomaji": "dekakeru no mendoi wa",
+    "exampleEn": "Ugh, going out is such a pain.",
+    "socialConsequenceEn": "Now nationwide, but the 'wa' ending keeps it Kansai.",
+    "tag": {
+      "era": "関西",
+      "whoUses": "関西の人",
+      "gachi": "tsuujiru",
+      "sourceNote": "mendokusai → mendoi"
+    }
+  },
+  {
+    "id": "kansai-048",
+    "categoryId": "kansai",
+    "term": "わや",
+    "reading": "わや",
+    "romaji": "waya",
+    "meaningEn": "A total mess; ruined",
+    "meaningJa": "めちゃくちゃ、台無し",
+    "exampleJa": "計画わやになったわ",
+    "exampleRomaji": "keikaku waya ni natta wa",
+    "exampleEn": "The plan fell completely apart.",
+    "socialConsequenceEn": "Vivid Kansai/west-Japan word for 'a disaster'.",
+    "tag": {
+      "era": "関西",
+      "whoUses": "関西の人",
+      "gachi": "tsuujiru",
+      "sourceNote": "waya = a mess (west Japan)"
+    }
+  },
+  {
+    "id": "kansai-049",
+    "categoryId": "kansai",
+    "term": "たこ",
+    "reading": "たこ",
+    "romaji": "tako",
+    "meaningEn": "You fool! (light insult)",
+    "meaningJa": "あほ・ばかに近い軽い罵り",
+    "exampleJa": "なにしてんねん、このたこ",
+    "exampleRomaji": "nani shiten nen, kono tako",
+    "exampleEn": "What are you doing, you fool!",
+    "socialConsequenceEn": "Lit. 'octopus'. A rough but jokey Kansai jab.",
+    "tag": {
+      "era": "関西",
+      "whoUses": "関西の人",
+      "gachi": "tsuujiru",
+      "sourceNote": "tako as light insult (Kansai)"
+    }
   }
 ]

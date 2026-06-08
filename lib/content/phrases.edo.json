@@ -226,5 +226,670 @@
       "gachi": "wakeru",
       "sourceNote": "べらんめえ調"
     }
+  },
+  {
+    "id": "edo-013",
+    "categoryId": "edo",
+    "term": "江戸っ子",
+    "reading": "えどっこ",
+    "romaji": "edokko",
+    "meaningEn": "A true-born Edo (Tokyo) native",
+    "meaningJa": "生粋の江戸生まれの人",
+    "exampleJa": "あたしゃ三代続いた江戸っ子でい",
+    "exampleRomaji": "atasha sandai tsuzuita edokko de i",
+    "exampleEn": "I'm a third-generation Edoite, I am.",
+    "socialConsequenceEn": "Worn with pride: quick-tempered, generous, can't save a yen.",
+    "tag": {
+      "era": "江戸",
+      "whoUses": "江戸っ子",
+      "gachi": "wakeru",
+      "sourceNote": "edokko = native Edoite, cultural ideal"
+    }
+  },
+  {
+    "id": "edo-014",
+    "categoryId": "edo",
+    "term": "宵越しの銭は持たねえ",
+    "reading": "よいごしのぜにはもたねえ",
+    "romaji": "yoigoshi no zeni wa motanee",
+    "meaningEn": "I never keep money overnight (Edo bravado)",
+    "meaningJa": "その日に稼いだ金はその日に使う心意気",
+    "exampleJa": "宵越しの銭は持たねえのが粋ってもんよ",
+    "exampleRomaji": "yoigoshi no zeni wa motanee no ga iki tte mon yo",
+    "exampleEn": "Spending it all today — that's the stylish way.",
+    "socialConsequenceEn": "The famous Edoite flex: too cool to hoard cash. Gloriously broke.",
+    "tag": {
+      "era": "江戸",
+      "whoUses": "江戸っ子",
+      "gachi": "wakeru",
+      "sourceNote": "classic Edoite saying of bravado"
+    }
+  },
+  {
+    "id": "edo-015",
+    "categoryId": "edo",
+    "term": "ちょいと",
+    "reading": "ちょいと",
+    "romaji": "choito",
+    "meaningEn": "A little; hey there (Edo flavor)",
+    "meaningJa": "ちょっと、の下町的な言い方",
+    "exampleJa": "ちょいと、そこのお人",
+    "exampleRomaji": "choito, soko no o-hito",
+    "exampleEn": "Hey there, you over there.",
+    "socialConsequenceEn": "Light, rhythmic shitamachi speech. Instantly old-Tokyo.",
+    "tag": {
+      "era": "江戸",
+      "whoUses": "江戸っ子",
+      "gachi": "tsuujiru",
+      "sourceNote": "chotto → choito, shitamachi"
+    }
+  },
+  {
+    "id": "edo-016",
+    "categoryId": "edo",
+    "term": "おかみさん",
+    "reading": "おかみさん",
+    "romaji": "okamisan",
+    "meaningEn": "The missus; the lady of the house/shop",
+    "meaningJa": "店や家の女主人・奥さん",
+    "exampleJa": "おかみさん、勘定たのまあ",
+    "exampleRomaji": "okamisan, kanjou tanomaa",
+    "exampleEn": "Ma'am, the bill please.",
+    "socialConsequenceEn": "Warm shitamachi address for a shop's matriarch.",
+    "tag": {
+      "era": "江戸",
+      "whoUses": "江戸っ子",
+      "gachi": "tsuujiru",
+      "sourceNote": "okamisan = mistress of a shop/house"
+    }
+  },
+  {
+    "id": "edo-017",
+    "categoryId": "edo",
+    "term": "旦那",
+    "reading": "だんな",
+    "romaji": "danna",
+    "meaningEn": "Master; sir; patron (a customer)",
+    "meaningJa": "主人・お得意様への呼びかけ",
+    "exampleJa": "旦那、お安くしときやす",
+    "exampleRomaji": "danna, o-yasuku shitokiyasu",
+    "exampleEn": "Sir, I'll give you a good price.",
+    "socialConsequenceEn": "Merchant flattery for a valued patron. Still half-alive today.",
+    "tag": {
+      "era": "江戸",
+      "whoUses": "江戸っ子",
+      "gachi": "tsuujiru",
+      "sourceNote": "danna = master/patron"
+    }
+  },
+  {
+    "id": "edo-018",
+    "categoryId": "edo",
+    "term": "ごめんなすって",
+    "reading": "ごめんなすって",
+    "romaji": "gomen-nasutte",
+    "meaningEn": "Pardon me / excuse me (rough, formal)",
+    "meaningJa": "ごめんください、の俠客的挨拶",
+    "exampleJa": "ごめんなすって、お控えなすって",
+    "exampleRomaji": "gomen-nasutte, o-hikae-nasutte",
+    "exampleEn": "Pardon me — allow me to introduce myself.",
+    "socialConsequenceEn": "Pure jidaigeki gambler greeting. Tarantino-cool, old-school.",
+    "tag": {
+      "era": "江戸",
+      "whoUses": "江戸っ子",
+      "gachi": "wakeru",
+      "sourceNote": "yakuza/tekiya formal greeting"
+    }
+  },
+  {
+    "id": "edo-019",
+    "categoryId": "edo",
+    "term": "あいすまねえ",
+    "reading": "あいすまねえ",
+    "romaji": "ai-sumanee",
+    "meaningEn": "I'm terribly sorry (rough, sincere)",
+    "meaningJa": "誠に申し訳ない、の下町言葉",
+    "exampleJa": "遅れちまってあいすまねえ",
+    "exampleRomaji": "okurechimatte ai-sumanee",
+    "exampleEn": "Sorry I'm late, my bad.",
+    "socialConsequenceEn": "Gruff but heartfelt. The Edoite apology.",
+    "tag": {
+      "era": "江戸",
+      "whoUses": "江戸っ子",
+      "gachi": "tsuujiru",
+      "sourceNote": "ai + sumanai (rough)"
+    }
+  },
+  {
+    "id": "edo-020",
+    "categoryId": "edo",
+    "term": "ありがとよ",
+    "reading": "ありがとよ",
+    "romaji": "arigatoyo",
+    "meaningEn": "Thanks (gruff, casual)",
+    "meaningJa": "ありがとう、のぶっきらぼうな形",
+    "exampleJa": "世話んなったな、ありがとよ",
+    "exampleRomaji": "sewa n natta na, arigatoyo",
+    "exampleEn": "You helped me out — thanks.",
+    "socialConsequenceEn": "Tough-guy gratitude. Warm under the gruffness.",
+    "tag": {
+      "era": "江戸",
+      "whoUses": "江戸っ子",
+      "gachi": "tsuujiru",
+      "sourceNote": "arigatou + yo (rough)"
+    }
+  },
+  {
+    "id": "edo-021",
+    "categoryId": "edo",
+    "term": "銭",
+    "reading": "ぜに",
+    "romaji": "zeni",
+    "meaningEn": "Money; coin (old word)",
+    "meaningJa": "お金の古い言い方",
+    "exampleJa": "銭がねえなら帰んな",
+    "exampleRomaji": "zeni ga nee nara kaen na",
+    "exampleEn": "No money? Then go home.",
+    "socialConsequenceEn": "Grittier than 'okane'. Smells of old coppers and market stalls.",
+    "tag": {
+      "era": "江戸",
+      "whoUses": "江戸っ子",
+      "gachi": "tsuujiru",
+      "sourceNote": "zeni = money (archaic/rough)"
+    }
+  },
+  {
+    "id": "edo-022",
+    "categoryId": "edo",
+    "term": "一文無し",
+    "reading": "いちもんなし",
+    "romaji": "ichimon-nashi",
+    "meaningEn": "Flat broke; penniless",
+    "meaningJa": "お金が全くないこと",
+    "exampleJa": "月末はいつも一文無しよ",
+    "exampleRomaji": "getsumatsu wa itsumo ichimon-nashi yo",
+    "exampleEn": "I'm always dead broke by month's end.",
+    "socialConsequenceEn": "Lit. 'not one mon coin'. Vivid Edo-era broke.",
+    "tag": {
+      "era": "江戸",
+      "whoUses": "江戸っ子",
+      "gachi": "tsuujiru",
+      "sourceNote": "ichimon (smallest coin) + nashi"
+    }
+  },
+  {
+    "id": "edo-023",
+    "categoryId": "edo",
+    "term": "朝飯前",
+    "reading": "あさめしまえ",
+    "romaji": "asameshi-mae",
+    "meaningEn": "A piece of cake; dead easy",
+    "meaningJa": "とても簡単なこと",
+    "exampleJa": "そんなの朝飯前よ",
+    "exampleRomaji": "sonna no asameshi-mae yo",
+    "exampleEn": "That's a piece of cake.",
+    "socialConsequenceEn": "Lit. 'before breakfast'. Still used; warmly old-school.",
+    "tag": {
+      "era": "江戸",
+      "whoUses": "江戸っ子",
+      "gachi": "tsuujiru",
+      "sourceNote": "asameshi-mae idiom, easy task"
+    }
+  },
+  {
+    "id": "edo-024",
+    "categoryId": "edo",
+    "term": "屁の河童",
+    "reading": "へのかっぱ",
+    "romaji": "he-no-kappa",
+    "meaningEn": "No big deal; nothing to it",
+    "meaningJa": "なんでもないこと、容易いこと",
+    "exampleJa": "この坂なんざ屁の河童だ",
+    "exampleRomaji": "kono saka nanza he-no-kappa da",
+    "exampleEn": "This hill? Nothing to it.",
+    "socialConsequenceEn": "Earthy Edo idiom (lit. 'a kappa's fart'). Charmingly crude.",
+    "tag": {
+      "era": "江戸",
+      "whoUses": "江戸っ子",
+      "gachi": "wakeru",
+      "sourceNote": "he no kappa idiom = trivial"
+    }
+  },
+  {
+    "id": "edo-025",
+    "categoryId": "edo",
+    "term": "おっちょこちょい",
+    "reading": "おっちょこちょい",
+    "romaji": "occhokochoi",
+    "meaningEn": "A scatterbrain; careless type",
+    "meaningJa": "そそっかしい人",
+    "exampleJa": "また忘れたのか、おっちょこちょいだな",
+    "exampleRomaji": "mata wasureta no ka, occhokochoi da na",
+    "exampleEn": "Forgot again? What a scatterbrain.",
+    "socialConsequenceEn": "Affectionate Edo-flavored jab. Still widely used.",
+    "tag": {
+      "era": "江戸",
+      "whoUses": "江戸っ子",
+      "gachi": "tsuujiru",
+      "sourceNote": "occhokochoi = scatterbrain"
+    }
+  },
+  {
+    "id": "edo-026",
+    "categoryId": "edo",
+    "term": "とんちき",
+    "reading": "とんちき",
+    "romaji": "tonchiki",
+    "meaningEn": "Blockhead; dimwit (comic insult)",
+    "meaningJa": "間抜け、おたんこなす",
+    "exampleJa": "このとんちきめ",
+    "exampleRomaji": "kono tonchiki me",
+    "exampleEn": "You blockhead!",
+    "socialConsequenceEn": "Old comic Edo insult. Sounds funnier than it stings.",
+    "tag": {
+      "era": "江戸",
+      "whoUses": "江戸っ子",
+      "gachi": "wakeru",
+      "sourceNote": "tonchiki = fool (Edo comic insult)"
+    }
+  },
+  {
+    "id": "edo-027",
+    "categoryId": "edo",
+    "term": "おたんこなす",
+    "reading": "おたんこなす",
+    "romaji": "otankonasu",
+    "meaningEn": "You dummy! (silly insult)",
+    "meaningJa": "間抜け・のろまをののしる語",
+    "exampleJa": "なにぼやっとしてんだ、おたんこなす",
+    "exampleRomaji": "nani boyatto shiten da, otankonasu",
+    "exampleEn": "Why are you spacing out, you dummy?",
+    "socialConsequenceEn": "Theatrical Edo scolding. More comedy than malice.",
+    "tag": {
+      "era": "江戸",
+      "whoUses": "江戸っ子",
+      "gachi": "wakeru",
+      "sourceNote": "otankonasu = comic insult"
+    }
+  },
+  {
+    "id": "edo-028",
+    "categoryId": "edo",
+    "term": "宵っ張り",
+    "reading": "よいっぱり",
+    "romaji": "yoippari",
+    "meaningEn": "A night owl; one who stays up late",
+    "meaningJa": "夜更かしする人",
+    "exampleJa": "おめえは宵っ張りだなあ",
+    "exampleRomaji": "omee wa yoippari da naa",
+    "exampleEn": "You're such a night owl.",
+    "socialConsequenceEn": "Cozy old word for a late-nighter. Reads vintage.",
+    "tag": {
+      "era": "江戸",
+      "whoUses": "江戸っ子",
+      "gachi": "tsuujiru",
+      "sourceNote": "yoippari = night owl"
+    }
+  },
+  {
+    "id": "edo-029",
+    "categoryId": "edo",
+    "term": "おてんとさま",
+    "reading": "おてんとさま",
+    "romaji": "otentosama",
+    "meaningEn": "The sun (with reverence)",
+    "meaningJa": "太陽の敬称",
+    "exampleJa": "おてんとさまに顔向けできねえ",
+    "exampleRomaji": "otentosama ni kaomuke dekinee",
+    "exampleEn": "I can't face the sun (I'm ashamed).",
+    "socialConsequenceEn": "Folksy reverence for the sun. Carries old moral weight.",
+    "tag": {
+      "era": "江戸",
+      "whoUses": "江戸っ子",
+      "gachi": "tsuujiru",
+      "sourceNote": "otentosama = the sun (honorific)"
+    }
+  },
+  {
+    "id": "edo-030",
+    "categoryId": "edo",
+    "term": "江戸前",
+    "reading": "えどまえ",
+    "romaji": "edomae",
+    "meaningEn": "Edo-style (esp. of sushi)",
+    "meaningJa": "江戸風の、江戸湾でとれた",
+    "exampleJa": "やっぱ江戸前の寿司は違うね",
+    "exampleRomaji": "yappa edomae no sushi wa chigau ne",
+    "exampleEn": "Edo-style sushi really is different.",
+    "socialConsequenceEn": "Still a badge of authenticity, especially for sushi.",
+    "tag": {
+      "era": "江戸",
+      "whoUses": "江戸っ子",
+      "gachi": "tsuujiru",
+      "sourceNote": "edomae = Edo-style/Edo Bay"
+    }
+  },
+  {
+    "id": "edo-031",
+    "categoryId": "edo",
+    "term": "拙者",
+    "reading": "せっしゃ",
+    "romaji": "sessha",
+    "meaningEn": "I / me (humble samurai 'I')",
+    "meaningJa": "武士が使う一人称（謙譲）",
+    "exampleJa": "拙者、剣の道を志す者でござる",
+    "exampleRomaji": "sessha, ken no michi o kokorozasu mono de gozaru",
+    "exampleEn": "I am one who walks the way of the sword.",
+    "socialConsequenceEn": "Pure samurai-drama 'I'. Say it today and you're cosplaying a ronin.",
+    "tag": {
+      "era": "江戸",
+      "whoUses": "武士",
+      "gachi": "wakeru",
+      "sourceNote": "sessha = humble samurai first person"
+    }
+  },
+  {
+    "id": "edo-032",
+    "categoryId": "edo",
+    "term": "ござる",
+    "reading": "ござる",
+    "romaji": "gozaru",
+    "meaningEn": "To be / it is (samurai speech)",
+    "meaningJa": "「ある・です」の武士的表現",
+    "exampleJa": "委細承知でござる",
+    "exampleRomaji": "isai shouchi de gozaru",
+    "exampleEn": "I understand completely, my lord.",
+    "socialConsequenceEn": "The signature samurai sentence-ender. Instant jidaigeki.",
+    "tag": {
+      "era": "江戸",
+      "whoUses": "武士",
+      "gachi": "wakeru",
+      "sourceNote": "gozaru = to be (bushi speech)"
+    }
+  },
+  {
+    "id": "edo-034",
+    "categoryId": "edo",
+    "term": "大儀である",
+    "reading": "たいぎである",
+    "romaji": "taigi de aru",
+    "meaningEn": "Well done (lord to retainer)",
+    "meaningJa": "ご苦労であった、という上位者の労い",
+    "exampleJa": "遠路はるばる大儀であった",
+    "exampleRomaji": "enro harubaru taigi de atta",
+    "exampleEn": "You've come a long way — well done.",
+    "socialConsequenceEn": "A lord's stately 'good work'. Pure period-drama authority.",
+    "tag": {
+      "era": "江戸",
+      "whoUses": "武士",
+      "gachi": "wakeru",
+      "sourceNote": "taigi = labor; lord's commendation"
+    }
+  },
+  {
+    "id": "edo-035",
+    "categoryId": "edo",
+    "term": "苦しゅうない",
+    "reading": "くるしゅうない",
+    "romaji": "kurushuu nai",
+    "meaningEn": "It's quite all right; you may (a lord's leave)",
+    "meaningJa": "差し支えない、構わぬ（上位者の許可）",
+    "exampleJa": "苦しゅうない、近う寄れ",
+    "exampleRomaji": "kurushuu nai, chikou yore",
+    "exampleEn": "It's fine — come closer.",
+    "socialConsequenceEn": "A lord granting permission. Peak jidaigeki grandeur.",
+    "tag": {
+      "era": "江戸",
+      "whoUses": "武士",
+      "gachi": "wakeru",
+      "sourceNote": "kurushuu nai = a lord's 'it's fine'"
+    }
+  },
+  {
+    "id": "edo-036",
+    "categoryId": "edo",
+    "term": "近う寄れ",
+    "reading": "ちこうよれ",
+    "romaji": "chikou yore",
+    "meaningEn": "Come closer (a lord's command)",
+    "meaningJa": "もっと近くに来なさい（上位者の命）",
+    "exampleJa": "遠慮するな、近う寄れ",
+    "exampleRomaji": "enryo suru na, chikou yore",
+    "exampleEn": "Don't hold back — come closer.",
+    "socialConsequenceEn": "Said by a lord on a dais. Total period-drama power move.",
+    "tag": {
+      "era": "江戸",
+      "whoUses": "武士",
+      "gachi": "wakeru",
+      "sourceNote": "chikou yore = come closer (lord)"
+    }
+  },
+  {
+    "id": "edo-037",
+    "categoryId": "edo",
+    "term": "成敗",
+    "reading": "せいばい",
+    "romaji": "seibai",
+    "meaningEn": "To punish / strike down (justice)",
+    "meaningJa": "罰すること、討ち果たすこと",
+    "exampleJa": "悪党め、成敗してくれる",
+    "exampleRomaji": "akutou me, seibai shite kureru",
+    "exampleEn": "Villain — I'll bring you to justice!",
+    "socialConsequenceEn": "The hero's pre-fight line. Maximum samurai-drama energy.",
+    "tag": {
+      "era": "江戸",
+      "whoUses": "武士",
+      "gachi": "wakeru",
+      "sourceNote": "seibai = to punish/execute"
+    }
+  },
+  {
+    "id": "edo-038",
+    "categoryId": "edo",
+    "term": "御免",
+    "reading": "ごめん",
+    "romaji": "gomen",
+    "meaningEn": "By your leave / pardon (formal)",
+    "meaningJa": "失礼する、許しを請う",
+    "exampleJa": "御免！通らせてもらうぞ",
+    "exampleRomaji": "gomen! toorasete morau zo",
+    "exampleEn": "By your leave — I'm coming through!",
+    "socialConsequenceEn": "The formal entrance/exit of a samurai. Crisp and proper.",
+    "tag": {
+      "era": "江戸",
+      "whoUses": "武士",
+      "gachi": "wakeru",
+      "sourceNote": "gomen = formal pardon/leave"
+    }
+  },
+  {
+    "id": "edo-039",
+    "categoryId": "edo",
+    "term": "申す",
+    "reading": "もうす",
+    "romaji": "mousu",
+    "meaningEn": "To say / be called (humble)",
+    "meaningJa": "言う・名乗る、の謙譲語",
+    "exampleJa": "拙者、三十郎と申す",
+    "exampleRomaji": "sessha, sanjuurou to mousu",
+    "exampleEn": "I am called Sanjuro.",
+    "socialConsequenceEn": "Humble self-introduction, samurai-style. Stately and old.",
+    "tag": {
+      "era": "江戸",
+      "whoUses": "武士",
+      "gachi": "wakeru",
+      "sourceNote": "mousu = humble 'to say'"
+    }
+  },
+  {
+    "id": "edo-040",
+    "categoryId": "edo",
+    "term": "武士に二言はない",
+    "reading": "ぶしににごんはない",
+    "romaji": "bushi ni nigon wa nai",
+    "meaningEn": "A samurai keeps his word",
+    "meaningJa": "武士は約束を違えない",
+    "exampleJa": "約束は守る。武士に二言はない",
+    "exampleRomaji": "yakusoku wa mamoru. bushi ni nigon wa nai",
+    "exampleEn": "I'll keep my word — a samurai never lies.",
+    "socialConsequenceEn": "The honor-bound samurai oath. Heavy with old-school pride.",
+    "tag": {
+      "era": "江戸",
+      "whoUses": "武士",
+      "gachi": "wakeru",
+      "sourceNote": "bushi ni nigon wa nai proverb"
+    }
+  },
+  {
+    "id": "edo-041",
+    "categoryId": "edo",
+    "term": "拙宅",
+    "reading": "せったく",
+    "romaji": "settaku",
+    "meaningEn": "My humble home",
+    "meaningJa": "自分の家をへりくだって言う語",
+    "exampleJa": "ぜひ拙宅へお越しを",
+    "exampleRomaji": "zehi settaku e o-koshi o",
+    "exampleEn": "Do come by my humble home.",
+    "socialConsequenceEn": "Refined humble speech. Very period, very polite.",
+    "tag": {
+      "era": "江戸",
+      "whoUses": "武士",
+      "gachi": "wakeru",
+      "sourceNote": "settaku = humble 'my home'"
+    }
+  },
+  {
+    "id": "edo-042",
+    "categoryId": "edo",
+    "term": "手前",
+    "reading": "てめえ",
+    "romaji": "temee",
+    "meaningEn": "You (rough, confrontational)",
+    "meaningJa": "おまえ、を荒く言った語",
+    "exampleJa": "手前、よくも言いやがったな",
+    "exampleRomaji": "temee, yoku mo iiyagatta na",
+    "exampleEn": "You — how dare you say that!",
+    "socialConsequenceEn": "Fighting words. Rough shitamachi/yakuza 'you'. Handle with care.",
+    "tag": {
+      "era": "江戸",
+      "whoUses": "江戸っ子",
+      "gachi": "tsuujiru",
+      "sourceNote": "temae → temee, rough 'you'"
+    }
+  },
+  {
+    "id": "edo-043",
+    "categoryId": "edo",
+    "term": "やい",
+    "reading": "やい",
+    "romaji": "yai",
+    "meaningEn": "Hey! Oi! (rough call to attention)",
+    "meaningJa": "おい、こら、と呼びかける語",
+    "exampleJa": "やい、待ちやがれ",
+    "exampleRomaji": "yai, machiyagare",
+    "exampleEn": "Oi! Hold it right there!",
+    "socialConsequenceEn": "A bristling Edo call-out. The sound of a brewing fight.",
+    "tag": {
+      "era": "江戸",
+      "whoUses": "江戸っ子",
+      "gachi": "wakeru",
+      "sourceNote": "yai = rough vocative call"
+    }
+  },
+  {
+    "id": "edo-044",
+    "categoryId": "edo",
+    "term": "野暮天",
+    "reading": "やぼてん",
+    "romaji": "yaboten",
+    "meaningEn": "A hopelessly tactless person",
+    "meaningJa": "野暮の極み、無粋な人",
+    "exampleJa": "そこで聞くか、この野暮天が",
+    "exampleRomaji": "soko de kiku ka, kono yaboten ga",
+    "exampleEn": "You ask THAT now? Such a clod.",
+    "socialConsequenceEn": "The anti-'iki': stronger than yabo. Edo aesthetics insult.",
+    "tag": {
+      "era": "江戸",
+      "whoUses": "江戸っ子",
+      "gachi": "tsuujiru",
+      "sourceNote": "yabo + ten emphatic; review nuance"
+    }
+  },
+  {
+    "id": "edo-045",
+    "categoryId": "edo",
+    "term": "おうとも",
+    "reading": "おうとも",
+    "romaji": "outomo",
+    "meaningEn": "Of course! / You bet! (manly assent)",
+    "meaningJa": "もちろんだ、という威勢のいい肯定",
+    "exampleJa": "やるか？おうとも！",
+    "exampleRomaji": "yaru ka? outomo!",
+    "exampleEn": "You in? You bet I am!",
+    "socialConsequenceEn": "Hearty, chest-out Edo agreement. Full of bravado.",
+    "tag": {
+      "era": "江戸",
+      "whoUses": "江戸っ子",
+      "gachi": "wakeru",
+      "sourceNote": "ou + tomo emphatic assent"
+    }
+  },
+  {
+    "id": "edo-046",
+    "categoryId": "edo",
+    "term": "あたぼうよ",
+    "reading": "あたぼうよ",
+    "romaji": "atabou yo",
+    "meaningEn": "Obviously! / You bet! (Edo emphatic)",
+    "meaningJa": "当たり前だ、を崩した威勢のいい語",
+    "exampleJa": "勝てるかって？あたぼうよ",
+    "exampleRomaji": "kateru ka tte? atabou yo",
+    "exampleEn": "Can we win? Obviously!",
+    "socialConsequenceEn": "From 'atarimae da, beraboume'. Peak Edoite swagger.",
+    "tag": {
+      "era": "江戸",
+      "whoUses": "江戸っ子",
+      "gachi": "wakeru",
+      "sourceNote": "atarimae+beraboume contraction"
+    }
+  },
+  {
+    "id": "edo-047",
+    "categoryId": "edo",
+    "term": "おひけえなすって",
+    "reading": "おひけえなすって",
+    "romaji": "o-hikee-nasutte",
+    "meaningEn": "Allow me to introduce myself (gambler's formal)",
+    "meaningJa": "俠客の自己紹介の口上",
+    "exampleJa": "お控えなすって、手前生国は…",
+    "exampleRomaji": "o-hikee-nasutte, temae shoukoku wa...",
+    "exampleEn": "Allow me — my home province is…",
+    "socialConsequenceEn": "The famous yakuza self-intro ritual. Pure jidaigeki theater.",
+    "tag": {
+      "era": "江戸",
+      "whoUses": "江戸っ子",
+      "gachi": "wakeru",
+      "sourceNote": "o-hikae-nasutte gambler's intro"
+    }
+  },
+  {
+    "id": "edo-048",
+    "categoryId": "edo",
+    "term": "いよっ、待ってました",
+    "reading": "いよっま ってました",
+    "romaji": "iyo', matte-mashita",
+    "meaningEn": "Bravo! We've been waiting! (theater call)",
+    "meaningJa": "歌舞伎などでの掛け声",
+    "exampleJa": "いよっ、待ってました、中村屋！",
+    "exampleRomaji": "iyo', matte-mashita, nakamuraya!",
+    "exampleEn": "Bravo! We've waited for this, Nakamuraya!",
+    "socialConsequenceEn": "The kabuki audience cheer (kakegoe). Joyful old-Edo theater.",
+    "tag": {
+      "era": "江戸",
+      "whoUses": "江戸っ子",
+      "gachi": "wakeru",
+      "sourceNote": "kabuki kakegoe cheer"
+    }
   }
 ]

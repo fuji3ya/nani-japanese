@@ -226,5 +226,689 @@
       "gachi": "tsuujiru",
       "sourceNote": "同担(同じ推し)+拒否"
     }
+  },
+  {
+    "id": "otaku-013",
+    "categoryId": "otaku",
+    "term": "箱推し",
+    "reading": "はこおし",
+    "romaji": "hako-oshi",
+    "meaningEn": "Supporting the whole group (not one member)",
+    "meaningJa": "グループ全体を推すこと",
+    "exampleJa": "私は箱推しだから全員好き",
+    "exampleRomaji": "watashi wa hako-oshi dakara zenin suki",
+    "exampleEn": "I'm a whole-group fan, I love them all.",
+    "socialConsequenceEn": "The diplomatic fan stance. Opposite of 'tan-oshi'.",
+    "tag": {
+      "era": "オタク文化",
+      "whoUses": "ドルオタ",
+      "gachi": "tsuujiru",
+      "sourceNote": "hako (box=group) + oshi"
+    }
+  },
+  {
+    "id": "otaku-014",
+    "categoryId": "otaku",
+    "term": "単推し",
+    "reading": "たんおし",
+    "romaji": "tan-oshi",
+    "meaningEn": "Supporting only one member",
+    "meaningJa": "特定の一人だけを推すこと",
+    "exampleJa": "ずっと単推しを貫いてる",
+    "exampleRomaji": "zutto tan-oshi o tsuranuiteru",
+    "exampleEn": "I've stayed loyal to my one fave.",
+    "socialConsequenceEn": "Loyalty incarnate. The opposite of hako-oshi.",
+    "tag": {
+      "era": "オタク文化",
+      "whoUses": "ドルオタ",
+      "gachi": "tsuujiru",
+      "sourceNote": "tan (single) + oshi"
+    }
+  },
+  {
+    "id": "otaku-015",
+    "categoryId": "otaku",
+    "term": "推し変",
+    "reading": "おしへん",
+    "romaji": "oshi-hen",
+    "meaningEn": "Switching your fave to someone else",
+    "meaningJa": "推す対象を変えること",
+    "exampleJa": "まさかの推し変しちゃった",
+    "exampleRomaji": "masaka no oshi-hen shichatta",
+    "exampleEn": "I unexpectedly switched faves.",
+    "socialConsequenceEn": "A loaded move in fandom. Can feel like a betrayal.",
+    "tag": {
+      "era": "オタク文化",
+      "whoUses": "ドルオタ",
+      "gachi": "tsuujiru",
+      "sourceNote": "oshi + hen (change)"
+    }
+  },
+  {
+    "id": "otaku-016",
+    "categoryId": "otaku",
+    "term": "同担",
+    "reading": "どうたん",
+    "romaji": "doutan",
+    "meaningEn": "A fan of the same member as you",
+    "meaningJa": "自分と同じ推しのファン",
+    "exampleJa": "同担と仲良くなれた",
+    "exampleRomaji": "doutan to nakayoku nareta",
+    "exampleEn": "I made friends with a same-fave fan.",
+    "socialConsequenceEn": "Could be besties or rivals — see 'doutan-kyohi'.",
+    "tag": {
+      "era": "オタク文化",
+      "whoUses": "ドルオタ",
+      "gachi": "tsuujiru",
+      "sourceNote": "dou (same) + tantou"
+    }
+  },
+  {
+    "id": "otaku-017",
+    "categoryId": "otaku",
+    "term": "担当",
+    "reading": "たんとう",
+    "romaji": "tantou",
+    "meaningEn": "The member you support ('your' one)",
+    "meaningJa": "自分が推している担当メンバー",
+    "exampleJa": "私の担当は赤色担当",
+    "exampleRomaji": "watashi no tantou wa aka-iro tantou",
+    "exampleEn": "My member is the one in red.",
+    "socialConsequenceEn": "Idol-fan word for 'mine'. Forms '~tan' (e.g. aka-tan).",
+    "tag": {
+      "era": "オタク文化",
+      "whoUses": "ドルオタ",
+      "gachi": "tsuujiru",
+      "sourceNote": "tantou = the member one supports"
+    }
+  },
+  {
+    "id": "otaku-018",
+    "categoryId": "otaku",
+    "term": "現場",
+    "reading": "げんば",
+    "romaji": "genba",
+    "meaningEn": "A live event / venue (the scene)",
+    "meaningJa": "ライブやイベントの現場",
+    "exampleJa": "週末は現場に参戦する",
+    "exampleRomaji": "shuumatsu wa genba ni sansen suru",
+    "exampleEn": "I'm hitting the live event this weekend.",
+    "socialConsequenceEn": "Where it all happens. Opposite of 'zaitaku' (home fan).",
+    "tag": {
+      "era": "オタク文化",
+      "whoUses": "ドルオタ",
+      "gachi": "tsuujiru",
+      "sourceNote": "genba = the live-event scene"
+    }
+  },
+  {
+    "id": "otaku-019",
+    "categoryId": "otaku",
+    "term": "参戦",
+    "reading": "さんせん",
+    "romaji": "sansen",
+    "meaningEn": "To attend (a concert/event)",
+    "meaningJa": "ライブ等に参加すること",
+    "exampleJa": "ドーム公演参戦決定！",
+    "exampleRomaji": "doomu kouen sansen kettei!",
+    "exampleEn": "I'm officially going to the dome show!",
+    "socialConsequenceEn": "Lit. 'join the battle'. Going to a show is an event in itself.",
+    "tag": {
+      "era": "オタク文化",
+      "whoUses": "ドルオタ",
+      "gachi": "tsuujiru",
+      "sourceNote": "sansen = to attend (lit. join battle)"
+    }
+  },
+  {
+    "id": "otaku-020",
+    "categoryId": "otaku",
+    "term": "遠征",
+    "reading": "えんせい",
+    "romaji": "ensei",
+    "meaningEn": "Traveling far for an event",
+    "meaningJa": "遠方の公演まで出かけること",
+    "exampleJa": "大阪まで遠征してきた",
+    "exampleRomaji": "oosaka made ensei shite kita",
+    "exampleEn": "I traveled all the way to Osaka for it.",
+    "socialConsequenceEn": "Lit. 'expedition'. Dedication measured in train tickets.",
+    "tag": {
+      "era": "オタク文化",
+      "whoUses": "ドルオタ",
+      "gachi": "tsuujiru",
+      "sourceNote": "ensei = traveling for an event"
+    }
+  },
+  {
+    "id": "otaku-021",
+    "categoryId": "otaku",
+    "term": "ペンラ",
+    "reading": "ぺんら",
+    "romaji": "penra",
+    "meaningEn": "A glowstick / penlight",
+    "meaningJa": "ペンライトの略",
+    "exampleJa": "ペンラの色推しに合わせた",
+    "exampleRomaji": "penra no iro oshi ni awaseta",
+    "exampleEn": "I set my glowstick to my fave's color.",
+    "socialConsequenceEn": "The fan's light saber. Color = your allegiance.",
+    "tag": {
+      "era": "オタク文化",
+      "whoUses": "ドルオタ",
+      "gachi": "tsuujiru",
+      "sourceNote": "penra = clipped penlight"
+    }
+  },
+  {
+    "id": "otaku-022",
+    "categoryId": "otaku",
+    "term": "神対応",
+    "reading": "かみたいおう",
+    "romaji": "kami-taiou",
+    "meaningEn": "God-tier fan service (from the idol)",
+    "meaningJa": "ファンに神のように優しい対応",
+    "exampleJa": "握手会で神対応だった",
+    "exampleRomaji": "akushukai de kami-taiou datta",
+    "exampleEn": "They were amazing to fans at the handshake.",
+    "socialConsequenceEn": "The opposite of 'shio-taiou' (cold). Makes fans melt.",
+    "tag": {
+      "era": "オタク文化",
+      "whoUses": "ドルオタ",
+      "gachi": "tsuujiru",
+      "sourceNote": "kami (god) + taiou (response)"
+    }
+  },
+  {
+    "id": "otaku-023",
+    "categoryId": "otaku",
+    "term": "塩対応",
+    "reading": "しおたいおう",
+    "romaji": "shio-taiou",
+    "meaningEn": "Cold / indifferent treatment",
+    "meaningJa": "そっけない冷たい対応",
+    "exampleJa": "今日はちょっと塩対応だった",
+    "exampleRomaji": "kyou wa chotto shio-taiou datta",
+    "exampleEn": "They were a bit cold today.",
+    "socialConsequenceEn": "Lit. 'salt response'. The heartbreak counterpart to kami-taiou.",
+    "tag": {
+      "era": "オタク文化",
+      "whoUses": "ドルオタ",
+      "gachi": "tsuujiru",
+      "sourceNote": "shio (salt=cold) + taiou"
+    }
+  },
+  {
+    "id": "otaku-024",
+    "categoryId": "otaku",
+    "term": "認知",
+    "reading": "にんち",
+    "romaji": "ninchi",
+    "meaningEn": "Being recognized by your idol",
+    "meaningJa": "推しに顔や名前を覚えてもらうこと",
+    "exampleJa": "ついに認知された…！",
+    "exampleRomaji": "tsui ni ninchi sareta...!",
+    "exampleEn": "They finally recognized me…!",
+    "socialConsequenceEn": "The holy grail for a regular. Pure fan euphoria.",
+    "tag": {
+      "era": "オタク文化",
+      "whoUses": "ドルオタ",
+      "gachi": "tsuujiru",
+      "sourceNote": "ninchi = being recognized by oshi"
+    }
+  },
+  {
+    "id": "otaku-025",
+    "categoryId": "otaku",
+    "term": "チェキ",
+    "reading": "ちぇき",
+    "romaji": "cheki",
+    "meaningEn": "An instant photo (with the idol)",
+    "meaningJa": "推しと撮るインスタント写真",
+    "exampleJa": "チェキ会で2枚撮った",
+    "exampleRomaji": "cheki-kai de nimai totta",
+    "exampleEn": "I got two instant photos at the event.",
+    "socialConsequenceEn": "From the Cheki camera brand. A treasured fan keepsake.",
+    "tag": {
+      "era": "オタク文化",
+      "whoUses": "ドルオタ",
+      "gachi": "tsuujiru",
+      "sourceNote": "cheki = instant photo (brand)"
+    }
+  },
+  {
+    "id": "otaku-026",
+    "categoryId": "otaku",
+    "term": "在宅",
+    "reading": "ざいたく",
+    "romaji": "zaitaku",
+    "meaningEn": "A fan who supports from home",
+    "meaningJa": "現場に行かず家から応援するファン",
+    "exampleJa": "最近は在宅オタクしてる",
+    "exampleRomaji": "saikin wa zaitaku otaku shiteru",
+    "exampleEn": "Lately I'm a home-based fan.",
+    "socialConsequenceEn": "The couch-fan. Opposite of a 'genba' diehard. No shame.",
+    "tag": {
+      "era": "オタク文化",
+      "whoUses": "ドルオタ",
+      "gachi": "tsuujiru",
+      "sourceNote": "zaitaku = home-based fan"
+    }
+  },
+  {
+    "id": "otaku-027",
+    "categoryId": "otaku",
+    "term": "卒業",
+    "reading": "そつぎょう",
+    "romaji": "sotsugyou",
+    "meaningEn": "A member graduating / leaving the group",
+    "meaningJa": "メンバーがグループを離れること",
+    "exampleJa": "推しの卒業発表で号泣",
+    "exampleRomaji": "oshi no sotsugyou happyou de goukyuu",
+    "exampleEn": "I sobbed at my fave's graduation news.",
+    "socialConsequenceEn": "Lit. 'graduation'. The gentle word for an idol's exit.",
+    "tag": {
+      "era": "オタク文化",
+      "whoUses": "ドルオタ",
+      "gachi": "tsuujiru",
+      "sourceNote": "sotsugyou = idol graduation/departure"
+    }
+  },
+  {
+    "id": "otaku-028",
+    "categoryId": "otaku",
+    "term": "リアコ",
+    "reading": "りあこ",
+    "romaji": "riako",
+    "meaningEn": "Real-love: genuinely in love with your fave",
+    "meaningJa": "リアルに恋している状態",
+    "exampleJa": "完全にリアコこじらせてる",
+    "exampleRomaji": "kanzen ni riako kojiraseteru",
+    "exampleEn": "I've got it bad — actually in love.",
+    "socialConsequenceEn": "Sibling of 'gachi-koi'. Crossing the fan/lover line.",
+    "tag": {
+      "era": "オタク文化",
+      "whoUses": "ドルオタ",
+      "gachi": "tsuujiru",
+      "sourceNote": "real + koi (love)"
+    }
+  },
+  {
+    "id": "otaku-029",
+    "categoryId": "otaku",
+    "term": "夢女子",
+    "reading": "ゆめじょし",
+    "romaji": "yumejoshi",
+    "meaningEn": "A fan who romantically self-inserts",
+    "meaningJa": "自分とキャラの恋愛を夢想するファン",
+    "exampleJa": "私バリバリの夢女子です",
+    "exampleRomaji": "watashi baribari no yumejoshi desu",
+    "exampleEn": "I'm a hardcore self-insert fan.",
+    "socialConsequenceEn": "Dreams of 'me x character'. A whole fandom mode.",
+    "tag": {
+      "era": "オタク文化",
+      "whoUses": "オタク",
+      "gachi": "tsuujiru",
+      "sourceNote": "yume (dream) + joshi (girl)"
+    }
+  },
+  {
+    "id": "otaku-030",
+    "categoryId": "otaku",
+    "term": "腐女子",
+    "reading": "ふじょし",
+    "romaji": "fujoshi",
+    "meaningEn": "A female fan of boys-love (BL)",
+    "meaningJa": "BL（ボーイズラブ）を好む女性ファン",
+    "exampleJa": "腐女子歴もう10年",
+    "exampleRomaji": "fujoshi-reki mou juunen",
+    "exampleEn": "I've been a BL fan for ten years now.",
+    "socialConsequenceEn": "Self-deprecating pun ('rotten girl'). A proud subculture label.",
+    "tag": {
+      "era": "オタク文化",
+      "whoUses": "オタク",
+      "gachi": "tsuujiru",
+      "sourceNote": "fujoshi = BL fan (pun on 婦女子)"
+    }
+  },
+  {
+    "id": "otaku-031",
+    "categoryId": "otaku",
+    "term": "限界オタク",
+    "reading": "げんかいおたく",
+    "romaji": "genkai-otaku",
+    "meaningEn": "A fan overwhelmed past their limit",
+    "meaningJa": "感情が限界に達したオタク",
+    "exampleJa": "尊すぎて限界オタクと化した",
+    "exampleRomaji": "toutosugite genkai-otaku to kashita",
+    "exampleEn": "So precious I've hit my emotional limit.",
+    "socialConsequenceEn": "When you can only flail and keysmash. Peak fan emotion.",
+    "tag": {
+      "era": "オタク文化",
+      "whoUses": "オタク",
+      "gachi": "tsuujiru",
+      "sourceNote": "genkai (limit) + otaku"
+    }
+  },
+  {
+    "id": "otaku-032",
+    "categoryId": "otaku",
+    "term": "語彙力",
+    "reading": "ごいりょく",
+    "romaji": "goiryoku",
+    "meaningEn": "(Loss of) words from emotion ('no words')",
+    "meaningJa": "感動で言葉が出ない様子の自虐",
+    "exampleJa": "尊い…語彙力…",
+    "exampleRomaji": "toutoi... goiryoku...",
+    "exampleEn": "So precious… I have no words…",
+    "socialConsequenceEn": "Joking lament that emotion erased your vocabulary.",
+    "tag": {
+      "era": "オタク文化",
+      "whoUses": "オタク",
+      "gachi": "tsuujiru",
+      "sourceNote": "goiryoku joke = lost for words"
+    }
+  },
+  {
+    "id": "otaku-033",
+    "categoryId": "otaku",
+    "term": "沼落ち",
+    "reading": "ぬまおち",
+    "romaji": "numa-ochi",
+    "meaningEn": "Falling into a fandom rabbit hole",
+    "meaningJa": "沼にはまり込むこと",
+    "exampleJa": "一話見ただけで沼落ちした",
+    "exampleRomaji": "ichiwa mita dake de numa-ochi shita",
+    "exampleEn": "One episode and I fell down the rabbit hole.",
+    "socialConsequenceEn": "The moment a hobby becomes an obsession. No climbing out.",
+    "tag": {
+      "era": "オタク文化",
+      "whoUses": "オタク",
+      "gachi": "tsuujiru",
+      "sourceNote": "numa (swamp) + ochi (fall)"
+    }
+  },
+  {
+    "id": "otaku-034",
+    "categoryId": "otaku",
+    "term": "オタ活",
+    "reading": "おたかつ",
+    "romaji": "otakatsu",
+    "meaningEn": "Otaku activities (the hobby life)",
+    "meaningJa": "オタクとしての活動全般",
+    "exampleJa": "今月はオタ活に給料溶けた",
+    "exampleRomaji": "kongetsu wa otakatsu ni kyuuryou toketa",
+    "exampleEn": "My whole paycheck went to fandom this month.",
+    "socialConsequenceEn": "Broader than oshi-katsu: any fan activity counts.",
+    "tag": {
+      "era": "オタク文化",
+      "whoUses": "オタク",
+      "gachi": "tsuujiru",
+      "sourceNote": "ota + katsu (activity)"
+    }
+  },
+  {
+    "id": "otaku-035",
+    "categoryId": "otaku",
+    "term": "オタ芸",
+    "reading": "おたげい",
+    "romaji": "otagei",
+    "meaningEn": "The wild fan call-and-dance moves",
+    "meaningJa": "ライブでファンが繰り出す独特の動き",
+    "exampleJa": "前列のオタ芸がすごい",
+    "exampleRomaji": "zenretsu no otagei ga sugoi",
+    "exampleEn": "The front-row fan moves are wild.",
+    "socialConsequenceEn": "Synchronized arm-swings and chants. A fan athletic art.",
+    "tag": {
+      "era": "オタク文化",
+      "whoUses": "ドルオタ",
+      "gachi": "tsuujiru",
+      "sourceNote": "ota + gei (performance)"
+    }
+  },
+  {
+    "id": "otaku-036",
+    "categoryId": "otaku",
+    "term": "聖地巡礼",
+    "reading": "せいちじゅんれい",
+    "romaji": "seichi-junrei",
+    "meaningEn": "Pilgrimage to real anime locations",
+    "meaningJa": "作品の舞台となった場所を訪ねること",
+    "exampleJa": "アニメの聖地巡礼してきた",
+    "exampleRomaji": "anime no seichi-junrei shite kita",
+    "exampleEn": "I went on a pilgrimage to the anime's locations.",
+    "socialConsequenceEn": "Visiting the real-world places a show was set. Wholesome obsession.",
+    "tag": {
+      "era": "オタク文化",
+      "whoUses": "オタク",
+      "gachi": "tsuujiru",
+      "sourceNote": "seichi (holy site) + junrei (pilgrimage)"
+    }
+  },
+  {
+    "id": "otaku-037",
+    "categoryId": "otaku",
+    "term": "痛バ",
+    "reading": "いたバ",
+    "romaji": "itaba",
+    "meaningEn": "A bag plastered with oshi merch",
+    "meaningJa": "推しの缶バッジ等で埋めたバッグ",
+    "exampleJa": "痛バ完成して持ち歩いてる",
+    "exampleRomaji": "itaba kansei shite mochiaruiteru",
+    "exampleEn": "I finished my merch bag and carry it everywhere.",
+    "socialConsequenceEn": "From 'itai' (painfully obvious). Worn with total pride.",
+    "tag": {
+      "era": "オタク文化",
+      "whoUses": "オタク",
+      "gachi": "tsuujiru",
+      "sourceNote": "ita(i) + bag"
+    }
+  },
+  {
+    "id": "otaku-038",
+    "categoryId": "otaku",
+    "term": "ぬい",
+    "reading": "ぬい",
+    "romaji": "nui",
+    "meaningEn": "A plushie (of your oshi)",
+    "meaningJa": "ぬいぐるみの略。推しのぬいぐるみ",
+    "exampleJa": "ぬい連れて旅行行く",
+    "exampleRomaji": "nui tsurete ryokou iku",
+    "exampleEn": "I take my plushie on trips.",
+    "socialConsequenceEn": "Clipped 'nuigurumi'. 'Nui-dori' = posing it for photos.",
+    "tag": {
+      "era": "オタク文化",
+      "whoUses": "オタク",
+      "gachi": "tsuujiru",
+      "sourceNote": "nui = clipped nuigurumi"
+    }
+  },
+  {
+    "id": "otaku-039",
+    "categoryId": "otaku",
+    "term": "円盤",
+    "reading": "えんばん",
+    "romaji": "enban",
+    "meaningEn": "A disc (Blu-ray/DVD release)",
+    "meaningJa": "BD・DVDのこと",
+    "exampleJa": "円盤特典目当てで予約した",
+    "exampleRomaji": "enban tokuten meate de yoyaku shita",
+    "exampleEn": "I pre-ordered for the disc bonuses.",
+    "socialConsequenceEn": "Lit. 'disc'. 'Enban-ka' = getting a home-video release.",
+    "tag": {
+      "era": "オタク文化",
+      "whoUses": "オタク",
+      "gachi": "tsuujiru",
+      "sourceNote": "enban = disc (BD/DVD)"
+    }
+  },
+  {
+    "id": "otaku-040",
+    "categoryId": "otaku",
+    "term": "二次創作",
+    "reading": "にじそうさく",
+    "romaji": "niji-sousaku",
+    "meaningEn": "Fan-made works (fanfic/fanart)",
+    "meaningJa": "原作を元にしたファン創作",
+    "exampleJa": "二次創作で沼が深まる",
+    "exampleRomaji": "niji-sousaku de numa ga fukamaru",
+    "exampleEn": "Fan works pull you deeper into the fandom.",
+    "socialConsequenceEn": "The engine of fandom. Doujin culture lives here.",
+    "tag": {
+      "era": "オタク文化",
+      "whoUses": "オタク",
+      "gachi": "tsuujiru",
+      "sourceNote": "niji (secondary) + sousaku (creation)"
+    }
+  },
+  {
+    "id": "otaku-041",
+    "categoryId": "otaku",
+    "term": "同人",
+    "reading": "どうじん",
+    "romaji": "doujin",
+    "meaningEn": "Self-published fan works",
+    "meaningJa": "同人誌などの自主制作",
+    "exampleJa": "同人即売会に出る",
+    "exampleRomaji": "doujin sokubaikai ni deru",
+    "exampleEn": "I'm selling at the doujin fair.",
+    "socialConsequenceEn": "The indie heart of otaku culture (Comiket et al.).",
+    "tag": {
+      "era": "オタク文化",
+      "whoUses": "オタク",
+      "gachi": "tsuujiru",
+      "sourceNote": "doujin = self-published works"
+    }
+  },
+  {
+    "id": "otaku-042",
+    "categoryId": "otaku",
+    "term": "配信",
+    "reading": "はいしん",
+    "romaji": "haishin",
+    "meaningEn": "A livestream / streaming",
+    "meaningJa": "ライブ配信・ネット配信",
+    "exampleJa": "今夜21時から配信するって",
+    "exampleRomaji": "konya 21-ji kara haishin suru tte",
+    "exampleEn": "They're streaming from 9pm tonight.",
+    "socialConsequenceEn": "Core VTuber/streamer vocab. 'Haishin-sha' = a streamer.",
+    "tag": {
+      "era": "オタク文化",
+      "whoUses": "オタク",
+      "gachi": "tsuujiru",
+      "sourceNote": "haishin = livestream/streaming"
+    }
+  },
+  {
+    "id": "otaku-043",
+    "categoryId": "otaku",
+    "term": "スパチャ",
+    "reading": "すぱちゃ",
+    "romaji": "supacha",
+    "meaningEn": "A superchat (paid stream donation)",
+    "meaningJa": "配信への投げ銭（スーパーチャット）",
+    "exampleJa": "推しにスパチャ投げた",
+    "exampleRomaji": "oshi ni supacha nageta",
+    "exampleEn": "I sent my fave a superchat.",
+    "socialConsequenceEn": "Money = visible love. 'Akaspa' = the big red superchats.",
+    "tag": {
+      "era": "オタク文化",
+      "whoUses": "オタク",
+      "gachi": "tsuujiru",
+      "sourceNote": "supacha = superchat"
+    }
+  },
+  {
+    "id": "otaku-044",
+    "categoryId": "otaku",
+    "term": "切り抜き",
+    "reading": "きりぬき",
+    "romaji": "kirinuki",
+    "meaningEn": "A clip (highlight cut of a stream)",
+    "meaningJa": "配信の一部を切り取った動画",
+    "exampleJa": "切り抜きでハマった",
+    "exampleRomaji": "kirinuki de hamatta",
+    "exampleEn": "I got hooked through the clips.",
+    "socialConsequenceEn": "The gateway drug to streamer fandoms. Whole channels exist for it.",
+    "tag": {
+      "era": "オタク文化",
+      "whoUses": "オタク",
+      "gachi": "tsuujiru",
+      "sourceNote": "kirinuki = clip of a stream"
+    }
+  },
+  {
+    "id": "otaku-045",
+    "categoryId": "otaku",
+    "term": "推ししか勝たん",
+    "reading": "おししかかたん",
+    "romaji": "oshi shika katan",
+    "meaningEn": "No one beats my fave",
+    "meaningJa": "推しが最高、他は敵わない",
+    "exampleJa": "結局うちの推ししか勝たん",
+    "exampleRomaji": "kekkyoku uchi no oshi shika katan",
+    "exampleEn": "In the end, no one beats my fave.",
+    "socialConsequenceEn": "The ultimate stan declaration. Reiwa-era fan catchphrase.",
+    "tag": {
+      "era": "オタク文化",
+      "whoUses": "オタク",
+      "gachi": "tsuujiru",
+      "sourceNote": "oshi shika katan catchphrase"
+    }
+  },
+  {
+    "id": "otaku-046",
+    "categoryId": "otaku",
+    "term": "尊死",
+    "reading": "とうとし",
+    "romaji": "tooto-shi",
+    "meaningEn": "To 'die' from how precious they are",
+    "meaningJa": "尊すぎて死ぬ、の意",
+    "exampleJa": "笑顔が尊死案件",
+    "exampleRomaji": "egao ga tooto-shi anken",
+    "exampleEn": "That smile is a 'I'm dead' situation.",
+    "socialConsequenceEn": "Hyperbolic fan death-by-cuteness. Pure keysmash energy.",
+    "tag": {
+      "era": "オタク文化",
+      "whoUses": "オタク",
+      "gachi": "tsuujiru",
+      "sourceNote": "toutoi + shi(death); review reading"
+    }
+  },
+  {
+    "id": "otaku-047",
+    "categoryId": "otaku",
+    "term": "概念",
+    "reading": "がいねん",
+    "romaji": "gainen",
+    "meaningEn": "'The concept' — abstract oshi-themed aesthetics",
+    "meaningJa": "推しを象徴するイメージやモチーフ",
+    "exampleJa": "これ完全に推しの概念じゃん",
+    "exampleRomaji": "kore kanzen ni oshi no gainen jan",
+    "exampleEn": "This totally embodies my fave's vibe.",
+    "socialConsequenceEn": "Niche fan usage: items that 'feel like' your oshi without being them.",
+    "tag": {
+      "era": "オタク文化",
+      "whoUses": "オタク",
+      "gachi": "tsuujiru",
+      "sourceNote": "gainen = 'concept' merch/aesthetic; review nuance"
+    }
+  },
+  {
+    "id": "otaku-048",
+    "categoryId": "otaku",
+    "term": "担降り",
+    "reading": "たんおり",
+    "romaji": "tan-ori",
+    "meaningEn": "Quitting being a member's fan",
+    "meaningJa": "担当を降りる＝推すのをやめる",
+    "exampleJa": "色々あって担降りした",
+    "exampleRomaji": "iroiro atte tan-ori shita",
+    "exampleEn": "Some stuff happened and I stepped away.",
+    "socialConsequenceEn": "The quiet, often painful exit from supporting someone.",
+    "tag": {
+      "era": "オタク文化",
+      "whoUses": "ドルオタ",
+      "gachi": "tsuujiru",
+      "sourceNote": "tantou + ori (step down)"
+    }
   }
 ]

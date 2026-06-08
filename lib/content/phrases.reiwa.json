@@ -226,5 +226,670 @@
       "gachi": "itai",
       "sourceNote": "バブー(赤ちゃん)+み"
     }
+  },
+  {
+    "id": "reiwa-013",
+    "categoryId": "reiwa",
+    "term": "蛙化現象",
+    "reading": "かえるかげんしょう",
+    "romaji": "kaeruka-genshou",
+    "meaningEn": "Going cold once your crush likes you back",
+    "meaningJa": "好きだった相手に好かれた途端冷める現象",
+    "exampleJa": "両思いになった瞬間蛙化現象きた",
+    "exampleRomaji": "ryouomoi ni natta shunkan kaeruka-genshou kita",
+    "exampleEn": "The second it was mutual, I went cold.",
+    "socialConsequenceEn": "A massive 2023 buzzword. Reads very current and very online.",
+    "tag": {
+      "era": "令和",
+      "whoUses": "若者",
+      "gachi": "tsuujiru",
+      "sourceNote": "2023 buzzword, 'frog-ification'"
+    }
+  },
+  {
+    "id": "reiwa-014",
+    "categoryId": "reiwa",
+    "term": "親ガチャ",
+    "reading": "おやガチャ",
+    "romaji": "oya-gacha",
+    "meaningEn": "The 'parent lottery' (luck of your upbringing)",
+    "meaningJa": "どんな親に生まれるかは運次第という考え",
+    "exampleJa": "親ガチャ当たりだったわ",
+    "exampleRomaji": "oya-gacha atari datta wa",
+    "exampleEn": "I won the parent lottery, honestly.",
+    "socialConsequenceEn": "A loaded 2021 term about inherited circumstance. Touches a nerve.",
+    "tag": {
+      "era": "令和",
+      "whoUses": "若者",
+      "gachi": "tsuujiru",
+      "sourceNote": "2021 buzzword, oya + gacha"
+    }
+  },
+  {
+    "id": "reiwa-015",
+    "categoryId": "reiwa",
+    "term": "タイパ",
+    "reading": "たいぱ",
+    "romaji": "taipa",
+    "meaningEn": "Time performance (time efficiency)",
+    "meaningJa": "時間対効果。タイムパフォーマンス",
+    "exampleJa": "倍速視聴はタイパ重視だから",
+    "exampleRomaji": "baisoku shichou wa taipa juushi dakara",
+    "exampleEn": "I watch at 2x for time efficiency.",
+    "socialConsequenceEn": "The 2022 sequel to 'kosupa'. Defines a whole generation's habits.",
+    "tag": {
+      "era": "令和",
+      "whoUses": "若者",
+      "gachi": "tsuujiru",
+      "sourceNote": "time performance, 2022 term"
+    }
+  },
+  {
+    "id": "reiwa-016",
+    "categoryId": "reiwa",
+    "term": "コスパ",
+    "reading": "こすぱ",
+    "romaji": "kosupa",
+    "meaningEn": "Cost performance (bang for buck)",
+    "meaningJa": "費用対効果。コストパフォーマンス",
+    "exampleJa": "この店コスパ良すぎ",
+    "exampleRomaji": "kono mise kosupa yosugi",
+    "exampleEn": "This place is amazing value.",
+    "socialConsequenceEn": "Totally standard now. The yardstick for any purchase.",
+    "tag": {
+      "era": "令和",
+      "whoUses": "若者",
+      "gachi": "tsuujiru",
+      "sourceNote": "cost performance"
+    }
+  },
+  {
+    "id": "reiwa-017",
+    "categoryId": "reiwa",
+    "term": "陰キャ",
+    "reading": "いんきゃ",
+    "romaji": "in-kya",
+    "meaningEn": "An introverted / gloomy type",
+    "meaningJa": "内向的で地味な性格の人",
+    "exampleJa": "休み時間は陰キャムーブしてた",
+    "exampleRomaji": "yasumi jikan wa in-kya muubu shiteta",
+    "exampleEn": "At break I went full introvert-mode.",
+    "socialConsequenceEn": "Self-applied or teasing. Pairs with 'you-kya'.",
+    "tag": {
+      "era": "令和",
+      "whoUses": "若者",
+      "gachi": "tsuujiru",
+      "sourceNote": "in (shadow) + kyara"
+    }
+  },
+  {
+    "id": "reiwa-018",
+    "categoryId": "reiwa",
+    "term": "陽キャ",
+    "reading": "ようきゃ",
+    "romaji": "you-kya",
+    "meaningEn": "An extroverted / sunny type",
+    "meaningJa": "明るく社交的な人",
+    "exampleJa": "陽キャは輪の中心にいる",
+    "exampleRomaji": "you-kya wa wa no chuushin ni iru",
+    "exampleEn": "The extroverts are always center-stage.",
+    "socialConsequenceEn": "The sunny counterpart to in-kya. Half envy, half label.",
+    "tag": {
+      "era": "令和",
+      "whoUses": "若者",
+      "gachi": "tsuujiru",
+      "sourceNote": "you (light) + kyara"
+    }
+  },
+  {
+    "id": "reiwa-019",
+    "categoryId": "reiwa",
+    "term": "コミュ障",
+    "reading": "こみゅしょう",
+    "romaji": "komyushou",
+    "meaningEn": "Bad at socializing (casual self-label)",
+    "meaningJa": "コミュニケーションが苦手なこと",
+    "exampleJa": "電話とか無理、コミュ障だもん",
+    "exampleRomaji": "denwa toka muri, komyushou da mon",
+    "exampleEn": "Phone calls? No way, I'm bad with people.",
+    "socialConsequenceEn": "Casual self-deprecation, not a clinical claim. Very common.",
+    "tag": {
+      "era": "令和",
+      "whoUses": "若者",
+      "gachi": "tsuujiru",
+      "sourceNote": "communication + shougai (casual)"
+    }
+  },
+  {
+    "id": "reiwa-020",
+    "categoryId": "reiwa",
+    "term": "ぼっち",
+    "reading": "ぼっち",
+    "romaji": "bocchi",
+    "meaningEn": "A loner; being all alone",
+    "meaningJa": "一人ぼっちの略",
+    "exampleJa": "昼休みぼっち飯だった",
+    "exampleRomaji": "hiruyasumi bocchi-meshi datta",
+    "exampleEn": "I ate lunch all alone.",
+    "socialConsequenceEn": "From 'hitori-bocchi'. Now half-affectionate ('bocchi-meshi').",
+    "tag": {
+      "era": "令和",
+      "whoUses": "若者",
+      "gachi": "tsuujiru",
+      "sourceNote": "clipped hitori-bocchi"
+    }
+  },
+  {
+    "id": "reiwa-021",
+    "categoryId": "reiwa",
+    "term": "チル",
+    "reading": "ちる",
+    "romaji": "chiru",
+    "meaningEn": "To chill; relax",
+    "meaningJa": "ゆったりくつろぐこと",
+    "exampleJa": "今日は家でチルする",
+    "exampleRomaji": "kyou wa ie de chiru suru",
+    "exampleEn": "I'm just gonna chill at home today.",
+    "socialConsequenceEn": "From English 'chill'. 'Chill-i' (chirui) = the adjective.",
+    "tag": {
+      "era": "令和",
+      "whoUses": "若者",
+      "gachi": "tsuujiru",
+      "sourceNote": "chiru = to chill"
+    }
+  },
+  {
+    "id": "reiwa-022",
+    "categoryId": "reiwa",
+    "term": "ととのう",
+    "reading": "ととのう",
+    "romaji": "totonou",
+    "meaningEn": "To hit sauna bliss (sauna + cold plunge high)",
+    "meaningJa": "サウナで心身が整う快感",
+    "exampleJa": "水風呂のあとととのった",
+    "exampleRomaji": "mizuburo no ato totonotta",
+    "exampleEn": "After the cold bath I reached sauna nirvana.",
+    "socialConsequenceEn": "From the 2020s sauna boom. A specific, blissful trance.",
+    "tag": {
+      "era": "令和",
+      "whoUses": "若者",
+      "gachi": "tsuujiru",
+      "sourceNote": "totonou = sauna bliss (2020s boom)"
+    }
+  },
+  {
+    "id": "reiwa-023",
+    "categoryId": "reiwa",
+    "term": "マウント",
+    "reading": "まうんと",
+    "romaji": "maunto",
+    "meaningEn": "To flex / one-up someone",
+    "meaningJa": "優位に立とうとする言動",
+    "exampleJa": "さらっとマウント取ってくる",
+    "exampleRomaji": "saratto maunto totte kuru",
+    "exampleEn": "They casually one-up you.",
+    "socialConsequenceEn": "'Maunto o toru' = to subtly assert superiority. Very current.",
+    "tag": {
+      "era": "令和",
+      "whoUses": "若者",
+      "gachi": "tsuujiru",
+      "sourceNote": "maunto = to flex/dominate"
+    }
+  },
+  {
+    "id": "reiwa-024",
+    "categoryId": "reiwa",
+    "term": "無理ゲー",
+    "reading": "むりゲー",
+    "romaji": "murige",
+    "meaningEn": "An impossible task ('unwinnable game')",
+    "meaningJa": "クリア不可能なほど難しい状況",
+    "exampleJa": "この納期、無理ゲーだろ",
+    "exampleRomaji": "kono nouki, murige daro",
+    "exampleEn": "This deadline is literally impossible.",
+    "socialConsequenceEn": "Gaming metaphor for real life. Widely understood.",
+    "tag": {
+      "era": "令和",
+      "whoUses": "若者",
+      "gachi": "tsuujiru",
+      "sourceNote": "muri + game"
+    }
+  },
+  {
+    "id": "reiwa-025",
+    "categoryId": "reiwa",
+    "term": "詰んだ",
+    "reading": "つんだ",
+    "romaji": "tsunda",
+    "meaningEn": "I'm done for; checkmate",
+    "meaningJa": "もう打つ手がない、終わった",
+    "exampleJa": "財布忘れた、詰んだ",
+    "exampleRomaji": "saifu wasureta, tsunda",
+    "exampleEn": "Forgot my wallet — I'm done for.",
+    "socialConsequenceEn": "From chess/shogi 'checkmate'. The gen-Z 'I'm finished'.",
+    "tag": {
+      "era": "令和",
+      "whoUses": "若者",
+      "gachi": "tsuujiru",
+      "sourceNote": "tsumu (checkmate) → tsunda"
+    }
+  },
+  {
+    "id": "reiwa-026",
+    "categoryId": "reiwa",
+    "term": "きゅんです",
+    "reading": "きゅんです",
+    "romaji": "kyun-desu",
+    "meaningEn": "My heart fluttered (with finger-heart)",
+    "meaningJa": "胸がきゅんとする、の決め台詞",
+    "exampleJa": "その仕草きゅんです",
+    "exampleRomaji": "sono shigusa kyun-desu",
+    "exampleEn": "That little gesture made my heart flutter.",
+    "socialConsequenceEn": "A 2020 TikTok craze with a hand-heart pose. Peak cute.",
+    "tag": {
+      "era": "令和",
+      "whoUses": "若者",
+      "gachi": "tsuujiru",
+      "sourceNote": "kyun + desu, 2020 TikTok trend"
+    }
+  },
+  {
+    "id": "reiwa-027",
+    "categoryId": "reiwa",
+    "term": "知らんけど",
+    "reading": "しらんけど",
+    "romaji": "shiran kedo",
+    "meaningEn": "…but idk / don't quote me",
+    "meaningJa": "言い切った後に責任回避でつける語",
+    "exampleJa": "たぶん晴れる、知らんけど",
+    "exampleRomaji": "tabun hareru, shiran kedo",
+    "exampleEn": "It'll probably clear up, but idk.",
+    "socialConsequenceEn": "Kansai-origin tic that went national. A perfect disclaimer.",
+    "tag": {
+      "era": "令和",
+      "whoUses": "若者",
+      "gachi": "tsuujiru",
+      "sourceNote": "shiran kedo, Kansai-origin national tic"
+    }
+  },
+  {
+    "id": "reiwa-028",
+    "categoryId": "reiwa",
+    "term": "それはそう",
+    "reading": "それはそう",
+    "romaji": "sore wa sou",
+    "meaningEn": "Well, that's just true; fair point",
+    "meaningJa": "確かにその通り、と認める語",
+    "exampleJa": "早く寝た方がいい？それはそう",
+    "exampleRomaji": "hayaku neta hou ga ii? sore wa sou",
+    "exampleEn": "Sleep earlier? …Yeah, fair.",
+    "socialConsequenceEn": "A dry, agreeable shrug. Very online conversational rhythm.",
+    "tag": {
+      "era": "令和",
+      "whoUses": "若者",
+      "gachi": "tsuujiru",
+      "sourceNote": "sore wa sou = fair/true"
+    }
+  },
+  {
+    "id": "reiwa-029",
+    "categoryId": "reiwa",
+    "term": "ま？",
+    "reading": "ま？",
+    "romaji": "ma?",
+    "meaningEn": "For real? (clipped 'maji?')",
+    "meaningJa": "マジで？の超省略",
+    "exampleJa": "明日休講だって。ま？",
+    "exampleRomaji": "ashita kyuukou datte. ma?",
+    "exampleEn": "Class is cancelled tomorrow. For real?",
+    "socialConsequenceEn": "One syllable of disbelief. Texting-native.",
+    "tag": {
+      "era": "令和",
+      "whoUses": "若者",
+      "gachi": "tsuujiru",
+      "sourceNote": "ma? = clipped maji?"
+    }
+  },
+  {
+    "id": "reiwa-030",
+    "categoryId": "reiwa",
+    "term": "つらみ",
+    "reading": "つらみ",
+    "romaji": "tsurami",
+    "meaningEn": "The feeling of 'this is rough'",
+    "meaningJa": "つらい気持ち（〜み表現）",
+    "exampleJa": "月曜の朝はつらみが深い",
+    "exampleRomaji": "getsuyou no asa wa tsurami ga fukai",
+    "exampleEn": "Monday mornings hit with deep pain.",
+    "socialConsequenceEn": "The '-mi' suffix that turns feelings into nouns (cf. wakarimi).",
+    "tag": {
+      "era": "令和",
+      "whoUses": "若者",
+      "gachi": "tsuujiru",
+      "sourceNote": "tsurai + mi nominalizer"
+    }
+  },
+  {
+    "id": "reiwa-031",
+    "categoryId": "reiwa",
+    "term": "うれしみ",
+    "reading": "うれしみ",
+    "romaji": "ureshimi",
+    "meaningEn": "The feeling of happiness ('-mi' style)",
+    "meaningJa": "うれしい気持ち（〜み表現）",
+    "exampleJa": "推しが配信、うれしみ",
+    "exampleRomaji": "oshi ga haishin, ureshimi",
+    "exampleEn": "My fave is streaming — pure joy.",
+    "socialConsequenceEn": "Cute '-mi' coinage. Soft, fan-flavored happiness.",
+    "tag": {
+      "era": "令和",
+      "whoUses": "若者",
+      "gachi": "tsuujiru",
+      "sourceNote": "ureshii + mi"
+    }
+  },
+  {
+    "id": "reiwa-032",
+    "categoryId": "reiwa",
+    "term": "地雷系",
+    "reading": "じらいけい",
+    "romaji": "jirai-kei",
+    "meaningEn": "'Landmine' style (dark-cute fashion/persona)",
+    "meaningJa": "病みかわ系のファッション・性格",
+    "exampleJa": "地雷系メイク似合うね",
+    "exampleRomaji": "jirai-kei meiku niau ne",
+    "exampleEn": "The landmine-style makeup suits you.",
+    "socialConsequenceEn": "Black-and-pink, frilly-but-volatile aesthetic. A whole 2020s subculture.",
+    "tag": {
+      "era": "令和",
+      "whoUses": "若者",
+      "gachi": "tsuujiru",
+      "sourceNote": "jirai (landmine) + kei (style)"
+    }
+  },
+  {
+    "id": "reiwa-033",
+    "categoryId": "reiwa",
+    "term": "量産型",
+    "reading": "りょうさんがた",
+    "romaji": "ryousan-gata",
+    "meaningEn": "The 'mass-produced' cutesy look",
+    "meaningJa": "似たような無難で可愛い系の見た目",
+    "exampleJa": "今日は量産型コーデ",
+    "exampleRomaji": "kyou wa ryousan-gata koode",
+    "exampleEn": "Today's a mass-produced-cutie outfit.",
+    "socialConsequenceEn": "Pastel, frilly, identical-by-design. Half-pride, half-tease.",
+    "tag": {
+      "era": "令和",
+      "whoUses": "若者",
+      "gachi": "tsuujiru",
+      "sourceNote": "ryousan (mass-produced) + gata"
+    }
+  },
+  {
+    "id": "reiwa-034",
+    "categoryId": "reiwa",
+    "term": "ぴえん超えてぱおん",
+    "reading": "ぴえんこえてぱおん",
+    "romaji": "pien koete paon",
+    "meaningEn": "Beyond crying (even more emotional than pien)",
+    "meaningJa": "ぴえんを超えた強い感情表現",
+    "exampleJa": "尊すぎてぴえん超えてぱおん",
+    "exampleRomaji": "toutosugite pien koete paon",
+    "exampleEn": "So precious I'm beyond tears.",
+    "socialConsequenceEn": "The escalated form of pien. Peak 2020 gal-emoji energy.",
+    "tag": {
+      "era": "令和",
+      "whoUses": "若者",
+      "gachi": "itai",
+      "sourceNote": "pien escalation, 2020"
+    }
+  },
+  {
+    "id": "reiwa-035",
+    "categoryId": "reiwa",
+    "term": "きしょい",
+    "reading": "きしょい",
+    "romaji": "kishoi",
+    "meaningEn": "Gross; creepy (stronger than kimoi)",
+    "meaningJa": "気色悪い、の若者表現",
+    "exampleJa": "その絡み方きしょい",
+    "exampleRomaji": "sono karamikata kishoi",
+    "exampleEn": "The way they're being is so creepy.",
+    "socialConsequenceEn": "From 'kishoku warui'. Harsher than kimoi — careful who hears.",
+    "tag": {
+      "era": "令和",
+      "whoUses": "若者",
+      "gachi": "tsuujiru",
+      "sourceNote": "kishoku warui contraction"
+    }
+  },
+  {
+    "id": "reiwa-036",
+    "categoryId": "reiwa",
+    "term": "かまちょ",
+    "reading": "かまちょ",
+    "romaji": "kamacho",
+    "meaningEn": "An attention-seeker ('pay attention to me')",
+    "meaningJa": "構ってちゃんの略",
+    "exampleJa": "深夜のかまちょツイート",
+    "exampleRomaji": "shinya no kamacho tsuiito",
+    "exampleEn": "A late-night attention-seeking post.",
+    "socialConsequenceEn": "From 'kamatte-chan'. Gently mocks needy posting.",
+    "tag": {
+      "era": "令和",
+      "whoUses": "若者",
+      "gachi": "tsuujiru",
+      "sourceNote": "kamatte-chan → kamacho"
+    }
+  },
+  {
+    "id": "reiwa-037",
+    "categoryId": "reiwa",
+    "term": "フロリダ",
+    "reading": "ふろりだ",
+    "romaji": "furorida",
+    "meaningEn": "BRB, taking a bath (bath + leaving)",
+    "meaningJa": "風呂に入るので離脱、の略",
+    "exampleJa": "ちょっとフロリダするね",
+    "exampleRomaji": "chotto furorida suru ne",
+    "exampleEn": "Brb, hopping in the bath.",
+    "socialConsequenceEn": "Pun on 'furo ridatsu' (=Florida). Cheeky chat shorthand.",
+    "tag": {
+      "era": "令和",
+      "whoUses": "若者",
+      "gachi": "tsuujiru",
+      "sourceNote": "furo ridatsu pun (Florida)"
+    }
+  },
+  {
+    "id": "reiwa-038",
+    "categoryId": "reiwa",
+    "term": "ガチ勢",
+    "reading": "ガチぜい",
+    "romaji": "gachizei",
+    "meaningEn": "The hardcore / try-hard crowd",
+    "meaningJa": "本気で取り組む人たち",
+    "exampleJa": "あの界隈ガチ勢ばっか",
+    "exampleRomaji": "ano kaiwai gachizei bakka",
+    "exampleEn": "That scene is all hardcore types.",
+    "socialConsequenceEn": "From gachi + zei (crowd). Opposite of 'enjoy-zei' (casuals).",
+    "tag": {
+      "era": "令和",
+      "whoUses": "若者",
+      "gachi": "tsuujiru",
+      "sourceNote": "gachi + zei (faction)"
+    }
+  },
+  {
+    "id": "reiwa-039",
+    "categoryId": "reiwa",
+    "term": "情緒不安定",
+    "reading": "じょうちょふあんてい",
+    "romaji": "joucho-fuantei",
+    "meaningEn": "An emotional rollercoaster (jokingly)",
+    "meaningJa": "感情の起伏が激しいこと",
+    "exampleJa": "推しのせいで情緒不安定",
+    "exampleRomaji": "oshi no sei de joucho-fuantei",
+    "exampleEn": "My fave's got me on an emotional rollercoaster.",
+    "socialConsequenceEn": "Used jokingly for fan/feels overload, not clinically.",
+    "tag": {
+      "era": "令和",
+      "whoUses": "若者",
+      "gachi": "tsuujiru",
+      "sourceNote": "joucho fuantei used hyperbolically"
+    }
+  },
+  {
+    "id": "reiwa-040",
+    "categoryId": "reiwa",
+    "term": "やばたん",
+    "reading": "やばたん",
+    "romaji": "yabatan",
+    "meaningEn": "OMG / yikes (cutesy 'yabai')",
+    "meaningJa": "やばいをかわいく言った形",
+    "exampleJa": "寝坊した、やばたん",
+    "exampleRomaji": "nebou shita, yabatan",
+    "exampleEn": "I overslept, yikes!",
+    "socialConsequenceEn": "Cutesy 'yabai'. Also stretched to 'yabatanien'. Very gal-reiwa.",
+    "tag": {
+      "era": "令和",
+      "whoUses": "若者",
+      "gachi": "itai",
+      "sourceNote": "yabai + tan cutesy"
+    }
+  },
+  {
+    "id": "reiwa-041",
+    "categoryId": "reiwa",
+    "term": "それな案件",
+    "reading": "それなあんけん",
+    "romaji": "sorena-anken",
+    "meaningEn": "A total 'so true' situation",
+    "meaningJa": "まさにそれな、と共感する事柄",
+    "exampleJa": "月曜だるいはそれな案件",
+    "exampleRomaji": "getsuyou darui wa sorena-anken",
+    "exampleEn": "'Mondays are rough' is a total mood.",
+    "socialConsequenceEn": "Stacks 'sore na' + '-anken' (a case/matter). Very online.",
+    "tag": {
+      "era": "令和",
+      "whoUses": "若者",
+      "gachi": "tsuujiru",
+      "sourceNote": "sore na + anken; review nuance"
+    }
+  },
+  {
+    "id": "reiwa-042",
+    "categoryId": "reiwa",
+    "term": "しんどい",
+    "reading": "しんどい",
+    "romaji": "shindoi",
+    "meaningEn": "Overwhelming (in a GOOD way too)",
+    "meaningJa": "尊すぎてつらい、良い意味のしんどさ",
+    "exampleJa": "今日の推し尊くてしんどい",
+    "exampleRomaji": "kyou no oshi toutokute shindoi",
+    "exampleEn": "My fave's so precious today it hurts (good).",
+    "socialConsequenceEn": "Reiwa twist: 'shindoi' as overwhelmed-by-cuteness, not just tired.",
+    "tag": {
+      "era": "令和",
+      "whoUses": "若者",
+      "gachi": "tsuujiru",
+      "sourceNote": "shindoi reclaimed as 'good overwhelm'; cf Kansai sense"
+    }
+  },
+  {
+    "id": "reiwa-043",
+    "categoryId": "reiwa",
+    "term": "推し疲れ",
+    "reading": "おしづかれ",
+    "romaji": "oshi-zukare",
+    "meaningEn": "Fan burnout (tired from stanning)",
+    "meaningJa": "推し活に疲れてしまうこと",
+    "exampleJa": "課金しすぎて推し疲れ",
+    "exampleRomaji": "kakin shisugite oshi-zukare",
+    "exampleEn": "I spent too much and burned out as a fan.",
+    "socialConsequenceEn": "The honest downside of fandom intensity. Increasingly discussed.",
+    "tag": {
+      "era": "令和",
+      "whoUses": "若者",
+      "gachi": "tsuujiru",
+      "sourceNote": "oshi + tsukare (fatigue)"
+    }
+  },
+  {
+    "id": "reiwa-044",
+    "categoryId": "reiwa",
+    "term": "蛙化",
+    "reading": "かえるか",
+    "romaji": "kaeruka",
+    "meaningEn": "Going cold on a crush (clipped form)",
+    "meaningJa": "蛙化現象の略",
+    "exampleJa": "ちょっとした仕草で蛙化した",
+    "exampleRomaji": "chotto shita shigusa de kaeruka shita",
+    "exampleEn": "One small gesture and I went cold.",
+    "socialConsequenceEn": "The everyday clipped form of kaeruka-genshou.",
+    "tag": {
+      "era": "令和",
+      "whoUses": "若者",
+      "gachi": "tsuujiru",
+      "sourceNote": "clipped kaeruka-genshou"
+    }
+  },
+  {
+    "id": "reiwa-045",
+    "categoryId": "reiwa",
+    "term": "ぎゃるぴーす",
+    "reading": "ぎゃるぴーす",
+    "romaji": "gyaru-piisu",
+    "meaningEn": "The downward-flipped 'gal peace' pose",
+    "meaningJa": "逆向きのピースサイン（ギャルポーズ）",
+    "exampleJa": "プリでぎゃるぴーすして撮る",
+    "exampleRomaji": "puri de gyaru-piisu shite toru",
+    "exampleEn": "We do the flipped peace sign in photos.",
+    "socialConsequenceEn": "The upside-down peace sign that defined late-2010s/2020s selfies.",
+    "tag": {
+      "era": "令和",
+      "whoUses": "若者",
+      "gachi": "tsuujiru",
+      "sourceNote": "gyaru peace pose; review nuance"
+    }
+  },
+  {
+    "id": "reiwa-046",
+    "categoryId": "reiwa",
+    "term": "限界",
+    "reading": "げんかい",
+    "romaji": "genkai",
+    "meaningEn": "At my limit (overwhelmed, often good)",
+    "meaningJa": "感情が限界、もう無理（良い意味も）",
+    "exampleJa": "かわいすぎて限界",
+    "exampleRomaji": "kawaisugite genkai",
+    "exampleEn": "Too cute — I've hit my limit.",
+    "socialConsequenceEn": "Short for the 'genkai' emotional state. Often joy-overload.",
+    "tag": {
+      "era": "令和",
+      "whoUses": "若者",
+      "gachi": "tsuujiru",
+      "sourceNote": "genkai as emotional-overload slang"
+    }
+  },
+  {
+    "id": "reiwa-047",
+    "categoryId": "reiwa",
+    "term": "おじ構文",
+    "reading": "おじこうぶん",
+    "romaji": "oji-koubun",
+    "meaningEn": "'Uncle-text style' (cringe older-man texting)",
+    "meaningJa": "中年男性特有の砕けすぎたメッセージ文体",
+    "exampleJa": "絵文字多すぎておじ構文",
+    "exampleRomaji": "emoji oosugite oji-koubun",
+    "exampleEn": "Too many emojis — total uncle-text.",
+    "socialConsequenceEn": "Mocks the over-familiar, emoji-stuffed texts of older men.",
+    "tag": {
+      "era": "令和",
+      "whoUses": "若者",
+      "gachi": "tsuujiru",
+      "sourceNote": "oji (uncle) + koubun (syntax)"
+    }
   }
 ]

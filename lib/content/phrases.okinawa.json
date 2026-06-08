@@ -112,5 +112,727 @@
       "gachi": "tsuujiru",
       "sourceNote": "うちなーぐち「にふぇーでーびる」"
     }
+  },
+  {
+    "id": "okinawa-007",
+    "categoryId": "okinawa",
+    "term": "はいたい",
+    "reading": "はいたい",
+    "romaji": "haitai",
+    "meaningEn": "Hi / hey (said by women)",
+    "meaningJa": "女性が使うあいさつ（男性はハイサイ）",
+    "exampleJa": "はいたい、元気ね？",
+    "exampleRomaji": "haitai, genki ne?",
+    "exampleEn": "Hi! How are you?",
+    "socialConsequenceEn": "The female counterpart to 'haisai'. Warm island hello.",
+    "tag": {
+      "era": "沖縄",
+      "whoUses": "うちなーんちゅ",
+      "gachi": "tsuujiru",
+      "sourceNote": "haitai = women's greeting (cf haisai)"
+    }
+  },
+  {
+    "id": "okinawa-008",
+    "categoryId": "okinawa",
+    "term": "いっぺーまーさん",
+    "reading": "いっぺーまーさん",
+    "romaji": "ippee maasan",
+    "meaningEn": "Super delicious",
+    "meaningJa": "とてもおいしい",
+    "exampleJa": "この沖縄そばいっぺーまーさん！",
+    "exampleRomaji": "kono okinawa soba ippee maasan!",
+    "exampleEn": "This Okinawa soba is so good!",
+    "socialConsequenceEn": "'Ippee' (very) + 'maasan' (tasty). Essential food praise.",
+    "tag": {
+      "era": "沖縄",
+      "whoUses": "うちなーんちゅ",
+      "gachi": "tsuujiru",
+      "sourceNote": "ippee (very) + maasan (delicious)"
+    }
+  },
+  {
+    "id": "okinawa-009",
+    "categoryId": "okinawa",
+    "term": "まーさん",
+    "reading": "まーさん",
+    "romaji": "maasan",
+    "meaningEn": "Delicious; tasty",
+    "meaningJa": "おいしい",
+    "exampleJa": "あんまーの料理はまーさん",
+    "exampleRomaji": "anmaa no ryouri wa maasan",
+    "exampleEn": "Mom's cooking is delicious.",
+    "socialConsequenceEn": "The core Okinawan 'oishii'. Heard at every table.",
+    "tag": {
+      "era": "沖縄",
+      "whoUses": "うちなーんちゅ",
+      "gachi": "tsuujiru",
+      "sourceNote": "maasan = delicious"
+    }
+  },
+  {
+    "id": "okinawa-010",
+    "categoryId": "okinawa",
+    "term": "くゎっちーさびら",
+    "reading": "くゎっちーさびら",
+    "romaji": "kwacchii sabira",
+    "meaningEn": "Let's eat (= itadakimasu)",
+    "meaningJa": "いただきます",
+    "exampleJa": "そろったね、くゎっちーさびら",
+    "exampleRomaji": "sorotta ne, kwacchii sabira",
+    "exampleEn": "We're all here — let's eat!",
+    "socialConsequenceEn": "The Okinawan grace before a meal. 'Kwacchii' = a feast.",
+    "tag": {
+      "era": "沖縄",
+      "whoUses": "うちなーんちゅ",
+      "gachi": "tsuujiru",
+      "sourceNote": "kwacchii (feast) sabira = itadakimasu"
+    }
+  },
+  {
+    "id": "okinawa-011",
+    "categoryId": "okinawa",
+    "term": "くゎっちーさびたん",
+    "reading": "くゎっちーさびたん",
+    "romaji": "kwacchii sabitan",
+    "meaningEn": "Thanks for the meal (= gochisousama)",
+    "meaningJa": "ごちそうさま",
+    "exampleJa": "あい、くゎっちーさびたん",
+    "exampleRomaji": "ai, kwacchii sabitan",
+    "exampleEn": "Ah, thanks for the lovely meal.",
+    "socialConsequenceEn": "Said after eating. The bookend to 'kwacchii sabira'.",
+    "tag": {
+      "era": "沖縄",
+      "whoUses": "うちなーんちゅ",
+      "gachi": "tsuujiru",
+      "sourceNote": "kwacchii sabitan = gochisousama"
+    }
+  },
+  {
+    "id": "okinawa-012",
+    "categoryId": "okinawa",
+    "term": "うさがみそーれー",
+    "reading": "うさがみそーれー",
+    "romaji": "usagamisoore",
+    "meaningEn": "Please eat / help yourself",
+    "meaningJa": "召し上がってください",
+    "exampleJa": "遠慮せずうさがみそーれー",
+    "exampleRomaji": "enryo sezu usagamisoore",
+    "exampleEn": "Don't hold back — please eat up.",
+    "socialConsequenceEn": "Warm Okinawan 'dig in'. Hospitality in one word.",
+    "tag": {
+      "era": "沖縄",
+      "whoUses": "うちなーんちゅ",
+      "gachi": "tsuujiru",
+      "sourceNote": "usagamisoore = please eat (honorific)"
+    }
+  },
+  {
+    "id": "okinawa-013",
+    "categoryId": "okinawa",
+    "term": "かめーかめー",
+    "reading": "かめーかめー",
+    "romaji": "kamee-kamee",
+    "meaningEn": "Eat, eat! (urging you to eat more)",
+    "meaningJa": "食べて食べて、ともてなす",
+    "exampleJa": "おばあのかめーかめー攻撃",
+    "exampleRomaji": "obaa no kamee-kamee kougeki",
+    "exampleEn": "Grandma's 'eat-eat' offensive.",
+    "socialConsequenceEn": "The famous 'kamee-kamee koujeki' — being force-fed by an Okinawan grandma.",
+    "tag": {
+      "era": "沖縄",
+      "whoUses": "うちなーんちゅ",
+      "gachi": "wakeru",
+      "sourceNote": "kamee = eat (imperative), hospitality"
+    }
+  },
+  {
+    "id": "okinawa-014",
+    "categoryId": "okinawa",
+    "term": "あきさみよー",
+    "reading": "あきさみよー",
+    "romaji": "akisamiyoo",
+    "meaningEn": "Oh my goodness! Good grief!",
+    "meaningJa": "驚き・困惑を表す感嘆",
+    "exampleJa": "あきさみよー、財布忘れた！",
+    "exampleRomaji": "akisamiyoo, saifu wasureta!",
+    "exampleEn": "Oh no, I forgot my wallet!",
+    "socialConsequenceEn": "The all-purpose Okinawan cry of shock or dismay.",
+    "tag": {
+      "era": "沖縄",
+      "whoUses": "うちなーんちゅ",
+      "gachi": "tsuujiru",
+      "sourceNote": "akisamiyoo = exclamation of surprise"
+    }
+  },
+  {
+    "id": "okinawa-015",
+    "categoryId": "okinawa",
+    "term": "だからよー",
+    "reading": "だからよー",
+    "romaji": "dakarayoo",
+    "meaningEn": "Right? / Exactly (agreement filler)",
+    "meaningJa": "そうだよね、と同調する相づち",
+    "exampleJa": "今日暑いね。だからよー",
+    "exampleRomaji": "kyou atsui ne. dakarayoo",
+    "exampleEn": "It's hot today. — Right?!",
+    "socialConsequenceEn": "Okinawa's beloved agreement word. Often answers without committing.",
+    "tag": {
+      "era": "沖縄",
+      "whoUses": "うちなーんちゅ",
+      "gachi": "tsuujiru",
+      "sourceNote": "dakarayoo = right?/exactly"
+    }
+  },
+  {
+    "id": "okinawa-016",
+    "categoryId": "okinawa",
+    "term": "とー",
+    "reading": "とー",
+    "romaji": "too",
+    "meaningEn": "Okay; alright; now then",
+    "meaningJa": "よし、さあ、という掛け声",
+    "exampleJa": "とー、はじめよーね",
+    "exampleRomaji": "too, hajimeyoo ne",
+    "exampleEn": "Alright, let's get started.",
+    "socialConsequenceEn": "A versatile Okinawan 'okay/here we go'. Tiny but everywhere.",
+    "tag": {
+      "era": "沖縄",
+      "whoUses": "うちなーんちゅ",
+      "gachi": "tsuujiru",
+      "sourceNote": "too = okay/now then"
+    }
+  },
+  {
+    "id": "okinawa-017",
+    "categoryId": "okinawa",
+    "term": "ちむぐくる",
+    "reading": "ちむぐくる",
+    "romaji": "chimugukuru",
+    "meaningEn": "Heart; compassion; the Okinawan spirit",
+    "meaningJa": "心、思いやり、沖縄の心",
+    "exampleJa": "ちむぐくるあふれる島",
+    "exampleRomaji": "chimugukuru afureru shima",
+    "exampleEn": "An island overflowing with warmth.",
+    "socialConsequenceEn": "A cherished word for Okinawan warmth and heart.",
+    "tag": {
+      "era": "沖縄",
+      "whoUses": "うちなーんちゅ",
+      "gachi": "tsuujiru",
+      "sourceNote": "chimu (heart) + kukuru (heart/mind)"
+    }
+  },
+  {
+    "id": "okinawa-018",
+    "categoryId": "okinawa",
+    "term": "ちむぐりさ",
+    "reading": "ちむぐりさ",
+    "romaji": "chimugurisa",
+    "meaningEn": "Heartache for someone; deep compassion",
+    "meaningJa": "相手を思って胸が痛むこと",
+    "exampleJa": "見ていてちむぐりさん",
+    "exampleRomaji": "mite ite chimugurisan",
+    "exampleEn": "It pains my heart to watch.",
+    "socialConsequenceEn": "Empathic pain — feeling another's suffering. Deeply Okinawan.",
+    "tag": {
+      "era": "沖縄",
+      "whoUses": "うちなーんちゅ",
+      "gachi": "tsuujiru",
+      "sourceNote": "chimu (heart) + gurisa (painful)"
+    }
+  },
+  {
+    "id": "okinawa-019",
+    "categoryId": "okinawa",
+    "term": "てーげー",
+    "reading": "てーげー",
+    "romaji": "teegee",
+    "meaningEn": "Easygoing; roughly; 'good enough'",
+    "meaningJa": "いいかげん、おおらか、ほどほど",
+    "exampleJa": "まあてーげーでいいさ",
+    "exampleRomaji": "maa teegee de ii sa",
+    "exampleEn": "Eh, good enough is fine.",
+    "socialConsequenceEn": "The relaxed Okinawan philosophy: don't sweat it. Half virtue, half tease.",
+    "tag": {
+      "era": "沖縄",
+      "whoUses": "うちなーんちゅ",
+      "gachi": "tsuujiru",
+      "sourceNote": "teegee = easygoing/roughly"
+    }
+  },
+  {
+    "id": "okinawa-020",
+    "categoryId": "okinawa",
+    "term": "いちゃりばちょーでー",
+    "reading": "いちゃりばちょーでー",
+    "romaji": "icharibachoodee",
+    "meaningEn": "Once we meet, we're family",
+    "meaningJa": "出会えば皆兄弟、という沖縄の心",
+    "exampleJa": "いちゃりばちょーでー、まずは一杯",
+    "exampleRomaji": "icharibachoodee, mazu wa ippai",
+    "exampleEn": "We're family now — have a drink first!",
+    "socialConsequenceEn": "The famous Okinawan proverb of instant kinship. Beloved.",
+    "tag": {
+      "era": "沖縄",
+      "whoUses": "うちなーんちゅ",
+      "gachi": "tsuujiru",
+      "sourceNote": "icharibachoodee proverb = once met, family"
+    }
+  },
+  {
+    "id": "okinawa-021",
+    "categoryId": "okinawa",
+    "term": "かりー",
+    "reading": "かりー",
+    "romaji": "karii",
+    "meaningEn": "Good fortune; cheers (a toast)",
+    "meaningJa": "縁起・幸運。乾杯の掛け声にも",
+    "exampleJa": "かりー！today is a good day",
+    "exampleRomaji": "karii! kyou wa ii hi",
+    "exampleEn": "Cheers! Today's a lucky day.",
+    "socialConsequenceEn": "Said at toasts and celebrations to invite good luck.",
+    "tag": {
+      "era": "沖縄",
+      "whoUses": "うちなーんちゅ",
+      "gachi": "tsuujiru",
+      "sourceNote": "karii = good fortune/cheers"
+    }
+  },
+  {
+    "id": "okinawa-022",
+    "categoryId": "okinawa",
+    "term": "うちなーんちゅ",
+    "reading": "うちなーんちゅ",
+    "romaji": "uchinaanchu",
+    "meaningEn": "An Okinawan person",
+    "meaningJa": "沖縄の人",
+    "exampleJa": "わったーうちなーんちゅやいびーん",
+    "exampleRomaji": "wattaa uchinaanchu yaibiin",
+    "exampleEn": "We are Okinawans.",
+    "socialConsequenceEn": "A proud identity word. Pairs with 'yamatunchu' (mainlanders).",
+    "tag": {
+      "era": "沖縄",
+      "whoUses": "うちなーんちゅ",
+      "gachi": "tsuujiru",
+      "sourceNote": "uchinaa (Okinawa) + nchu (person)"
+    }
+  },
+  {
+    "id": "okinawa-023",
+    "categoryId": "okinawa",
+    "term": "やまとぅんちゅ",
+    "reading": "やまとぅんちゅ",
+    "romaji": "yamatunchu",
+    "meaningEn": "A mainland Japanese person",
+    "meaningJa": "本土（ヤマト）の人",
+    "exampleJa": "やまとぅんちゅには珍しいはず",
+    "exampleRomaji": "yamatunchu ni wa mezurashii hazu",
+    "exampleEn": "It must seem rare to mainlanders.",
+    "socialConsequenceEn": "The counterpart to uchinaanchu. Marks the Okinawa/mainland line.",
+    "tag": {
+      "era": "沖縄",
+      "whoUses": "うちなーんちゅ",
+      "gachi": "tsuujiru",
+      "sourceNote": "yamatu (mainland) + nchu"
+    }
+  },
+  {
+    "id": "okinawa-024",
+    "categoryId": "okinawa",
+    "term": "うちなーぐち",
+    "reading": "うちなーぐち",
+    "romaji": "uchinaaguchi",
+    "meaningEn": "The Okinawan language",
+    "meaningJa": "沖縄の言葉",
+    "exampleJa": "うちなーぐち習ってみたい",
+    "exampleRomaji": "uchinaaguchi naratte mitai",
+    "exampleEn": "I'd love to learn Okinawan.",
+    "socialConsequenceEn": "The language itself — distinct from mainland Japanese.",
+    "tag": {
+      "era": "沖縄",
+      "whoUses": "うちなーんちゅ",
+      "gachi": "tsuujiru",
+      "sourceNote": "uchinaa + guchi (mouth/speech)"
+    }
+  },
+  {
+    "id": "okinawa-025",
+    "categoryId": "okinawa",
+    "term": "うちなー",
+    "reading": "うちなー",
+    "romaji": "uchinaa",
+    "meaningEn": "Okinawa",
+    "meaningJa": "沖縄のこと",
+    "exampleJa": "うちなーは海がきれい",
+    "exampleRomaji": "uchinaa wa umi ga kirei",
+    "exampleEn": "Okinawa's sea is beautiful.",
+    "socialConsequenceEn": "The Okinawan name for Okinawa. Heart of every 'uchinaa-' word.",
+    "tag": {
+      "era": "沖縄",
+      "whoUses": "うちなーんちゅ",
+      "gachi": "tsuujiru",
+      "sourceNote": "uchinaa = Okinawa"
+    }
+  },
+  {
+    "id": "okinawa-026",
+    "categoryId": "okinawa",
+    "term": "がんじゅー",
+    "reading": "がんじゅー",
+    "romaji": "ganjuu",
+    "meaningEn": "Healthy; robust; doing well",
+    "meaningJa": "元気、丈夫",
+    "exampleJa": "ちゃーがんじゅーね？",
+    "exampleRomaji": "chaa ganjuu ne?",
+    "exampleEn": "Are you keeping well?",
+    "socialConsequenceEn": "Okinawan 'genki'. 'Chaa ganjuu?' = how've you been?",
+    "tag": {
+      "era": "沖縄",
+      "whoUses": "うちなーんちゅ",
+      "gachi": "tsuujiru",
+      "sourceNote": "ganjuu = healthy/robust"
+    }
+  },
+  {
+    "id": "okinawa-027",
+    "categoryId": "okinawa",
+    "term": "ゆんたく",
+    "reading": "ゆんたく",
+    "romaji": "yuntaku",
+    "meaningEn": "Chatting; a good long natter",
+    "meaningJa": "おしゃべり、雑談",
+    "exampleJa": "ばあちゃんとゆんたくした",
+    "exampleRomaji": "baachan to yuntaku shita",
+    "exampleEn": "I had a nice long chat with grandma.",
+    "socialConsequenceEn": "The art of relaxed island chit-chat. 'Yuntaku-hingaa' = chatterbox.",
+    "tag": {
+      "era": "沖縄",
+      "whoUses": "うちなーんちゅ",
+      "gachi": "tsuujiru",
+      "sourceNote": "yuntaku = chatting"
+    }
+  },
+  {
+    "id": "okinawa-028",
+    "categoryId": "okinawa",
+    "term": "まじゅん",
+    "reading": "まじゅん",
+    "romaji": "majun",
+    "meaningEn": "Together",
+    "meaningJa": "一緒に",
+    "exampleJa": "まじゅん行こーね",
+    "exampleRomaji": "majun ikoo ne",
+    "exampleEn": "Let's go together.",
+    "socialConsequenceEn": "A simple, warm 'together'. Heard in invitations.",
+    "tag": {
+      "era": "沖縄",
+      "whoUses": "うちなーんちゅ",
+      "gachi": "tsuujiru",
+      "sourceNote": "majun = together"
+    }
+  },
+  {
+    "id": "okinawa-029",
+    "categoryId": "okinawa",
+    "term": "わじわじー",
+    "reading": "わじわじー",
+    "romaji": "wajiwajii",
+    "meaningEn": "Irritated; fuming",
+    "meaningJa": "いらいらする、腹が立つ",
+    "exampleJa": "渋滞でわじわじーする",
+    "exampleRomaji": "juutai de wajiwajii suru",
+    "exampleEn": "The traffic is making me fume.",
+    "socialConsequenceEn": "Vivid Okinawan 'ticked off'. Even the anger sounds rhythmic.",
+    "tag": {
+      "era": "沖縄",
+      "whoUses": "うちなーんちゅ",
+      "gachi": "tsuujiru",
+      "sourceNote": "wajiwajii = irritated"
+    }
+  },
+  {
+    "id": "okinawa-030",
+    "categoryId": "okinawa",
+    "term": "あがー",
+    "reading": "あがー",
+    "romaji": "agaa",
+    "meaningEn": "Ouch! (cry of pain)",
+    "meaningJa": "痛い！という叫び",
+    "exampleJa": "あがー、ぶつけた！",
+    "exampleRomaji": "agaa, butsuketa!",
+    "exampleEn": "Ouch, I bumped it!",
+    "socialConsequenceEn": "The Okinawan 'ow'. Instinctive and instantly local.",
+    "tag": {
+      "era": "沖縄",
+      "whoUses": "うちなーんちゅ",
+      "gachi": "tsuujiru",
+      "sourceNote": "agaa = ouch"
+    }
+  },
+  {
+    "id": "okinawa-031",
+    "categoryId": "okinawa",
+    "term": "しに",
+    "reading": "しに",
+    "romaji": "shini",
+    "meaningEn": "Very; really (intensifier)",
+    "meaningJa": "とても、すごく（でーじと同義）",
+    "exampleJa": "しにまーさん！",
+    "exampleRomaji": "shini maasan!",
+    "exampleEn": "Super delicious!",
+    "socialConsequenceEn": "Another Okinawan 'very', alongside 'deeji'. Youthful flavor.",
+    "tag": {
+      "era": "沖縄",
+      "whoUses": "うちなーんちゅ",
+      "gachi": "tsuujiru",
+      "sourceNote": "shini = very (intensifier)"
+    }
+  },
+  {
+    "id": "okinawa-032",
+    "categoryId": "okinawa",
+    "term": "まぎー",
+    "reading": "まぎー",
+    "romaji": "magii",
+    "meaningEn": "Big; large",
+    "meaningJa": "大きい",
+    "exampleJa": "まぎーシークヮーサー",
+    "exampleRomaji": "magii shiikwaasaa",
+    "exampleEn": "A big shikuwasa fruit.",
+    "socialConsequenceEn": "Okinawan 'ookii'. Small word, big presence.",
+    "tag": {
+      "era": "沖縄",
+      "whoUses": "うちなーんちゅ",
+      "gachi": "tsuujiru",
+      "sourceNote": "magii = big"
+    }
+  },
+  {
+    "id": "okinawa-033",
+    "categoryId": "okinawa",
+    "term": "かなさん",
+    "reading": "かなさん",
+    "romaji": "kanasan",
+    "meaningEn": "Beloved; dear; precious",
+    "meaningJa": "愛しい、かわいい",
+    "exampleJa": "わが子はかなさん",
+    "exampleRomaji": "waga ko wa kanasan",
+    "exampleEn": "My child is so dear to me.",
+    "socialConsequenceEn": "Tender Okinawan 'beloved'. Often sung in shima-uta.",
+    "tag": {
+      "era": "沖縄",
+      "whoUses": "うちなーんちゅ",
+      "gachi": "tsuujiru",
+      "sourceNote": "kanasan = beloved/dear"
+    }
+  },
+  {
+    "id": "okinawa-034",
+    "categoryId": "okinawa",
+    "term": "ぐすーよー",
+    "reading": "ぐすーよー",
+    "romaji": "gusuuyoo",
+    "meaningEn": "Everyone (a greeting to a group)",
+    "meaningJa": "皆さん、という呼びかけ",
+    "exampleJa": "ぐすーよー、ちゅーうがなびら",
+    "exampleRomaji": "gusuuyoo, chuu uganabira",
+    "exampleEn": "Everyone, hello (today).",
+    "socialConsequenceEn": "Formal Okinawan 'everyone' — opens speeches and shows.",
+    "tag": {
+      "era": "沖縄",
+      "whoUses": "うちなーんちゅ",
+      "gachi": "tsuujiru",
+      "sourceNote": "gusuuyoo = everyone (address)"
+    }
+  },
+  {
+    "id": "okinawa-035",
+    "categoryId": "okinawa",
+    "term": "ちゅーうがなびら",
+    "reading": "ちゅーうがなびら",
+    "romaji": "chuu uganabira",
+    "meaningEn": "Hello (a polite greeting)",
+    "meaningJa": "こんにちは（丁寧なあいさつ）",
+    "exampleJa": "ちゅーうがなびら、お元気で？",
+    "exampleRomaji": "chuu uganabira, ogenki de?",
+    "exampleEn": "Hello — how do you do?",
+    "socialConsequenceEn": "A respectful Okinawan 'hello'. More formal than haisai.",
+    "tag": {
+      "era": "沖縄",
+      "whoUses": "うちなーんちゅ",
+      "gachi": "tsuujiru",
+      "sourceNote": "chuu uganabira = polite hello"
+    }
+  },
+  {
+    "id": "okinawa-036",
+    "categoryId": "okinawa",
+    "term": "わん",
+    "reading": "わん",
+    "romaji": "wan",
+    "meaningEn": "I; me",
+    "meaningJa": "私（一人称）",
+    "exampleJa": "わんが行くさ",
+    "exampleRomaji": "wan ga iku sa",
+    "exampleEn": "I'll go.",
+    "socialConsequenceEn": "Okinawan first-person 'I'. Tiny but foundational.",
+    "tag": {
+      "era": "沖縄",
+      "whoUses": "うちなーんちゅ",
+      "gachi": "tsuujiru",
+      "sourceNote": "wan = I/me"
+    }
+  },
+  {
+    "id": "okinawa-037",
+    "categoryId": "okinawa",
+    "term": "いゃー",
+    "reading": "いゃー",
+    "romaji": "iyaa",
+    "meaningEn": "You (informal)",
+    "meaningJa": "おまえ、あなた（くだけた言い方）",
+    "exampleJa": "いゃーや誰ね？",
+    "exampleRomaji": "iyaa ya taa ne?",
+    "exampleEn": "Who are you?",
+    "socialConsequenceEn": "Casual Okinawan 'you'. Friends and family only.",
+    "tag": {
+      "era": "沖縄",
+      "whoUses": "うちなーんちゅ",
+      "gachi": "tsuujiru",
+      "sourceNote": "iyaa = you (informal)"
+    }
+  },
+  {
+    "id": "okinawa-038",
+    "categoryId": "okinawa",
+    "term": "やいびーん",
+    "reading": "やいびーん",
+    "romaji": "yaibiin",
+    "meaningEn": "It is / I am (polite copula = desu)",
+    "meaningJa": "〜です（丁寧）",
+    "exampleJa": "わんねー学生やいびーん",
+    "exampleRomaji": "wannee gakusei yaibiin",
+    "exampleEn": "I am a student.",
+    "socialConsequenceEn": "The polite Okinawan 'desu'. Marks respectful speech.",
+    "tag": {
+      "era": "沖縄",
+      "whoUses": "うちなーんちゅ",
+      "gachi": "tsuujiru",
+      "sourceNote": "yaibiin = polite copula (desu)"
+    }
+  },
+  {
+    "id": "okinawa-039",
+    "categoryId": "okinawa",
+    "term": "ぐぶりーさびたん",
+    "reading": "ぐぶりーさびたん",
+    "romaji": "guburii sabitan",
+    "meaningEn": "Excuse my rudeness / pardon me",
+    "meaningJa": "失礼しました",
+    "exampleJa": "遅れてぐぶりーさびたん",
+    "exampleRomaji": "okurete guburii sabitan",
+    "exampleEn": "Sorry for being late / my rudeness.",
+    "socialConsequenceEn": "Polite Okinawan apology for any impoliteness.",
+    "tag": {
+      "era": "沖縄",
+      "whoUses": "うちなーんちゅ",
+      "gachi": "tsuujiru",
+      "sourceNote": "guburii sabitan = excuse my rudeness"
+    }
+  },
+  {
+    "id": "okinawa-040",
+    "categoryId": "okinawa",
+    "term": "うとぅいむち",
+    "reading": "うとぅいむち",
+    "romaji": "utuimuchi",
+    "meaningEn": "Hospitality; entertaining a guest",
+    "meaningJa": "もてなし",
+    "exampleJa": "うとぅいむちの心が深い",
+    "exampleRomaji": "utuimuchi no kokoro ga fukai",
+    "exampleEn": "Their spirit of hospitality runs deep.",
+    "socialConsequenceEn": "The Okinawan art of welcoming guests warmly.",
+    "tag": {
+      "era": "沖縄",
+      "whoUses": "うちなーんちゅ",
+      "gachi": "tsuujiru",
+      "sourceNote": "utuimuchi = hospitality"
+    }
+  },
+  {
+    "id": "okinawa-041",
+    "categoryId": "okinawa",
+    "term": "にーびち",
+    "reading": "にーびち",
+    "romaji": "niibichi",
+    "meaningEn": "A wedding",
+    "meaningJa": "結婚式",
+    "exampleJa": "週末はいとこのにーびち",
+    "exampleRomaji": "shuumatsu wa itoko no niibichi",
+    "exampleEn": "It's my cousin's wedding this weekend.",
+    "socialConsequenceEn": "Okinawan weddings (niibichi) are famously huge celebrations.",
+    "tag": {
+      "era": "沖縄",
+      "whoUses": "うちなーんちゅ",
+      "gachi": "tsuujiru",
+      "sourceNote": "niibichi = wedding"
+    }
+  },
+  {
+    "id": "okinawa-042",
+    "categoryId": "okinawa",
+    "term": "ちゅらかーぎー",
+    "reading": "ちゅらかーぎー",
+    "romaji": "chura-kaagi",
+    "meaningEn": "A beautiful person",
+    "meaningJa": "美人",
+    "exampleJa": "島いちばんのちゅらかーぎー",
+    "exampleRomaji": "shima ichiban no chura-kaagi",
+    "exampleEn": "The island's greatest beauty.",
+    "socialConsequenceEn": "'Chura' (beautiful) + 'kaagi' (looks). Cf. the word 'churaumi'.",
+    "tag": {
+      "era": "沖縄",
+      "whoUses": "うちなーんちゅ",
+      "gachi": "tsuujiru",
+      "sourceNote": "chura (beautiful) + kaagi (looks)"
+    }
+  },
+  {
+    "id": "okinawa-043",
+    "categoryId": "okinawa",
+    "term": "ちゅらさん",
+    "reading": "ちゅらさん",
+    "romaji": "churasan",
+    "meaningEn": "Beautiful; clean and lovely",
+    "meaningJa": "美しい、清らかだ",
+    "exampleJa": "海ぬちゅらさ！",
+    "exampleRomaji": "umi nu churasa!",
+    "exampleEn": "How beautiful the sea is!",
+    "socialConsequenceEn": "Title of a famous NHK drama. The Okinawan 'beautiful'.",
+    "tag": {
+      "era": "沖縄",
+      "whoUses": "うちなーんちゅ",
+      "gachi": "tsuujiru",
+      "sourceNote": "chura = beautiful (+san adj.)"
+    }
+  },
+  {
+    "id": "okinawa-044",
+    "categoryId": "okinawa",
+    "term": "ちゃーびらさい",
+    "reading": "ちゃーびらさい",
+    "romaji": "chaabira sai",
+    "meaningEn": "Hello / excuse me (entering; men)",
+    "meaningJa": "ごめんください（男性の言い方）",
+    "exampleJa": "ちゃーびらさい、誰かいねー？",
+    "exampleRomaji": "chaabira sai, daka inee?",
+    "exampleEn": "Hello? Is anyone home?",
+    "socialConsequenceEn": "Said when entering a home. Men say 'sai', women 'tai'.",
+    "tag": {
+      "era": "沖縄",
+      "whoUses": "うちなーんちゅ",
+      "gachi": "tsuujiru",
+      "sourceNote": "chaabira sai = excuse me (entering, male)"
+    }
   }
 ]
