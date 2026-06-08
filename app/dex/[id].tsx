@@ -1,5 +1,5 @@
-import { Stack, useLocalSearchParams, useRouter } from 'expo-router';
-import { useEffect, useState } from 'react';
+import { Stack, useFocusEffect, useLocalSearchParams, useRouter } from 'expo-router';
+import { useCallback, useState } from 'react';
 import { Pressable, ScrollView, Text, View } from 'react-native';
 import { findCategory, loadPhrasesByCategory } from '../../lib/content/loadContent';
 import { loadProgress, Progress } from '../../store/progress';
@@ -16,9 +16,11 @@ export default function DexCategory() {
   const cat = findCategory(id!);
   const pool = loadPhrasesByCategory(id!);
   const [p, setP] = useState<Progress | null>(null);
-  useEffect(() => {
-    loadProgress().then(setP);
-  }, []);
+  useFocusEffect(
+    useCallback(() => {
+      loadProgress().then(setP);
+    }, []),
+  );
 
   if (!p || !cat) {
     return (

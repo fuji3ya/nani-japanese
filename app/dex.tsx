@@ -1,5 +1,5 @@
-import { Stack, useRouter } from 'expo-router';
-import { useEffect, useState } from 'react';
+import { Stack, useFocusEffect, useRouter } from 'expo-router';
+import { useCallback, useState } from 'react';
 import { Pressable, ScrollView, Text, View } from 'react-native';
 import { loadCategories, loadPhrasesByCategory } from '../lib/content/loadContent';
 import { loadProgress, Progress } from '../store/progress';
@@ -11,9 +11,11 @@ const PAPER = '#FFFDF7';
 export default function DexHome() {
   const router = useRouter();
   const [p, setP] = useState<Progress | null>(null);
-  useEffect(() => {
-    loadProgress().then(setP);
-  }, []);
+  useFocusEffect(
+    useCallback(() => {
+      loadProgress().then(setP);
+    }, []),
+  );
 
   const cats = loadCategories().filter((c) => loadPhrasesByCategory(c.id).length > 0);
 

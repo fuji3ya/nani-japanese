@@ -1,5 +1,5 @@
-import { Stack, useRouter } from 'expo-router';
-import { useEffect, useState } from 'react';
+import { Stack, useFocusEffect, useRouter } from 'expo-router';
+import { useCallback, useState } from 'react';
 import { Pressable, ScrollView, Text, View } from 'react-native';
 import { findCategory, loadCategories, loadPhrasesByCategory } from '../lib/content/loadContent';
 import { loadProgress, saveProgress, setPro, Progress } from '../store/progress';
@@ -12,13 +12,17 @@ export default function Home() {
   const router = useRouter();
   const [progress, setProgress] = useState<Progress | null>(null);
 
-  useEffect(() => {
-    loadProgress().then((p) => {
-      if (!p.onboarded) router.replace('/onboarding' as never);
-      else setProgress(p);
-    });
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+  // Reload on every focus (incl. returning from a lesson) so 🔥 streak / unlock
+  // state reflect what just happened — a mount-only effect would stay stale.
+  useFocusEffect(
+    useCallback(() => {
+      loadProgress().then((p) => {
+        if (!p.onboarded) router.replace('/onboarding' as never);
+        else setProgress(p);
+      });
+      // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, []),
+  );
 
   const cats = loadCategories();
 
