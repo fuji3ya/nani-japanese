@@ -30,6 +30,9 @@ jobs:
       - name: Expo prebuild (generate native iOS project)
         run: npx expo prebuild --platform ios --no-install
 
+      - name: Pod install (CocoaPods creates the .xcworkspace)
+        run: cd ios && pod install
+
       - name: Resolve Xcode scheme
         id: scheme
         run: |
