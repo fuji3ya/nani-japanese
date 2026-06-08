@@ -413,6 +413,18 @@ const MIX: Record<string, string> = {
   'ちゅらかーぎー': "She's a real chura-kaagi.",
   'ちゅらさん': "This beach is so churasan.",
   'ちゃーびらさい': "Chaabira sai — anyone home?",
+  'ドパガキ': "Sorry, I'm such a dopagaki, I can't sit still.",
+  'メロい': "His smile is so meroi, I can't.",
+  '好きすぎて滅': "I love this song suki sugite metsu.",
+  '界隈': "The K-pop kaiwai is next-level.",
+  'ビジュ': "Your biju is amazing today.",
+  'キャパい': "Four reports at once? I'm so kyapai.",
+  'てぇてぇ': "Those two together are so teetee.",
+  'ウマ確': "This burger is uma-kaku, trust.",
+  '風呂キャン': "I did a furo-kyan again, oops.",
+  'ビジュ爆発': "She's having a biju-bakuhatsu moment.",
+  'エッホエッホ': "Ehho-ehho! Gotta tell everyone the news!",
+  'ほんmoney': "My oshi replied?! Hon-money!!",
 };
 
 // JP → EN labels for temperature tags (English-first chrome).

@@ -891,5 +891,233 @@
       "gachi": "tsuujiru",
       "sourceNote": "oji (uncle) + koubun (syntax)"
     }
+  },
+  {
+    "id": "reiwa-048",
+    "categoryId": "reiwa",
+    "term": "ドパガキ",
+    "reading": "どぱがき",
+    "romaji": "dopagaki",
+    "meaningEn": "A 'dopamine kid' — can't focus, needs constant stimulation",
+    "meaningJa": "強い刺激に慣れて集中が続かない若年層の自虐語",
+    "exampleJa": "もうドパガキで10分も集中できない",
+    "exampleRomaji": "mou dopagaki de juppun mo shuuchuu dekinai",
+    "exampleEn": "I'm such a dopamine-kid, can't focus 10 minutes.",
+    "socialConsequenceEn": "From 'dopamine + gaki (kid)'. Z/α-gen self-roast for short-video brain (late 2024).",
+    "tag": {
+      "era": "令和",
+      "whoUses": "若者",
+      "gachi": "tsuujiru",
+      "sourceNote": "ドーパミン中毒のガキ; 2024末 Z/α世代の自虐語 (Wikipedia/集英社オンライン)"
+    }
+  },
+  {
+    "id": "reiwa-049",
+    "categoryId": "reiwa",
+    "term": "メロい",
+    "reading": "めろい",
+    "romaji": "meroi",
+    "meaningEn": "Smitten; so charming it melts your heart",
+    "meaningJa": "メロメロになるほど魅力的",
+    "exampleJa": "推しの笑顔がメロい",
+    "exampleRomaji": "oshi no egao ga meroi",
+    "exampleEn": "My fave's smile makes me melt.",
+    "socialConsequenceEn": "Adjective form of 'meromero'. Peak oshi-katsu and crush vocab (2025).",
+    "tag": {
+      "era": "令和",
+      "whoUses": "若者",
+      "gachi": "tsuujiru",
+      "sourceNote": "メロメロ→メロい; 2025流行 (weknowledge/haradaeigo)"
+    }
+  },
+  {
+    "id": "reiwa-050",
+    "categoryId": "reiwa",
+    "term": "好きすぎて滅",
+    "reading": "すきすぎてめつ",
+    "romaji": "suki sugite metsu",
+    "meaningEn": "I love it/them so much I'm destroyed",
+    "meaningJa": "好きすぎて滅びそうなほど、の強い推し表現",
+    "exampleJa": "この曲好きすぎて滅",
+    "exampleRomaji": "kono kyoku suki sugite metsu",
+    "exampleEn": "I love this song so much I'm dead.",
+    "socialConsequenceEn": "'Metsu' (annihilation) as hyperbole. The stan's 'I'm deceased' (2025).",
+    "tag": {
+      "era": "令和",
+      "whoUses": "若者",
+      "gachi": "tsuujiru",
+      "sourceNote": "激推し表現 好きすぎて滅; 2025 (weknowledge)"
+    }
+  },
+  {
+    "id": "reiwa-051",
+    "categoryId": "reiwa",
+    "term": "界隈",
+    "reading": "かいわい",
+    "romaji": "kaiwai",
+    "meaningEn": "A scene / community around an interest",
+    "meaningJa": "特定の趣味や話題でつながる人たちの集まり",
+    "exampleJa": "K-POP界隈はやばい",
+    "exampleRomaji": "kei-poppu kaiwai wa yabai",
+    "exampleEn": "The K-pop community is wild.",
+    "socialConsequenceEn": "Lit. 'the vicinity'. Now means any niche online scene. Everywhere in 2025.",
+    "tag": {
+      "era": "令和",
+      "whoUses": "若者",
+      "gachi": "tsuujiru",
+      "sourceNote": "○○界隈=趣味コミュニティ; 2025定番 (g-crews/haradaeigo)"
+    }
+  },
+  {
+    "id": "reiwa-052",
+    "categoryId": "reiwa",
+    "term": "ビジュ",
+    "reading": "びじゅ",
+    "romaji": "biju",
+    "meaningEn": "Looks; visual appearance (esp. 'good-looking')",
+    "meaningJa": "ビジュアル、見た目",
+    "exampleJa": "今日ビジュ良すぎ",
+    "exampleRomaji": "kyou biju yosugi",
+    "exampleEn": "Your look today is too good.",
+    "socialConsequenceEn": "Clipped 'visual'. 'Biju ii jan' was a 2025 hit phrase/song.",
+    "tag": {
+      "era": "令和",
+      "whoUses": "若者",
+      "gachi": "tsuujiru",
+      "sourceNote": "ビジュ=ビジュアル; ビジュいいじゃん 2025 (haradaeigo/g-crews)"
+    }
+  },
+  {
+    "id": "reiwa-053",
+    "categoryId": "reiwa",
+    "term": "キャパい",
+    "reading": "きゃぱい",
+    "romaji": "kyapai",
+    "meaningEn": "At full capacity; overwhelmed; maxed out",
+    "meaningJa": "容量がいっぱいで余裕がない",
+    "exampleJa": "レポート4本同時はキャパい",
+    "exampleRomaji": "repooto yonhon douji wa kyapai",
+    "exampleEn": "Four reports at once — I'm maxed out.",
+    "socialConsequenceEn": "Adjective from 'capacity'. The gen-Z 'I can't even' (2025).",
+    "tag": {
+      "era": "令和",
+      "whoUses": "若者",
+      "gachi": "tsuujiru",
+      "sourceNote": "キャパ(capacity)+い; 2025 (g-crews)"
+    }
+  },
+  {
+    "id": "reiwa-054",
+    "categoryId": "reiwa",
+    "term": "てぇてぇ",
+    "reading": "てぇてぇ",
+    "romaji": "teetee",
+    "meaningEn": "So precious (corrupted 'toutoi')",
+    "meaningJa": "尊いを崩したかわいい言い方",
+    "exampleJa": "あの二人のやりとりてぇてぇ",
+    "exampleRomaji": "ano futari no yaritori teetee",
+    "exampleEn": "Those two interacting are so precious.",
+    "socialConsequenceEn": "Baby-talk 'toutoi', from VTuber clips. Wholesome fan flail (2025).",
+    "tag": {
+      "era": "令和",
+      "whoUses": "若者",
+      "gachi": "tsuujiru",
+      "sourceNote": "尊い→てぇてぇ; VTuber発 (g-crews)"
+    }
+  },
+  {
+    "id": "reiwa-055",
+    "categoryId": "reiwa",
+    "term": "ウマ確",
+    "reading": "うまかく",
+    "romaji": "uma-kaku",
+    "meaningEn": "Guaranteed delicious (confirmed tasty)",
+    "meaningJa": "おいしいことが確定している",
+    "exampleJa": "このチーズバーガー、ウマ確",
+    "exampleRomaji": "kono chiizu baagaa, uma-kaku",
+    "exampleEn": "This cheeseburger? Guaranteed delicious.",
+    "socialConsequenceEn": "'Umai' + 'kakutei' (confirmed). The foodie stamp of approval (2025).",
+    "tag": {
+      "era": "令和",
+      "whoUses": "若者",
+      "gachi": "tsuujiru",
+      "sourceNote": "うまい+確定; 2025 (g-crews)"
+    }
+  },
+  {
+    "id": "reiwa-056",
+    "categoryId": "reiwa",
+    "term": "風呂キャン",
+    "reading": "ふろキャン",
+    "romaji": "furo-kyan",
+    "meaningEn": "Skipping your bath (cancelling the bath)",
+    "meaningJa": "入浴をやめてしまうこと",
+    "exampleJa": "疲れて今日も風呂キャンしちゃった",
+    "exampleRomaji": "tsukarete kyou mo furo-kyan shichatta",
+    "exampleEn": "Too tired — skipped my bath again today.",
+    "socialConsequenceEn": "'Furo' + 'cancel'. A whole '風呂キャン界隈' formed around it (2025).",
+    "tag": {
+      "era": "令和",
+      "whoUses": "若者",
+      "gachi": "tsuujiru",
+      "sourceNote": "風呂+キャンセル; 風呂キャン界隈 2025 (haradaeigo)"
+    }
+  },
+  {
+    "id": "reiwa-057",
+    "categoryId": "reiwa",
+    "term": "ビジュ爆発",
+    "reading": "びじゅばくはつ",
+    "romaji": "biju-bakuhatsu",
+    "meaningEn": "Looking absolutely stunning ('visual explosion')",
+    "meaningJa": "見た目が最高潮にいい状態",
+    "exampleJa": "今日の推しビジュ爆発してる",
+    "exampleRomaji": "kyou no oshi biju-bakuhatsu shiteru",
+    "exampleEn": "My fave's looks are exploding today.",
+    "socialConsequenceEn": "When someone's 'biju' is off the charts. Pure hype compliment (2025).",
+    "tag": {
+      "era": "令和",
+      "whoUses": "若者",
+      "gachi": "tsuujiru",
+      "sourceNote": "ビジュ+爆発; 2025派生"
+    }
+  },
+  {
+    "id": "reiwa-058",
+    "categoryId": "reiwa",
+    "term": "エッホエッホ",
+    "reading": "えっほえっほ",
+    "romaji": "ehho-ehho",
+    "meaningEn": "Cutely/earnestly trotting off to share news (meme)",
+    "meaningJa": "メンフクロウの雛画像発の構文。一生懸命伝える様子",
+    "exampleJa": "エッホエッホ、みんなに伝えなきゃ",
+    "exampleRomaji": "ehho-ehho, minna ni tsutaenakya",
+    "exampleEn": "Trot trot — gotta go tell everyone!",
+    "socialConsequenceEn": "From a baby barn-owl photo. A cutesy 'I must share this!' template (2025).",
+    "tag": {
+      "era": "令和",
+      "whoUses": "若者",
+      "gachi": "wakeru",
+      "sourceNote": "メンフクロウ雛発の構文; 2025上半期1位級 (haradaeigo/g-crews); 用法ニュアンス要確認"
+    }
+  },
+  {
+    "id": "reiwa-059",
+    "categoryId": "reiwa",
+    "term": "ほんmoney",
+    "reading": "ほんまね",
+    "romaji": "hon-money",
+    "meaningEn": "For real!! (pun on 'honma' + money)",
+    "meaningJa": "本当に、を money でもじった強調表現",
+    "exampleJa": "推しからリプ来た、ほんmoney",
+    "exampleRomaji": "oshi kara ripu kita, hon-money",
+    "exampleEn": "My fave replied — for real!!",
+    "socialConsequenceEn": "Pun on 'honma ni' (really). Playful emphasis/gratitude (2025).",
+    "tag": {
+      "era": "令和",
+      "whoUses": "若者",
+      "gachi": "wakeru",
+      "sourceNote": "ほんまに+money のダジャレ; 2025 (g-crews/haradaeigo); ニュアンス要確認"
+    }
   }
 ]
