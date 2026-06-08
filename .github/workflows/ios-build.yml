@@ -2,10 +2,13 @@ name: iOS compile gate
 
 # The "does it actually build on a Mac" gate for a Windows dev box.
 # Pure compile check: expo prebuild + xcodebuild for the simulator, NO code
-# signing (no Apple secrets needed). This catches native/RN compile errors that
+# signing (no Apple secrets needed). Catches native/RN compile errors that
 # tsc + vitest can't. Signing + TestFlight is a later, separate workflow.
 #
 # Public repo => unlimited free macOS minutes. EAS is not used (Line I policy).
+# Proven config copied from the ibiki SDK56 build (same Expo SDK56 / RN 0.85
+# stack): macos-26 + newest Xcode (Swift 6.2), pod install --repo-update,
+# scheme resolved via `xcodebuild -list -json`.
 
 on:
   push:
@@ -13,52 +16,70 @@ on:
   workflow_dispatch:
 
 jobs:
-  ios-build:
-    runs-on: macos-15
-    timeout-minutes: 40
+  simulator-build:
+    name: iPhone Simulator Build (compile gate)
+    runs-on: macos-26
+    timeout-minutes: 60
     steps:
-      - uses: actions/checkout@v4
+      - name: Check out repository
+        uses: actions/checkout@v4
 
-      - name: Select newest Xcode (RN 0.85 SPM needs Swift 6.2 / Xcode 26)
+      - name: Select newest Xcode (Expo SDK56 'apple' SPM pkg needs Swift 6.2)
         run: |
-          echo "Available Xcodes:"; ls -d /Applications/Xcode_*.app
-          XC=$(ls -d /Applications/Xcode_*.app | sort -V | tail -1)
-          echo "Selecting $XC"
-          sudo xcode-select -s "$XC/Contents/Developer"
+          set -euo pipefail
+          LATEST=$(ls -d /Applications/Xcode_26*.app 2>/dev/null | sort -V | tail -1 || true)
+          if [ -z "$LATEST" ]; then LATEST=$(ls -d /Applications/Xcode*.app | sort -V | tail -1); fi
+          echo "Using $LATEST"
+          sudo xcode-select -s "$LATEST/Contents/Developer"
           xcodebuild -version
           swift --version
 
-      - uses: actions/setup-node@v4
+      - name: Set up Node
+        uses: actions/setup-node@v4
         with:
           node-version: 20
           cache: npm
 
-      - name: Install deps
+      - name: Install JS dependencies
         run: npm ci
 
-      - name: Expo prebuild (generate native iOS project)
+      - name: Type-check (tsc) + unit tests (vitest)
+        run: |
+          npx tsc --noEmit
+          npx vitest run
+
+      - name: Expo prebuild (iOS)
         run: npx expo prebuild --platform ios --no-install
 
-      - name: Pod install (CocoaPods creates the .xcworkspace)
-        run: cd ios && pod install
+      - name: Install CocoaPods
+        working-directory: ios
+        run: pod install --repo-update
 
-      - name: Resolve Xcode scheme
-        id: scheme
+      - name: Resolve workspace and scheme
+        id: xc
         run: |
-          WS=$(ls -d ios/*.xcworkspace | head -1)
-          SCHEME=$(basename "$WS" .xcworkspace)
-          echo "ws=$WS" >> "$GITHUB_OUTPUT"
+          set -euo pipefail
+          WORKSPACE=$(find ios -maxdepth 1 -name "*.xcworkspace" | head -1)
+          SCHEME=$(xcodebuild -list -workspace "$WORKSPACE" -json | python3 -c "import sys,json;print(json.load(sys.stdin)['workspace']['schemes'][0])")
+          echo "workspace=$WORKSPACE" >> "$GITHUB_OUTPUT"
           echo "scheme=$SCHEME" >> "$GITHUB_OUTPUT"
-          echo "Workspace=$WS Scheme=$SCHEME"
+          echo "Resolved workspace=$WORKSPACE scheme=$SCHEME"
 
-      - name: Build (iphonesimulator, no signing)
+      - name: Build for simulator (compile only, generic destination)
         run: |
           set -o pipefail
           xcodebuild \
-            -workspace "${{ steps.scheme.outputs.ws }}" \
-            -scheme "${{ steps.scheme.outputs.scheme }}" \
-            -configuration Release \
-            -sdk iphonesimulator \
-            -destination 'generic/platform=iOS Simulator' \
+            -workspace "${{ steps.xc.outputs.workspace }}" \
+            -scheme "${{ steps.xc.outputs.scheme }}" \
+            -configuration Debug \
+            -destination "generic/platform=iOS Simulator" \
+            -skipPackagePluginValidation \
             CODE_SIGNING_ALLOWED=NO \
-            build
+            build | tee xcodebuild.log
+
+      - name: Upload xcodebuild log
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: nani-sim-log
+          path: xcodebuild.log
