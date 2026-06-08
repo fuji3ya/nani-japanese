@@ -179,14 +179,28 @@ jobs:
             PROVISIONING_PROFILE_SPECIFIER="Nani App Store Profile" \
             archive | tee archive.log
 
-      - name: Export IPA
+      - name: Export IPA (exportArchive, fallback to manual package)
         run: |
           set -o pipefail
-          xcodebuild -exportArchive \
-            -archivePath "$RUNNER_TEMP/Nani.xcarchive" \
-            -exportOptionsPlist ExportOptions.plist \
-            -exportPath "$RUNNER_TEMP/export" \
-            -allowProvisioningUpdates | tee export.log
+          # Newer Xcode (26.5) hits IDEDistribution "Unknown Distribution Error"
+          # (methods list empty -> "expected one {}"). The archive is already
+          # signed for App Store, so fall back to packaging Payload/*.app -> .ipa.
+          if xcodebuild -exportArchive \
+               -archivePath "$RUNNER_TEMP/Nani.xcarchive" \
+               -exportOptionsPlist ExportOptions.plist \
+               -exportPath "$RUNNER_TEMP/export" \
+               -allowProvisioningUpdates 2>&1 | tee export.log \
+             && ls "$RUNNER_TEMP"/export/*.ipa >/dev/null 2>&1; then
+            echo "exportArchive succeeded"
+          else
+            echo "exportArchive failed -> packaging IPA manually from the signed archive"
+            APP=$(ls -d "$RUNNER_TEMP/Nani.xcarchive/Products/Applications/"*.app | head -1)
+            echo "App bundle: $APP"
+            rm -rf "$RUNNER_TEMP/export"
+            mkdir -p "$RUNNER_TEMP/export/Payload"
+            cp -R "$APP" "$RUNNER_TEMP/export/Payload/"
+            ( cd "$RUNNER_TEMP/export" && zip -qry Nani.ipa Payload )
+          fi
           ls -la "$RUNNER_TEMP/export"
 
       - name: Upload IPA artifact
