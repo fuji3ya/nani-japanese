@@ -1,13 +1,16 @@
 import { Stack, useRouter } from 'expo-router';
 import { useEffect, useState } from 'react';
-import { Pressable, ScrollView, Text, View } from 'react-native';
+import { Linking, Pressable, ScrollView, Text, View } from 'react-native';
 import { loadProgress, saveProgress, setPro, Progress } from '../store/progress';
+import { getPlanPrices, purchasePlan, restorePurchases } from '../lib/purchases';
 import { FONT } from '../lib/theme';
 
 const INK = '#15130F';
 const PAPER = '#FFFDF7';
 const ACCENT = '#FF4D6D';
 const MUTE = '#8a8475';
+const TERMS_URL = 'https://nani-japanese-legal.pages.dev/terms';
+const PRIVACY_URL = 'https://nani-japanese-legal.pages.dev/privacy';
 
 const PRO_PERKS = [
   ['🔓', 'All 8 packs', 'Adds Otaku, Heian & Okinawa'],
@@ -20,16 +23,45 @@ const PRO_PERKS = [
 export default function Paywall() {
   const router = useRouter();
   const [p, setP] = useState<Progress | null>(null);
+  const [prices, setPrices] = useState({ monthly: '$4.99 / month', annual: '$39.99 / year' });
+  const [busy, setBusy] = useState(false);
+  const [note, setNote] = useState<string | null>(null);
+
   useEffect(() => {
     loadProgress().then(setP);
+    getPlanPrices().then(setPrices).catch(() => {});
   }, []);
 
-  const goPro = async () => {
-    if (!p) return;
-    // NOTE: real purchase = App Store IAP (StoreKit/RevenueCat) — wired in the device phase.
-    const np = setPro(p, true);
-    await saveProgress(np);
+  const finishPro = async () => {
+    const base = p ?? (await loadProgress());
+    await saveProgress(setPro(base, true));
     router.back();
+  };
+
+  const buy = async (plan: 'monthly' | 'annual') => {
+    if (busy) return;
+    setBusy(true);
+    setNote(null);
+    try {
+      const ok = await purchasePlan(plan);
+      if (ok) await finishPro();
+      else setNote('Purchase not completed.');
+    } finally {
+      setBusy(false);
+    }
+  };
+
+  const doRestore = async () => {
+    if (busy) return;
+    setBusy(true);
+    setNote(null);
+    try {
+      const ok = await restorePurchases();
+      if (ok) await finishPro();
+      else setNote('No previous purchases found.');
+    } finally {
+      setBusy(false);
+    }
   };
 
   return (
@@ -44,17 +76,8 @@ export default function Paywall() {
         Every era, every region, no limits.
       </Text>
 
-      {/* What you already get free — so the line is obvious */}
-      <View
-        style={{
-          marginTop: 20,
-          backgroundColor: '#F1EEE4',
-          borderWidth: 2,
-          borderColor: '#d8d3c4',
-          borderRadius: 16,
-          padding: 14,
-        }}
-      >
+      {/* What you already get free */}
+      <View style={{ marginTop: 20, backgroundColor: '#F1EEE4', borderWidth: 2, borderColor: '#d8d3c4', borderRadius: 16, padding: 14 }}>
         <Text style={{ fontWeight: '900', fontSize: 12, color: MUTE, letterSpacing: 1 }}>YOU'RE ON FREE</Text>
         <Text style={{ fontWeight: '700', fontSize: 14, color: INK, marginTop: 5 }}>
           ✓ 5 packs · ✓ 5 new words a day · ✓ review what you've learned
@@ -65,20 +88,8 @@ export default function Paywall() {
       </View>
 
       {/* Pro card */}
-      <View
-        style={{
-          marginTop: 16,
-          backgroundColor: '#fff',
-          borderWidth: 3,
-          borderColor: INK,
-          borderRadius: 20,
-          padding: 18,
-          boxShadow: '6px 6px 0px #15130F',
-        }}
-      >
-        <Text style={{ fontFamily: FONT.heavy, fontWeight: '900', fontSize: 18, color: INK, marginBottom: 8 }}>
-          With Pro you get
-        </Text>
+      <View style={{ marginTop: 16, backgroundColor: '#fff', borderWidth: 3, borderColor: INK, borderRadius: 20, padding: 18, boxShadow: '6px 6px 0px #15130F' }}>
+        <Text style={{ fontFamily: FONT.heavy, fontWeight: '900', fontSize: 18, color: INK, marginBottom: 8 }}>With Pro you get</Text>
         {PRO_PERKS.map(([icon, title, sub]) => (
           <View key={title} style={{ flexDirection: 'row', alignItems: 'flex-start', marginVertical: 6 }}>
             <Text style={{ fontSize: 17, width: 28 }}>{icon}</Text>
@@ -90,37 +101,49 @@ export default function Paywall() {
         ))}
       </View>
 
-      {/* Price */}
-      <Text style={{ fontFamily: FONT.heavy, fontWeight: '900', fontSize: 20, color: INK, textAlign: 'center', marginTop: 22 }}>
-        $4.99 / month
-      </Text>
-      <Text style={{ fontWeight: '700', fontSize: 13, color: MUTE, textAlign: 'center', marginTop: 2 }}>
-        or $39.99 / year (save 33%)
-      </Text>
-
+      {/* Annual — primary */}
       <Pressable
-        onPress={goPro}
-        style={{
-          marginTop: 20,
-          backgroundColor: ACCENT,
-          borderWidth: 3,
-          borderColor: INK,
-          borderRadius: 16,
-          padding: 16,
-          alignItems: 'center',
-          boxShadow: '5px 5px 0px #15130F',
-        }}
+        onPress={() => buy('annual')}
+        disabled={busy}
+        style={{ marginTop: 22, backgroundColor: ACCENT, borderWidth: 3, borderColor: INK, borderRadius: 16, padding: 15, alignItems: 'center', boxShadow: '5px 5px 0px #15130F', opacity: busy ? 0.6 : 1 }}
       >
-        <Text style={{ color: '#fff', fontWeight: '900', fontSize: 18 }}>Unlock everything</Text>
+        <Text style={{ color: '#fff', fontWeight: '900', fontSize: 18 }}>{busy ? 'Processing…' : `Go Pro — ${prices.annual}`}</Text>
+        <Text style={{ color: '#fff', fontWeight: '800', fontSize: 12, marginTop: 2, opacity: 0.92 }}>Best value · save 33%</Text>
       </Pressable>
 
-      <Pressable onPress={() => router.back()} style={{ marginTop: 14, alignItems: 'center', padding: 8 }}>
+      {/* Monthly — secondary */}
+      <Pressable
+        onPress={() => buy('monthly')}
+        disabled={busy}
+        style={{ marginTop: 10, backgroundColor: '#fff', borderWidth: 3, borderColor: INK, borderRadius: 16, padding: 14, alignItems: 'center', opacity: busy ? 0.6 : 1 }}
+      >
+        <Text style={{ color: INK, fontWeight: '900', fontSize: 15 }}>{prices.monthly}</Text>
+      </Pressable>
+
+      {!!note && (
+        <Text style={{ textAlign: 'center', color: '#b3261e', fontWeight: '700', fontSize: 13, marginTop: 12 }}>{note}</Text>
+      )}
+
+      <Pressable onPress={doRestore} disabled={busy} style={{ marginTop: 14, alignItems: 'center', padding: 8 }}>
+        <Text style={{ fontWeight: '800', fontSize: 14, color: INK }}>Restore purchases</Text>
+      </Pressable>
+      <Pressable onPress={() => router.back()} disabled={busy} style={{ marginTop: 2, alignItems: 'center', padding: 8 }}>
         <Text style={{ fontWeight: '800', fontSize: 14, color: MUTE }}>Keep using Free</Text>
       </Pressable>
 
+      {/* Required subscription disclosure (App Store 3.1.2) */}
       <Text style={{ fontSize: 11, color: '#b8b2a3', textAlign: 'center', marginTop: 12, lineHeight: 16 }}>
-        Auto-renews until cancelled. Manage or cancel anytime in Settings. (Demo build — no real charge.)
+        Payment is charged to your Apple ID. Subscriptions auto-renew at the price above each period until cancelled;
+        cancel anytime in your Apple ID settings at least 24h before renewal.
       </Text>
+      <View style={{ flexDirection: 'row', justifyContent: 'center', gap: 18, marginTop: 8 }}>
+        <Pressable onPress={() => Linking.openURL(TERMS_URL)}>
+          <Text style={{ fontSize: 12, color: MUTE, fontWeight: '700', textDecorationLine: 'underline' }}>Terms</Text>
+        </Pressable>
+        <Pressable onPress={() => Linking.openURL(PRIVACY_URL)}>
+          <Text style={{ fontSize: 12, color: MUTE, fontWeight: '700', textDecorationLine: 'underline' }}>Privacy</Text>
+        </Pressable>
+      </View>
     </ScrollView>
   );
 }
