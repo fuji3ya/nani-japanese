@@ -57,11 +57,6 @@ export function bumpNewLearn(p: Progress, today: string): Progress {
   return { ...p, newDay: today, newToday: used + 1 };
 }
 
-/** In-memory only: set the `pro` flag on a Progress snapshot (does not persist). */
-export function setPro(p: Progress, pro: boolean): Progress {
-  return { ...p, pro };
-}
-
 /** Persist the entitlement flag to its OWN key (source of truth, separate from the progress blob). */
 export async function persistPro(pro: boolean): Promise<void> {
   await AsyncStorage.setItem(PRO_KEY, pro ? '1' : '0');
