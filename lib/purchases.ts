@@ -37,7 +37,21 @@ export async function initPurchases(userId?: string): Promise<void> {
   }
   Purchases.setLogLevel(__DEV__ ? LOG_LEVEL.DEBUG : LOG_LEVEL.INFO);
   await Purchases.configure({ apiKey: key, appUserID: userId });
+  // Catch out-of-band grants the moment they land (Ask-to-Buy parental
+  // approval, deferred SCA, network-drop reconcile) — without waiting for the
+  // next foreground reconcile. Upgrade-only.
+  try {
+    Purchases.addCustomerInfoUpdateListener((info) => {
+      if (info.entitlements.active[ENTITLEMENT_ID]?.isActive) onProActiveCb?.();
+    });
+  } catch { /* best-effort */ }
   initialized = true;
+}
+
+let onProActiveCb: (() => void) | null = null;
+/** Register a callback fired when the pro entitlement becomes active. */
+export function onProActive(cb: () => void): void {
+  onProActiveCb = cb;
 }
 
 async function currentOffering(): Promise<PurchasesOffering | null> {

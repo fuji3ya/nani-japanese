@@ -7,7 +7,7 @@ import {
   LINESeedJP_700Bold,
   LINESeedJP_800ExtraBold,
 } from '@expo-google-fonts/line-seed-jp';
-import { initPurchases, getEntitlementStatus } from '../lib/purchases';
+import { initPurchases, getEntitlementStatus, onProActive } from '../lib/purchases';
 import { persistPro } from '../store/progress';
 
 // Reconcile the entitlement with the live RC status.
@@ -44,6 +44,7 @@ export default function RootLayout() {
     (async () => {
       try {
         await initPurchases();
+        onProActive(() => { void persistPro(true); }); // instant grant (Ask-to-Buy etc.)
         if (mounted) await reconcilePro();
       } catch (e) {
         console.warn('[nani] purchases init', (e as Error)?.message);
