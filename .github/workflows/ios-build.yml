@@ -128,9 +128,10 @@ jobs:
           # Write .env.local so the RevenueCat key is baked into the archive's JS bundle.
           if [ -n "${EXPO_PUBLIC_RC_API_KEY_IOS:-}" ]; then
             echo "EXPO_PUBLIC_RC_API_KEY_IOS=${EXPO_PUBLIC_RC_API_KEY_IOS}" >> .env.local
-            echo "Wrote EXPO_PUBLIC_RC_API_KEY_IOS (appl_) to .env.local"
+            echo "Wrote EXPO_PUBLIC_RC_API_KEY_IOS to .env.local"
           else
-            echo "::warning::EXPO_PUBLIC_RC_API_KEY_IOS var is empty - build will run in RC mock mode"
+            echo "::error::EXPO_PUBLIC_RC_API_KEY_IOS is empty -- refusing to ship a dead paywall / mock build"
+            exit 1
           fi
 
       - name: Expo prebuild (iOS)
