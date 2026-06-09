@@ -144,10 +144,11 @@ export default function Paywall() {
         <Text style={{ fontWeight: '800', fontSize: 14, color: MUTE }}>Keep using Free</Text>
       </Pressable>
 
-      {/* Required subscription disclosure (App Store 3.1.2) */}
+      {/* Required subscription disclosure (App Store 3.1.2(a)) — names the product + both periods */}
       <Text style={{ fontSize: 11, color: '#b8b2a3', textAlign: 'center', marginTop: 12, lineHeight: 16 }}>
-        Payment is charged to your Apple ID. Subscriptions auto-renew at the price above each period until cancelled;
-        cancel anytime in your Apple ID settings at least 24h before renewal.
+        Nani?! Pro is an auto-renewing subscription: {prices.monthly} or {prices.annual}. Payment is charged to your
+        Apple ID. It renews each period until cancelled; manage or cancel anytime in your Apple ID settings at least 24h
+        before the period ends.
       </Text>
       <View style={{ flexDirection: 'row', justifyContent: 'center', gap: 18, marginTop: 8 }}>
         <Pressable onPress={() => Linking.openURL(TERMS_URL)}>
