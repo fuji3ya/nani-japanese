@@ -1,6 +1,6 @@
 import { Stack, useFocusEffect, useRouter } from 'expo-router';
 import { useCallback, useState } from 'react';
-import { Alert, Pressable, ScrollView, Text, View } from 'react-native';
+import { Alert, Linking, Pressable, ScrollView, Text, View } from 'react-native';
 import { findCategory, loadCategories, loadPhrasesByCategory } from '../lib/content/loadContent';
 import { loadProgress, resetProgress, Progress } from '../store/progress';
 import { FONT } from '../lib/theme';
@@ -208,9 +208,16 @@ export default function Home() {
       </View>
 
       {isPro ? (
-        <Text style={{ textAlign: 'center', fontWeight: '800', fontSize: 12, color: '#8a8475', paddingTop: 18, paddingBottom: 4 }}>
-          ✨ Pro · all packs unlocked
-        </Text>
+        <Pressable
+          accessibilityRole="button"
+          accessibilityLabel="Manage subscription"
+          onPress={() => Linking.openURL('https://apps.apple.com/account/subscriptions').catch(() => {})}
+          style={{ paddingTop: 18, paddingBottom: 4 }}
+        >
+          <Text style={{ textAlign: 'center', fontWeight: '800', fontSize: 12, color: '#8a8475' }}>
+            ✨ Pro · all packs unlocked · Manage subscription
+          </Text>
+        </Pressable>
       ) : (
         <Pressable
           accessibilityRole="button"

@@ -23,6 +23,10 @@ const MOCK_KEY = 'jpkotoba:mockEntitlement';
 
 let initialized = false;
 const hasKey = () => (Platform.OS === 'ios' ? !!RC_API_KEY_IOS : !!RC_API_KEY_ANDROID);
+// The mock entitlement may ONLY grant pro in development. In a Release build the
+// mock branch can never unlock pro even if the RC key were somehow absent — this
+// makes "free pro for everyone on a mis-built binary" structurally impossible.
+const MOCK_OK = __DEV__;
 
 export async function initPurchases(userId?: string): Promise<void> {
   if (initialized) return;
@@ -63,7 +67,8 @@ export async function getPlanPrices(): Promise<{ monthly: string; annual: string
 /** Returns true if the user is now Pro. */
 export async function purchasePlan(plan: 'monthly' | 'annual'): Promise<boolean> {
   if (!hasKey()) {
-    await AsyncStorage.setItem(MOCK_KEY, '1'); // mock success for UX testing
+    if (!MOCK_OK) return false; // Release without a key: never fake a purchase
+    await AsyncStorage.setItem(MOCK_KEY, '1'); // dev-only mock success for UX testing
     return true;
   }
   try {
@@ -83,7 +88,7 @@ export async function purchasePlan(plan: 'monthly' | 'annual'): Promise<boolean>
 
 export async function isPro(): Promise<boolean> {
   if (!hasKey()) {
-    return (await AsyncStorage.getItem(MOCK_KEY)) === '1';
+    return MOCK_OK && (await AsyncStorage.getItem(MOCK_KEY)) === '1';
   }
   try {
     const info = await Purchases.getCustomerInfo();
@@ -103,7 +108,7 @@ export async function isPro(): Promise<boolean> {
  */
 export async function getEntitlementStatus(): Promise<boolean | null> {
   if (!hasKey()) {
-    return (await AsyncStorage.getItem(MOCK_KEY)) === '1';
+    return MOCK_OK ? (await AsyncStorage.getItem(MOCK_KEY)) === '1' : false;
   }
   try {
     const info = await Purchases.getCustomerInfo();

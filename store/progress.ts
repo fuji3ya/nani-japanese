@@ -8,6 +8,10 @@ const KEY = 'jpkotoba:progress:v2';
 // data (the lesson screen). Sharing one serialized blob caused a last-writer-
 // wins lost-update; separate keys mean neither writer can clobber the other.
 const PRO_KEY = 'jpkotoba:pro';
+// The free daily new-word quota ALSO lives in its own key (same reasoning as
+// PRO_KEY): the lesson screen writes the whole progress blob from two handlers,
+// which raced and lost a quota increment — letting a free user exceed the cap.
+const QUOTA_KEY = 'jpkotoba:quota';
 
 export const FREE_DAILY_NEW = 5; // free users: new words learned per day
 
@@ -16,8 +20,6 @@ export interface Progress {
   words: Record<string, WordProgress>; // phraseId -> SRS box/nextDue
   streak: StreakState | null;
   pro: boolean; // unlocked everything
-  newDay: string | null; // 'YYYY-MM-DD' for the new-word daily counter
-  newToday: number; // new words learned today (free gating)
   onboarded: boolean; // finished first-run onboarding
   goal: number; // daily new-word goal (1/3/5) — consumed by buildSession
   interest?: string; // chosen starter pack id — consumed by Home (word-of-the-day)
@@ -28,8 +30,6 @@ const EMPTY: Progress = {
   words: {},
   streak: null,
   pro: false,
-  newDay: null,
-  newToday: 0,
   onboarded: false,
   goal: 3,
 };
@@ -44,17 +44,33 @@ export function completeOnboarding(
   return { ...p, onboarded: true, goal: a.goal, interest: a.interest };
 }
 
-/** New words still allowed today for free users (Infinity if Pro). */
-export function freeNewRemaining(p: Progress, today: string): number {
-  if (p.pro) return Infinity;
-  const used = p.newDay === today ? p.newToday : 0;
-  return Math.max(0, FREE_DAILY_NEW - used);
+async function readQuota(): Promise<{ day: string | null; count: number }> {
+  try {
+    const raw = await AsyncStorage.getItem(QUOTA_KEY);
+    const q = raw ? JSON.parse(raw) : null;
+    if (q && typeof q === 'object' && typeof q.count === 'number') return { day: q.day ?? null, count: q.count };
+  } catch {
+    /* fall through */
+  }
+  return { day: null, count: 0 };
 }
 
-/** Count one new word toward today's free quota. */
-export function bumpNewLearn(p: Progress, today: string): Progress {
-  const used = p.newDay === today ? p.newToday : 0;
-  return { ...p, newDay: today, newToday: used + 1 };
+/** New words already spent toward today's free quota (0 on a new day). */
+export async function getQuotaUsed(today: string): Promise<number> {
+  const q = await readQuota();
+  return q.day === today ? q.count : 0;
+}
+
+/** Pure: remaining free new words given pro + used count (Infinity if Pro). */
+export function freeNewRemainingFor(pro: boolean, used: number): number {
+  return pro ? Infinity : Math.max(0, FREE_DAILY_NEW - used);
+}
+
+/** Atomically spend one free new word toward today's quota (own key, race-free). */
+export async function bumpNewLearn(today: string): Promise<void> {
+  const q = await readQuota();
+  const used = q.day === today ? q.count : 0;
+  await AsyncStorage.setItem(QUOTA_KEY, JSON.stringify({ day: today, count: used + 1 }));
 }
 
 /** Persist the entitlement flag to its OWN key (source of truth, separate from the progress blob). */
@@ -98,6 +114,7 @@ export async function resetProgress(): Promise<Progress> {
   const p = await loadProgress();
   const cleared: Progress = { ...EMPTY, pro: p.pro, onboarded: p.onboarded, goal: p.goal, interest: p.interest };
   await saveProgress(cleared);
+  await AsyncStorage.removeItem(QUOTA_KEY); // also reset today's free-word counter
   return cleared;
 }
 

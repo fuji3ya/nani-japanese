@@ -15,13 +15,17 @@ import { persistPro } from '../store/progress';
 // downgrades a paying user; a refund/expiry is dropped as soon as one online
 // check succeeds. Writes ONLY the dedicated pro key — never the learning blob,
 // so it can't clobber an in-flight lesson save.
+let reconciling = false;
 async function reconcilePro() {
+  if (reconciling) return; // in-flight guard: AppState 'active' can fire repeatedly
+  reconciling = true;
   try {
     const status = await getEntitlementStatus();
-    if (status === null) return; // indeterminate — keep cache
-    await persistPro(status);
+    if (status !== null) await persistPro(status); // null = indeterminate → keep cache
   } catch (e) {
     console.warn('[nani] reconcilePro', (e as Error)?.message);
+  } finally {
+    reconciling = false;
   }
 }
 

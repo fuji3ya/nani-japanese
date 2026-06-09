@@ -1,5 +1,5 @@
 import { Redirect, useLocalSearchParams, Stack, useRouter } from 'expo-router';
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useMemo, useRef, useState } from 'react';
 import { Pressable, ScrollView, Share, Text, View } from 'react-native';
 import { findCategory, loadPhrasesByCategory } from '../../lib/content/loadContent';
 import { GACHI_EN, Phrase } from '../../lib/content/types';
@@ -13,7 +13,8 @@ import {
   markSeen,
   markAnswered,
   boxOf,
-  freeNewRemaining,
+  getQuotaUsed,
+  freeNewRemainingFor,
   bumpNewLearn,
   Progress,
 } from '../../store/progress';
@@ -30,12 +31,12 @@ const todayISO = () => {
 
 type Step = { kind: 'learn' | 'practice'; phrase: Phrase };
 
-function buildSession(pool: Phrase[], progress: Progress, catId: string, today: string): Step[] {
+function buildSession(pool: Phrase[], progress: Progress, catId: string, today: string, quotaUsed: number): Step[] {
   const seen = new Set(progress.seenByCategory[catId] ?? []);
   const due = pool
     .filter((p) => seen.has(p.id) && progress.words[p.id] && isDue(progress.words[p.id], today))
     .slice(0, 5);
-  const freshAllowed = Math.max(0, Math.min(progress.goal || DAILY_GOAL, freeNewRemaining(progress, today)));
+  const freshAllowed = Math.max(0, Math.min(progress.goal || DAILY_GOAL, freeNewRemainingFor(progress.pro, quotaUsed)));
   const fresh = pool.filter((p) => !seen.has(p.id)).slice(0, freshAllowed);
   const steps: Step[] = [];
   due.forEach((p) => steps.push({ kind: 'practice', phrase: p }));
@@ -64,13 +65,20 @@ export default function Lesson() {
   // Re-entrancy latch for the learn-step "Got it" button: a fast double-tap
   // would otherwise burn two free new-words + skip the paired practice step.
   const advLock = useRef(false);
+  const [quotaUsed, setQuotaUsed] = useState(0);
+  // Capture the local day ONCE per lesson so a session straddling midnight is
+  // accounted to a single day (no mid-session quota reset).
+  const today = useMemo(() => todayISO(), []);
 
   // load + build session once
   useEffect(() => {
-    loadProgress().then((p) => {
+    (async () => {
+      const p = await loadProgress();
+      const used = await getQuotaUsed(today);
       setProgress(p);
-      setSteps(buildSession(pool, p, id!, todayISO()));
-    });
+      setQuotaUsed(used);
+      setSteps(buildSession(pool, p, id!, today, used));
+    })();
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
@@ -131,7 +139,7 @@ export default function Lesson() {
   // session complete (or nothing due/new)
   if (!step) {
     const unseenExist = pool.some((ph) => !(progress.seenByCategory[id!] ?? []).includes(ph.id));
-    const limited = steps.length === 0 && !progress.pro && freeNewRemaining(progress, todayISO()) === 0 && unseenExist;
+    const limited = steps.length === 0 && !progress.pro && freeNewRemainingFor(progress.pro, quotaUsed) === 0 && unseenExist;
     const allCaughtUp = steps.length === 0 && !limited;
     // Show the actual most-recently-learned word (captured in onGotIt), never a
     // merely-reviewed word and never just the first word of the batch.
@@ -229,7 +237,7 @@ export default function Lesson() {
 
   const finishIfLast = async (p: Progress) => {
     if (idx + 1 >= steps.length) {
-      const s = updateStreak(p.streak, todayISO());
+      const s = updateStreak(p.streak, today);
       const np = { ...p, streak: s };
       setProgress(np);
       setStreakDone(s.count);
@@ -240,11 +248,12 @@ export default function Lesson() {
   const onGotIt = async () => {
     if (advLock.current) return; // ignore double-tap until the next step renders
     advLock.current = true;
-    let p = markSeen(progress, id!, step.phrase.id);
-    p = bumpNewLearn(p, todayISO());
+    const p = markSeen(progress, id!, step.phrase.id);
     setProgress(p);
     setLastLearned(step.phrase);
     setStats((s) => ({ ...s, learned: s.learned + 1 }));
+    await bumpNewLearn(today); // atomic quota spend on its own key (race-free)
+    setQuotaUsed((u) => u + 1);
     await saveProgress(p);
     await finishIfLast(p);
     advance();
@@ -255,7 +264,7 @@ export default function Lesson() {
     const correct = checkExercise(ex, choiceId);
     setPicked(choiceId);
     const wasSeenBefore = (progress.words[step.phrase.id]?.box ?? 0) > 0;
-    const p = markAnswered(progress, step.phrase.id, correct, todayISO());
+    const p = markAnswered(progress, step.phrase.id, correct, today);
     setProgress(p);
     setStats((s) => ({
       ...s,
