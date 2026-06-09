@@ -8,25 +8,25 @@ import {
   LINESeedJP_800ExtraBold,
 } from '@expo-google-fonts/line-seed-jp';
 import { initPurchases, getEntitlementStatus } from '../lib/purchases';
-import { loadProgress, saveProgress, setPro } from '../store/progress';
+import { persistPro } from '../store/progress';
 
-// Reconcile the cached `pro` flag with the live RC entitlement.
-// Only writes when RC returns a definitive boolean: `null` (offline / error)
-// keeps the cached value, so a network blip never downgrades a paying user,
-// and a refund/expiry is dropped as soon as one online check succeeds.
+// Reconcile the entitlement with the live RC status.
+// `null` (offline / error) keeps the cached value, so a network blip never
+// downgrades a paying user; a refund/expiry is dropped as soon as one online
+// check succeeds. Writes ONLY the dedicated pro key — never the learning blob,
+// so it can't clobber an in-flight lesson save.
 async function reconcilePro() {
   try {
     const status = await getEntitlementStatus();
     if (status === null) return; // indeterminate — keep cache
-    const p = await loadProgress();
-    if (p.pro !== status) await saveProgress(setPro(p, status));
+    await persistPro(status);
   } catch (e) {
     console.warn('[nani] reconcilePro', (e as Error)?.message);
   }
 }
 
 export default function RootLayout() {
-  const [loaded] = useFonts({
+  const [loaded, error] = useFonts({
     LINESeedJP_400Regular,
     LINESeedJP_700Bold,
     LINESeedJP_800ExtraBold,
@@ -54,7 +54,9 @@ export default function RootLayout() {
     };
   }, []);
 
-  if (!loaded) return null;
+  // Render once fonts load OR if they fail (fall back to system font instead of
+  // hanging forever on a blank screen).
+  if (!loaded && !error) return null;
   // No native title text: every screen renders its own big in-content heading,
   // so the header is just a clean paper bar with a back chevron.
   return (

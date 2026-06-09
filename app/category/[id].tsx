@@ -1,5 +1,5 @@
 import { Redirect, useLocalSearchParams, Stack, useRouter } from 'expo-router';
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { Pressable, ScrollView, Share, Text, View } from 'react-native';
 import { findCategory, loadPhrasesByCategory } from '../../lib/content/loadContent';
 import { GACHI_EN, Phrase } from '../../lib/content/types';
@@ -60,6 +60,10 @@ export default function Lesson() {
   const [picked, setPicked] = useState<string | null>(null);
   const [stats, setStats] = useState({ learned: 0, reviewed: 0, correct: 0, practiced: 0 });
   const [streakDone, setStreakDone] = useState<number | null>(null);
+  const [lastLearned, setLastLearned] = useState<Phrase | null>(null);
+  // Re-entrancy latch for the learn-step "Got it" button: a fast double-tap
+  // would otherwise burn two free new-words + skip the paired practice step.
+  const advLock = useRef(false);
 
   // load + build session once
   useEffect(() => {
@@ -74,6 +78,7 @@ export default function Lesson() {
 
   // build exercise when entering a practice step
   useEffect(() => {
+    advLock.current = false; // new step → release the Got-it latch
     if (step?.kind === 'practice' && progress) {
       const e = buildBestExercise(step.phrase, pool, boxOf(progress, step.phrase.id));
       if (e) {
@@ -128,9 +133,9 @@ export default function Lesson() {
     const unseenExist = pool.some((ph) => !(progress.seenByCategory[id!] ?? []).includes(ph.id));
     const limited = steps.length === 0 && !progress.pro && freeNewRemaining(progress, todayISO()) === 0 && unseenExist;
     const allCaughtUp = steps.length === 0 && !limited;
-    // Only show the "I just learned" share card when a NEW word was actually
-    // learned this session — never label a merely-reviewed word as "just learned".
-    const cardPhrase = stats.learned > 0 ? steps.find((s) => s.kind === 'learn')?.phrase : undefined;
+    // Show the actual most-recently-learned word (captured in onGotIt), never a
+    // merely-reviewed word and never just the first word of the batch.
+    const cardPhrase = stats.learned > 0 ? lastLearned ?? undefined : undefined;
     const shareWord = () => {
       if (!cardPhrase) return;
       Share.share({
@@ -233,9 +238,12 @@ export default function Lesson() {
   };
 
   const onGotIt = async () => {
+    if (advLock.current) return; // ignore double-tap until the next step renders
+    advLock.current = true;
     let p = markSeen(progress, id!, step.phrase.id);
     p = bumpNewLearn(p, todayISO());
     setProgress(p);
+    setLastLearned(step.phrase);
     setStats((s) => ({ ...s, learned: s.learned + 1 }));
     await saveProgress(p);
     await finishIfLast(p);

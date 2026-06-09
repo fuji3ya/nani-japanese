@@ -1,8 +1,8 @@
 import { Stack, useFocusEffect, useRouter } from 'expo-router';
 import { useCallback, useState } from 'react';
-import { Pressable, ScrollView, Text, View } from 'react-native';
+import { Alert, Pressable, ScrollView, Text, View } from 'react-native';
 import { findCategory, loadCategories, loadPhrasesByCategory } from '../lib/content/loadContent';
-import { loadProgress, Progress } from '../store/progress';
+import { loadProgress, resetProgress, Progress } from '../store/progress';
 import { FONT } from '../lib/theme';
 
 const INK = '#15130F';
@@ -33,13 +33,34 @@ export default function Home() {
   const isPro = progress.pro;
   const unlocked = isPro ? cats.length : cats.filter((c) => c.tier === 'free').length;
 
+  const onReset = () => {
+    Alert.alert(
+      'Reset all progress?',
+      'This clears your learned words, streak, and collection. Your Pro unlock is kept.',
+      [
+        { text: 'Cancel', style: 'cancel' },
+        {
+          text: 'Reset',
+          style: 'destructive',
+          onPress: async () => {
+            const p = await resetProgress();
+            setProgress(p);
+          },
+        },
+      ],
+    );
+  };
+
   // Word of the day — featured from the user's chosen starter pack (falls back to Kansai).
   const startId =
     progress.interest && loadPhrasesByCategory(progress.interest).length ? progress.interest : 'kansai';
   const startCat = findCategory(startId) ?? findCategory('kansai')!;
   // Word of the day: rotate once per day (deterministic, advances daily).
   const wodPool = loadPhrasesByCategory(startId);
-  const dayIdx = Math.floor(Date.now() / 86_400_000);
+  // Local-day index so the word-of-the-day flips at local midnight, matching the
+  // streak / daily-cap local-date boundary (not UTC).
+  const _now = new Date();
+  const dayIdx = Math.floor((_now.getTime() - _now.getTimezoneOffset() * 60_000) / 86_400_000);
   const featured = wodPool.length ? wodPool[dayIdx % wodPool.length] : undefined;
 
   return (
@@ -66,6 +87,7 @@ export default function Home() {
           </Text>
         </View>
         <View
+          accessibilityLabel={`${progress.streak?.count ?? 0} day streak`}
           style={{
             borderWidth: 2.5,
             borderColor: INK,
@@ -82,6 +104,8 @@ export default function Home() {
       {/* word of the day (from chosen starter pack) */}
       {featured && (
         <Pressable
+          accessibilityRole="button"
+          accessibilityLabel={`Word of the day: ${featured.term} — ${featured.meaningEn}`}
           onPress={() => router.push(`/category/${startId}`)}
           style={{
             marginHorizontal: 18,
@@ -107,6 +131,8 @@ export default function Home() {
 
       {/* collection */}
       <Pressable
+        accessibilityRole="button"
+        accessibilityLabel="Open your collection"
         onPress={() => router.push('/dex' as never)}
         style={{
           marginHorizontal: 18,
@@ -141,6 +167,8 @@ export default function Home() {
           return (
             <Pressable
               key={c.id}
+              accessibilityRole="button"
+              accessibilityLabel={`${c.nameEn} pack${locked ? ', locked — Pro' : ''}`}
               onPress={() => (locked ? router.push('/paywall' as never) : router.push(`/category/${c.id}`))}
               style={{
                 width: '48%',
@@ -171,8 +199,7 @@ export default function Home() {
                 }}
               >
                 <Text style={{ color: '#fff', fontWeight: '800', fontSize: 12 }}>
-                  {locked ? '🔒 ' : ''}
-                  {c.peek}
+                  {locked ? '🔒 Pro' : c.peek}
                 </Text>
               </View>
             </Pressable>
@@ -185,12 +212,26 @@ export default function Home() {
           ✨ Pro · all packs unlocked
         </Text>
       ) : (
-        <Pressable onPress={() => router.push('/paywall' as never)} style={{ paddingTop: 18, paddingBottom: 4 }}>
+        <Pressable
+          accessibilityRole="button"
+          accessibilityLabel="Unlock all packs with Pro"
+          onPress={() => router.push('/paywall' as never)}
+          style={{ paddingTop: 18, paddingBottom: 4 }}
+        >
           <Text style={{ textAlign: 'center', fontWeight: '800', fontSize: 12, color: '#8a8475' }}>
             🔒 Unlock all packs with Pro →
           </Text>
         </Pressable>
       )}
+
+      <Pressable
+        accessibilityRole="button"
+        accessibilityLabel="Reset all progress"
+        onPress={onReset}
+        style={{ paddingTop: 10, paddingBottom: 8 }}
+      >
+        <Text style={{ textAlign: 'center', fontWeight: '700', fontSize: 11, color: '#c2bdae' }}>Reset all progress</Text>
+      </Pressable>
     </ScrollView>
   );
 }

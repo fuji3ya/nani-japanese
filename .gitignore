@@ -8,5 +8,8 @@ ios/
 android/
 expo-env.d.ts
 
+# Secrets — never commit (RC_SECRET_KEY lives in .env.local). Public repo OPSEC.
+.env
+.env.*
+*.env
 .secrets/
-credentials.json

@@ -36,12 +36,12 @@ export default function Onboarding() {
 
   const finish = async () => {
     if (!base) return;
-    const np = completeOnboarding(base, { goal, interest, reason, level });
+    const np = completeOnboarding(base, { goal, interest });
     await saveProgress(np);
     router.replace('/');
   };
 
-  const TOTAL = 6;
+  const TOTAL = 7; // steps 0–6 inclusive
 
   return (
     <ScrollView style={{ flex: 1, backgroundColor: PAPER }} contentContainerStyle={{ padding: 24, paddingBottom: 40, minHeight: '100%' }}>

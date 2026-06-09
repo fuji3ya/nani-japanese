@@ -3,6 +3,11 @@ import { StreakState } from '../lib/core/streak';
 import { updateBox, WordProgress } from '../lib/core/srs';
 
 const KEY = 'jpkotoba:progress:v2';
+// `pro` lives in its OWN key, NOT inside the progress blob. Two independent
+// writers touch entitlement (RC reconcile on launch/foreground) and learning
+// data (the lesson screen). Sharing one serialized blob caused a last-writer-
+// wins lost-update; separate keys mean neither writer can clobber the other.
+const PRO_KEY = 'jpkotoba:pro';
 
 export const FREE_DAILY_NEW = 5; // free users: new words learned per day
 
@@ -16,8 +21,6 @@ export interface Progress {
   onboarded: boolean; // finished first-run onboarding
   goal: number; // daily new-word goal (1/3/5) — consumed by buildSession
   interest?: string; // chosen starter pack id — consumed by Home (word-of-the-day)
-  reason?: string; // why-here answer — persisted from onboarding
-  level?: string; // self-rated JP level — persisted; seeds the default goal
 }
 
 const EMPTY: Progress = {
@@ -33,9 +36,12 @@ const EMPTY: Progress = {
 
 export function completeOnboarding(
   p: Progress,
-  a: { goal: number; interest?: string; reason?: string; level?: string },
+  a: { goal: number; interest?: string },
 ): Progress {
-  return { ...p, onboarded: true, goal: a.goal, interest: a.interest, reason: a.reason, level: a.level };
+  // `reason` / `level` are asked during onboarding for engagement and to seed the
+  // default goal, but are intentionally NOT persisted (nothing reads them back —
+  // keeping them out avoids a dead stored field).
+  return { ...p, onboarded: true, goal: a.goal, interest: a.interest };
 }
 
 /** New words still allowed today for free users (Infinity if Pro). */
@@ -51,13 +57,21 @@ export function bumpNewLearn(p: Progress, today: string): Progress {
   return { ...p, newDay: today, newToday: used + 1 };
 }
 
+/** In-memory only: set the `pro` flag on a Progress snapshot (does not persist). */
 export function setPro(p: Progress, pro: boolean): Progress {
   return { ...p, pro };
 }
 
+/** Persist the entitlement flag to its OWN key (source of truth, separate from the progress blob). */
+export async function persistPro(pro: boolean): Promise<void> {
+  await AsyncStorage.setItem(PRO_KEY, pro ? '1' : '0');
+}
+
 export async function loadProgress(): Promise<Progress> {
+  // `pro` is read from its own key and always overrides whatever a stale blob holds.
+  const pro = (await AsyncStorage.getItem(PRO_KEY)) === '1';
   const raw = await AsyncStorage.getItem(KEY);
-  if (!raw) return { ...EMPTY };
+  if (!raw) return { ...EMPTY, pro };
   try {
     const parsed = JSON.parse(raw);
     const isObj = (v: unknown) => !!v && typeof v === 'object' && !Array.isArray(v);
@@ -66,16 +80,30 @@ export async function loadProgress(): Promise<Progress> {
     return {
       ...EMPTY,
       ...parsed,
+      pro, // PRO_KEY wins over the blob's (ignored) pro field
       seenByCategory: isObj(parsed.seenByCategory) ? parsed.seenByCategory : {},
       words: isObj(parsed.words) ? parsed.words : {},
     };
   } catch {
-    return { ...EMPTY };
+    return { ...EMPTY, pro };
   }
 }
 
+/** Persist learning data. Never the source of truth for `pro` (see persistPro). */
 export async function saveProgress(p: Progress): Promise<void> {
   await AsyncStorage.setItem(KEY, JSON.stringify(p));
+}
+
+/**
+ * User-initiated data control (App Store 5.1.1(v)): wipe all learning data
+ * (words/SRS, streak, seen, daily counters) while preserving the unlock state
+ * (`pro`, reconciled from RevenueCat anyway) and the finished-onboarding flag.
+ */
+export async function resetProgress(): Promise<Progress> {
+  const p = await loadProgress();
+  const cleared: Progress = { ...EMPTY, pro: p.pro, onboarded: p.onboarded, goal: p.goal, interest: p.interest };
+  await saveProgress(cleared);
+  return cleared;
 }
 
 export function markSeen(p: Progress, categoryId: string, phraseId: string): Progress {

@@ -1,7 +1,7 @@
 import { Stack, useRouter } from 'expo-router';
 import { useEffect, useState } from 'react';
 import { Linking, Pressable, ScrollView, Text, View } from 'react-native';
-import { loadProgress, saveProgress, setPro, Progress } from '../store/progress';
+import { persistPro } from '../store/progress';
 import { getPlanPrices, purchasePlan, restorePurchases } from '../lib/purchases';
 import { FONT } from '../lib/theme';
 
@@ -17,19 +17,16 @@ const PRO_PERKS = [
   ['∞', 'Unlimited new words', 'No 5-a-day limit'],
   ['🔁', 'SRS review on every pack', 'Spaced-repetition across all of them'],
   ['📖', 'Fill your whole collection', 'Every word, every pack'],
-  ['🔊', 'Audio & native voices', 'Coming soon'],
 ];
 
 export default function Paywall() {
   const router = useRouter();
-  const [p, setP] = useState<Progress | null>(null);
   const [prices, setPrices] = useState({ monthly: '$4.99 / month', annual: '$39.99 / year' });
   const [busy, setBusy] = useState(false);
   const [note, setNote] = useState<string | null>(null);
 
   useEffect(() => {
     let on = true;
-    loadProgress().then((v) => on && setP(v));
     getPlanPrices().then((v) => on && setPrices(v)).catch(() => {});
     return () => {
       on = false;
@@ -37,8 +34,7 @@ export default function Paywall() {
   }, []);
 
   const finishPro = async () => {
-    const base = p ?? (await loadProgress());
-    await saveProgress(setPro(base, true));
+    await persistPro(true);
     router.back();
   };
 
@@ -109,6 +105,9 @@ export default function Paywall() {
       <Pressable
         onPress={() => buy('annual')}
         disabled={busy}
+        accessibilityRole="button"
+        accessibilityLabel={`Go Pro yearly, ${prices.annual}`}
+        accessibilityState={{ disabled: busy, busy }}
         style={{ marginTop: 22, backgroundColor: ACCENT, borderWidth: 3, borderColor: INK, borderRadius: 16, padding: 15, alignItems: 'center', boxShadow: '5px 5px 0px #15130F', opacity: busy ? 0.6 : 1 }}
       >
         <Text style={{ color: '#fff', fontWeight: '900', fontSize: 18 }}>{busy ? 'Processing…' : `Go Pro — ${prices.annual}`}</Text>
@@ -119,6 +118,9 @@ export default function Paywall() {
       <Pressable
         onPress={() => buy('monthly')}
         disabled={busy}
+        accessibilityRole="button"
+        accessibilityLabel={`Go Pro monthly, ${prices.monthly}`}
+        accessibilityState={{ disabled: busy, busy }}
         style={{ marginTop: 10, backgroundColor: '#fff', borderWidth: 3, borderColor: INK, borderRadius: 16, padding: 14, alignItems: 'center', opacity: busy ? 0.6 : 1 }}
       >
         <Text style={{ color: INK, fontWeight: '900', fontSize: 15 }}>{prices.monthly}</Text>
@@ -128,7 +130,14 @@ export default function Paywall() {
         <Text style={{ textAlign: 'center', color: '#b3261e', fontWeight: '700', fontSize: 13, marginTop: 12 }}>{note}</Text>
       )}
 
-      <Pressable onPress={doRestore} disabled={busy} style={{ marginTop: 14, alignItems: 'center', padding: 8 }}>
+      <Pressable
+        onPress={doRestore}
+        disabled={busy}
+        accessibilityRole="button"
+        accessibilityLabel="Restore purchases"
+        accessibilityState={{ disabled: busy, busy }}
+        style={{ marginTop: 14, alignItems: 'center', padding: 8 }}
+      >
         <Text style={{ fontWeight: '800', fontSize: 14, color: INK }}>Restore purchases</Text>
       </Pressable>
       <Pressable onPress={() => router.back()} disabled={busy} style={{ marginTop: 2, alignItems: 'center', padding: 8 }}>
