@@ -1,13 +1,29 @@
 import { Stack } from 'expo-router';
 import { useEffect } from 'react';
+import { AppState, AppStateStatus } from 'react-native';
 import {
   useFonts,
   LINESeedJP_400Regular,
   LINESeedJP_700Bold,
   LINESeedJP_800ExtraBold,
 } from '@expo-google-fonts/line-seed-jp';
-import { initPurchases, isPro } from '../lib/purchases';
+import { initPurchases, getEntitlementStatus } from '../lib/purchases';
 import { loadProgress, saveProgress, setPro } from '../store/progress';
+
+// Reconcile the cached `pro` flag with the live RC entitlement.
+// Only writes when RC returns a definitive boolean: `null` (offline / error)
+// keeps the cached value, so a network blip never downgrades a paying user,
+// and a refund/expiry is dropped as soon as one online check succeeds.
+async function reconcilePro() {
+  try {
+    const status = await getEntitlementStatus();
+    if (status === null) return; // indeterminate — keep cache
+    const p = await loadProgress();
+    if (p.pro !== status) await saveProgress(setPro(p, status));
+  } catch (e) {
+    console.warn('[nani] reconcilePro', (e as Error)?.message);
+  }
+}
 
 export default function RootLayout() {
   const [loaded] = useFonts({
@@ -16,20 +32,26 @@ export default function RootLayout() {
     LINESeedJP_800ExtraBold,
   });
 
-  // Init RevenueCat and reconcile the local `pro` cache with the live
-  // entitlement (so an expired/restored subscription is reflected on launch).
+  // Init RevenueCat once, reconcile on launch, then re-reconcile every time the
+  // app returns to the foreground (so an expired/refunded sub drops within one
+  // foreground cycle, not only on a cold launch).
   useEffect(() => {
+    let mounted = true;
     (async () => {
       try {
         await initPurchases();
-        const pro = await isPro();
-        const p = await loadProgress();
-        if (p.pro !== pro) await saveProgress(setPro(p, pro));
+        if (mounted) await reconcilePro();
       } catch (e) {
-        // non-fatal — gating falls back to the stored flag
         console.warn('[nani] purchases init', (e as Error)?.message);
       }
     })();
+    const sub = AppState.addEventListener('change', (s: AppStateStatus) => {
+      if (s === 'active') reconcilePro();
+    });
+    return () => {
+      mounted = false;
+      sub.remove();
+    };
   }, []);
 
   if (!loaded) return null;

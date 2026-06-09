@@ -28,8 +28,12 @@ export default function Paywall() {
   const [note, setNote] = useState<string | null>(null);
 
   useEffect(() => {
-    loadProgress().then(setP);
-    getPlanPrices().then(setPrices).catch(() => {});
+    let on = true;
+    loadProgress().then((v) => on && setP(v));
+    getPlanPrices().then((v) => on && setPrices(v)).catch(() => {});
+    return () => {
+      on = false;
+    };
   }, []);
 
   const finishPro = async () => {

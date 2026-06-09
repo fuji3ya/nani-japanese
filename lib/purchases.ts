@@ -93,6 +93,26 @@ export async function isPro(): Promise<boolean> {
   }
 }
 
+/**
+ * Live 'pro' entitlement status for reconciling the local cache:
+ *   true  → entitlement active (grant)
+ *   false → RC definitively says inactive (drop — expired/refunded)
+ *   null  → could NOT determine (offline / RC error) → caller MUST keep the
+ *           cached value, so a transient network blip never locks out a payer.
+ * This is the safe variant of isPro() for the launch/foreground reconcile.
+ */
+export async function getEntitlementStatus(): Promise<boolean | null> {
+  if (!hasKey()) {
+    return (await AsyncStorage.getItem(MOCK_KEY)) === '1';
+  }
+  try {
+    const info = await Purchases.getCustomerInfo();
+    return info.entitlements.active[ENTITLEMENT_ID]?.isActive ?? false;
+  } catch {
+    return null; // indeterminate — do not downgrade
+  }
+}
+
 export async function restorePurchases(): Promise<boolean> {
   if (!hasKey()) return isPro();
   try {
