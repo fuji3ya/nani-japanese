@@ -2,15 +2,22 @@ import { Stack, useFocusEffect, useRouter } from 'expo-router';
 import { useCallback, useState } from 'react';
 import { Alert, Linking, Pressable, ScrollView, Text, View } from 'react-native';
 import { findCategory, loadCategories, loadPhrasesByCategory } from '../lib/content/loadContent';
-import { loadProgress, resetProgress, Progress } from '../store/progress';
+import { getQuotaUsed, loadProgress, resetProgress, Progress } from '../store/progress';
 import { FONT } from '../lib/theme';
 
 const INK = '#15130F';
 const PAPER = '#FFFDF7';
 
+// LOCAL calendar date — must match the lesson screen's day boundary.
+const todayISO = () => {
+  const d = new Date();
+  return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
+};
+
 export default function Home() {
   const router = useRouter();
   const [progress, setProgress] = useState<Progress | null>(null);
+  const [todayLearned, setTodayLearned] = useState(0);
 
   // Reload on every focus (incl. returning from a lesson) so 🔥 streak / unlock
   // state reflect what just happened — a mount-only effect would stay stale.
@@ -20,6 +27,7 @@ export default function Home() {
         if (!p.onboarded) router.replace('/onboarding' as never);
         else setProgress(p);
       });
+      getQuotaUsed(todayISO()).then(setTodayLearned);
       // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []),
   );
@@ -86,18 +94,38 @@ export default function Home() {
             Weird Japanese · the Japanese they don't teach you
           </Text>
         </View>
-        <View
-          accessibilityLabel={`${progress.streak?.count ?? 0} day streak`}
-          style={{
-            borderWidth: 2.5,
-            borderColor: INK,
-            borderRadius: 999,
-            paddingHorizontal: 12,
-            paddingVertical: 7,
-            boxShadow: '3px 3px 0px #15130F',
-          }}
-        >
-          <Text style={{ fontWeight: '900', fontSize: 15, color: INK }}>🔥 {progress.streak?.count ?? 0}</Text>
+        <View style={{ flexDirection: 'row', gap: 8 }}>
+          <View
+            accessibilityLabel={`Today: ${Math.min(todayLearned, progress.goal || 3)} of ${progress.goal || 3} new words`}
+            style={{
+              borderWidth: 2.5,
+              borderColor: INK,
+              borderRadius: 999,
+              paddingHorizontal: 11,
+              paddingVertical: 7,
+              backgroundColor: todayLearned >= (progress.goal || 3) ? '#DCFCE7' : '#fff',
+              boxShadow: '3px 3px 0px #15130F',
+            }}
+          >
+            <Text style={{ fontWeight: '900', fontSize: 14, color: INK }}>
+              {todayLearned >= (progress.goal || 3) ? '✅' : '🎯'} {Math.min(todayLearned, progress.goal || 3)}/
+              {progress.goal || 3}
+            </Text>
+          </View>
+          <View
+            accessibilityLabel={`${progress.streak?.count ?? 0} day streak`}
+            style={{
+              borderWidth: 2.5,
+              borderColor: INK,
+              borderRadius: 999,
+              paddingHorizontal: 11,
+              paddingVertical: 7,
+              backgroundColor: '#fff',
+              boxShadow: '3px 3px 0px #15130F',
+            }}
+          >
+            <Text style={{ fontWeight: '900', fontSize: 14, color: INK }}>🔥 {progress.streak?.count ?? 0}</Text>
+          </View>
         </View>
       </View>
 
@@ -164,24 +192,28 @@ export default function Home() {
       <View style={{ flexDirection: 'row', flexWrap: 'wrap', gap: 11, paddingHorizontal: 18 }}>
         {cats.map((c) => {
           const locked = c.tier === 'pro' && !isPro;
+          const poolN = loadPhrasesByCategory(c.id).length;
+          const gotN = (progress.seenByCategory?.[c.id] ?? []).length;
+          const pct = poolN ? Math.min(100, Math.round((gotN / poolN) * 100)) : 0;
           return (
             <Pressable
               key={c.id}
               accessibilityRole="button"
-              accessibilityLabel={`${c.nameEn} pack${locked ? ', locked — Pro' : ''}`}
+              accessibilityLabel={`${c.nameEn} pack${locked ? ', locked — Pro' : `, ${gotN} of ${poolN} words learned`}`}
               onPress={() => (locked ? router.push('/paywall' as never) : router.push(`/category/${c.id}`))}
-              style={{
+              style={({ pressed }) => ({
                 width: '48%',
-                minHeight: 118,
+                minHeight: 126,
                 borderWidth: 3,
                 borderColor: INK,
                 borderRadius: 20,
                 backgroundColor: c.tileBg,
                 padding: 13,
                 justifyContent: 'space-between',
-                boxShadow: '4px 4px 0px #15130F',
+                boxShadow: pressed ? '1px 1px 0px #15130F' : '4px 4px 0px #15130F',
+                transform: [{ translateX: pressed ? 3 : 0 }, { translateY: pressed ? 3 : 0 }],
                 opacity: locked ? 0.55 : 1,
-              }}
+              })}
             >
               <Text style={{ fontSize: 26 }}>{c.emoji}</Text>
               <View>
@@ -202,6 +234,26 @@ export default function Home() {
                   {locked ? '🔒 Pro' : c.peek}
                 </Text>
               </View>
+              {/* pack progress — the collection drive, visible on the main surface */}
+              {!locked && gotN > 0 && (
+                <View style={{ marginTop: 9 }}>
+                  <View
+                    style={{
+                      height: 6,
+                      backgroundColor: '#ffffff',
+                      borderRadius: 999,
+                      borderWidth: 1.5,
+                      borderColor: INK,
+                      overflow: 'hidden',
+                    }}
+                  >
+                    <View style={{ width: `${pct}%`, height: '100%', backgroundColor: c.accent }} />
+                  </View>
+                  <Text style={{ fontWeight: '800', fontSize: 10, color: INK, opacity: 0.65, marginTop: 3 }}>
+                    {gotN}/{poolN}
+                  </Text>
+                </View>
+              )}
             </Pressable>
           );
         })}

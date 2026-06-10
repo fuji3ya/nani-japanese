@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react';
 import { Linking, Pressable, ScrollView, Text, View } from 'react-native';
 import { persistPro } from '../store/progress';
 import { getPlanPrices, purchasePlan, restorePurchases } from '../lib/purchases';
+import { celebrate } from '../lib/haptics';
 import { FONT } from '../lib/theme';
 
 const INK = '#15130F';
@@ -34,6 +35,7 @@ export default function Paywall() {
   }, []);
 
   const finishPro = async () => {
+    celebrate(); // the single most-earned haptic in the app
     await persistPro(true);
     router.back();
   };

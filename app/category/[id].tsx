@@ -1,6 +1,7 @@
 import { Redirect, useLocalSearchParams, Stack, useRouter } from 'expo-router';
 import { useEffect, useMemo, useRef, useState } from 'react';
-import { Pressable, ScrollView, Share, Text, View } from 'react-native';
+import { Animated, Easing, Pressable, ScrollView, Share, Text, View } from 'react-native';
+import { celebrate, notifySuccess, notifyWarning, tapLight } from '../../lib/haptics';
 import { findCategory, loadPhrasesByCategory } from '../../lib/content/loadContent';
 import { GACHI_EN, Phrase } from '../../lib/content/types';
 import { FONT } from '../../lib/theme';
@@ -30,6 +31,47 @@ const todayISO = () => {
 };
 
 type Step = { kind: 'learn' | 'practice'; phrase: Phrase };
+
+/** Spring-pop on mount (and again whenever `popKey` changes): scale 0.6→1 + fade in. */
+function Pop({ popKey, delay = 0, children }: { popKey: string | number; delay?: number; children: React.ReactNode }) {
+  const v = useRef(new Animated.Value(0)).current;
+  useEffect(() => {
+    v.setValue(0);
+    Animated.spring(v, { toValue: 1, delay, friction: 5, tension: 120, useNativeDriver: true }).start();
+  }, [popKey, delay, v]);
+  return (
+    <Animated.View
+      style={{
+        opacity: v,
+        transform: [{ scale: v.interpolate({ inputRange: [0, 1], outputRange: [0.6, 1] }) }],
+      }}
+    >
+      {children}
+    </Animated.View>
+  );
+}
+
+/** Progress bar that animates to the new fill instead of jumping. */
+function AnimatedBar({ pct, color }: { pct: number; color: string }) {
+  const [w, setW] = useState(0);
+  const v = useRef(new Animated.Value(0)).current;
+  useEffect(() => {
+    Animated.timing(v, {
+      toValue: (pct / 100) * w,
+      duration: 350,
+      easing: Easing.out(Easing.cubic),
+      useNativeDriver: false, // width is a layout prop
+    }).start();
+  }, [pct, w, v]);
+  return (
+    <View
+      onLayout={(e) => setW(e.nativeEvent.layout.width)}
+      style={{ height: 8, backgroundColor: '#ECE8DC', borderRadius: 999, overflow: 'hidden', marginBottom: 18 }}
+    >
+      <Animated.View style={{ width: v, height: '100%', backgroundColor: color, borderRadius: 999 }} />
+    </View>
+  );
+}
 
 function buildSession(pool: Phrase[], progress: Progress, catId: string, today: string, quotaUsed: number): Step[] {
   const seen = new Set(progress.seenByCategory[catId] ?? []);
@@ -153,7 +195,9 @@ export default function Lesson() {
     return (
       <View style={{ flex: 1, backgroundColor: PAPER, alignItems: 'center', justifyContent: 'center', padding: 32 }}>
         <Stack.Screen options={{ title: `${cat.emoji} ${cat.nameEn}` }} />
-        <Text style={{ fontSize: 52 }}>{limited ? '🔒' : allCaughtUp ? '✅' : '🎉'}</Text>
+        <Pop popKey="done">
+          <Text style={{ fontSize: 52 }}>{limited ? '🔒' : allCaughtUp ? '✅' : '🎉'}</Text>
+        </Pop>
         <Text style={{ fontWeight: '900', fontSize: 24, color: INK, marginTop: 12, textAlign: 'center' }}>
           {limited ? "That's today's free batch!" : allCaughtUp ? "You're all caught up!" : 'Session complete!'}
         </Text>
@@ -174,7 +218,22 @@ export default function Lesson() {
           </Text>
         )}
         {streakDone != null && (
-          <Text style={{ fontWeight: '900', fontSize: 18, color: INK, marginTop: 12 }}>🔥 {streakDone} day streak</Text>
+          <Pop popKey="streak" delay={250}>
+            <View
+              style={{
+                marginTop: 14,
+                backgroundColor: '#FFE8C2',
+                borderWidth: 3,
+                borderColor: INK,
+                borderRadius: 999,
+                paddingHorizontal: 20,
+                paddingVertical: 10,
+                boxShadow: '4px 4px 0px #15130F',
+              }}
+            >
+              <Text style={{ fontWeight: '900', fontSize: 19, color: INK }}>🔥 {streakDone} day streak!</Text>
+            </View>
+          </Pop>
         )}
 
         {!allCaughtUp && !limited && cardPhrase && (
@@ -241,6 +300,7 @@ export default function Lesson() {
       const np = { ...p, streak: s };
       setProgress(np);
       setStreakDone(s.count);
+      celebrate();
       await saveProgress(np);
     }
   };
@@ -248,6 +308,7 @@ export default function Lesson() {
   const onGotIt = async () => {
     if (advLock.current) return; // ignore double-tap until the next step renders
     advLock.current = true;
+    tapLight();
     const p = markSeen(progress, id!, step.phrase.id);
     setProgress(p);
     setLastLearned(step.phrase);
@@ -262,6 +323,8 @@ export default function Lesson() {
   const onPick = async (choiceId: string) => {
     if (picked || !ex) return;
     const correct = checkExercise(ex, choiceId);
+    if (correct) notifySuccess();
+    else notifyWarning();
     setPicked(choiceId);
     const wasSeenBefore = (progress.words[step.phrase.id]?.box ?? 0) > 0;
     const p = markAnswered(progress, step.phrase.id, correct, today);
@@ -283,9 +346,7 @@ export default function Lesson() {
       <Stack.Screen options={{ title: `${cat.emoji} ${cat.nameEn}`, headerBackTitle: 'Back' }} />
 
       {/* progress bar */}
-      <View style={{ height: 8, backgroundColor: '#ECE8DC', borderRadius: 999, overflow: 'hidden', marginBottom: 18 }}>
-        <View style={{ width: `${progressPct}%`, height: '100%', backgroundColor: accent }} />
-      </View>
+      <AnimatedBar pct={progressPct} color={accent} />
 
       {step.kind === 'learn' ? (
         <Reveal phrase={step.phrase} accent={accent} kwShadow={cat.kwShadow} onNext={onGotIt} />
@@ -333,20 +394,22 @@ function Reveal({
         </View>
       </View>
       <View style={{ alignItems: 'center', paddingVertical: 16 }}>
-        <Text
-          style={{
-            fontFamily: FONT.heavy,
-            fontWeight: '900',
-            fontSize: 58,
-            color: INK,
-            textAlign: 'center',
-            textShadowColor: kwShadow,
-            textShadowOffset: { width: 5, height: 5 },
-            textShadowRadius: 0,
-          }}
-        >
-          {phrase.term}
-        </Text>
+        <Pop popKey={phrase.id}>
+          <Text
+            style={{
+              fontFamily: FONT.heavy,
+              fontWeight: '900',
+              fontSize: 58,
+              color: INK,
+              textAlign: 'center',
+              textShadowColor: kwShadow,
+              textShadowOffset: { width: 5, height: 5 },
+              textShadowRadius: 0,
+            }}
+          >
+            {phrase.term}
+          </Text>
+        </Pop>
         {!!phrase.romaji && (
           <View
             style={{
@@ -424,23 +487,8 @@ function Practice({
 
       <View style={{ height: 12 }} />
       {ex.choices.map((c) => {
-        const show = answered;
-        const bg = !show
-          ? '#F2F2F7'
-          : c.correct
-            ? '#DCFCE7'
-            : c.id === picked
-              ? '#FEE2E2'
-              : '#F2F2F7';
-        return (
-          <Pressable
-            key={c.id}
-            onPress={() => onPick(c.id)}
-            style={{ padding: 16, borderRadius: 12, backgroundColor: bg, marginBottom: 10, borderWidth: 2, borderColor: INK }}
-          >
-            <Text style={{ fontWeight: '700', color: INK }}>{c.text}</Text>
-          </Pressable>
-        );
+        const state: ChoiceState = !answered ? 'idle' : c.correct ? 'correct' : c.id === picked ? 'wrongPicked' : 'dim';
+        return <ChoiceRow key={c.id} text={c.text} state={state} accent={accent} onPress={() => onPick(c.id)} />;
       })}
 
       {answered && (
@@ -468,6 +516,60 @@ function Practice({
   );
 }
 
+type ChoiceState = 'idle' | 'correct' | 'wrongPicked' | 'dim';
+
+/** Quiz answer row: press-scale while idle; on reveal the correct one pops with
+ *  the pack accent, the wrong pick shakes, the rest dim to pull focus. */
+function ChoiceRow({
+  text,
+  state,
+  accent,
+  onPress,
+}: {
+  text: string;
+  state: ChoiceState;
+  accent: string;
+  onPress: () => void;
+}) {
+  const anim = useRef(new Animated.Value(0)).current;
+  useEffect(() => {
+    if (state === 'correct') {
+      Animated.sequence([
+        Animated.timing(anim, { toValue: 1, duration: 110, easing: Easing.out(Easing.quad), useNativeDriver: true }),
+        Animated.spring(anim, { toValue: 0, friction: 4, useNativeDriver: true }),
+      ]).start();
+    } else if (state === 'wrongPicked') {
+      Animated.sequence(
+        [8, -8, 6, -6, 3, 0].map((x) => Animated.timing(anim, { toValue: x, duration: 55, useNativeDriver: true })),
+      ).start();
+    }
+  }, [state, anim]);
+  const transform =
+    state === 'wrongPicked'
+      ? [{ translateX: anim }]
+      : [{ scale: anim.interpolate({ inputRange: [0, 1], outputRange: [1, 1.04] }) }];
+  const bg = state === 'correct' ? '#DCFCE7' : state === 'wrongPicked' ? '#FEE2E2' : '#F2F2F7';
+  return (
+    <Animated.View style={{ transform, opacity: state === 'dim' ? 0.55 : 1 }}>
+      <Pressable
+        onPress={onPress}
+        style={({ pressed }) => ({
+          padding: 16,
+          borderRadius: 12,
+          backgroundColor: bg,
+          marginBottom: 10,
+          borderWidth: state === 'correct' ? 3 : 2,
+          borderColor: state === 'correct' ? accent : INK,
+          transform: [{ scale: pressed && state === 'idle' ? 0.97 : 1 }],
+          ...(state === 'correct' ? { boxShadow: '3px 3px 0px #15130F' } : null),
+        })}
+      >
+        <Text style={{ fontWeight: state === 'correct' ? '900' : '700', color: INK }}>{text}</Text>
+      </Pressable>
+    </Animated.View>
+  );
+}
+
 function Card({ children }: { children: React.ReactNode }) {
   return (
     <View
@@ -490,7 +592,7 @@ function Btn({ accent, label, onPress }: { accent: string; label: string; onPres
   return (
     <Pressable
       onPress={onPress}
-      style={{
+      style={({ pressed }) => ({
         marginTop: 20,
         backgroundColor: accent,
         borderWidth: 3,
@@ -498,8 +600,10 @@ function Btn({ accent, label, onPress }: { accent: string; label: string; onPres
         borderRadius: 16,
         padding: 15,
         alignItems: 'center',
-        boxShadow: '5px 5px 0px #15130F',
-      }}
+        // pressed = sink into the shadow (classic neo-brutalist press)
+        boxShadow: pressed ? '1px 1px 0px #15130F' : '5px 5px 0px #15130F',
+        transform: [{ translateX: pressed ? 4 : 0 }, { translateY: pressed ? 4 : 0 }],
+      })}
     >
       <Text style={{ color: '#fff', fontWeight: '900', fontSize: 17 }}>{label}</Text>
     </Pressable>
